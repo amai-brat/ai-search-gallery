@@ -1,6 +1,6 @@
 from collections.abc import Sequence
 
-from models.image import Image, ImageCreate, ImageUpdate
+from models.image import Image, ImageCreate, ImageSearchHit, ImageUpdate
 from pgvector import Vector
 from psycopg import Connection
 from psycopg.rows import dict_row
@@ -104,7 +104,7 @@ class ImageRepository:
 
     def nearest(self, embedding: Sequence[float], limit: int = 10) -> list[Image]:
         sql = """
-            SELECT id, sha256sum, filepath, added_at, ocr_text
+            SELECT id, sha256sum, filepath, added_at, ocr_text, (embedding <=> %s::vector)
             FROM images
             ORDER BY (embedding <=> %s::vector)
             LIMIT %s
@@ -112,3 +112,25 @@ class ImageRepository:
         with self._conn.cursor(row_factory=dict_row) as cur:
             cur.execute(sql, (embedding, limit))
             return [Image.model_validate(self._row_to_dict(r)) for r in cur.fetchall()]
+
+    def nearest_(
+        self, embedding: Sequence[float], limit: int = 10
+    ) -> list[ImageSearchHit]:
+        sql = """
+            SELECT id, sha256sum, filepath, added_at, ocr_text, embedding,
+                (embedding <=> %s::vector) AS distance
+            FROM images
+            ORDER BY distance
+            LIMIT %s
+        """
+        with self._conn.cursor(row_factory=dict_row) as cur:
+            cur.execute(sql, (Vector(list(embedding)), limit))
+            rows = cur.fetchall()
+
+        return [
+            ImageSearchHit(
+                image=Image.model_validate(self._row_to_dict(row)),
+                distance=row["distance"],
+            )
+            for row in rows
+        ]

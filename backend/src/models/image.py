@@ -34,3 +34,8 @@ class ImageUpdate(BaseModel):
     embedding: list[float] | None = Field(
         default=None, min_length=1024, max_length=1024
     )
+
+
+class ImageSearchHit(BaseModel):
+    image: Image
+    distance: float
