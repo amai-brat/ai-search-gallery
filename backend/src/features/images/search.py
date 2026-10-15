@@ -28,7 +28,7 @@ class SearchResponse(BaseModel):
     results: list[SearchHit]
 
 
-@router.post("", response_model=SearchResponse)
+@router.get("", response_model=SearchResponse)
 def semantic_search(
     req: SearchRequest,
     repo: Annotated[ImageRepository, Depends(get_repository)],

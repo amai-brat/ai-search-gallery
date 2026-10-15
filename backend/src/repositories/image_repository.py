@@ -53,6 +53,18 @@ class ImageRepository:
             row = cur.fetchone()
             return Image.model_validate(self._row_to_dict(row)) if row else None
 
+    def get_all(self, offset: int, limit: int = 20) -> list[Image]:
+        sql = """
+            SELECT id, sha256sum, filepath, added_at, ocr_text, embedding
+            FROM images
+            ORDER BY id
+            OFFSET %s
+            LIMIT %s
+        """
+        with self._conn.cursor(row_factory=dict_row) as cur:
+            cur.execute(sql, (offset, limit))
+            return [Image.model_validate(self._row_to_dict(r)) for r in cur.fetchall()]
+
     def update(self, image_id: int, patch: ImageUpdate) -> Image | None:
         fields = patch.model_dump(exclude_unset=True)
         if not fields:
