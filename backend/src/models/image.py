@@ -14,9 +14,7 @@ class Image(BaseModel):
     filepath: str
     added_at: datetime
     ocr_text: str | None = None
-    embedding: list[float] | None = Field(
-        default=None, min_length=1024, max_length=1024
-    )
+    embedding: list[float] | None
 
 
 class ImageCreate(BaseModel):
@@ -24,16 +22,12 @@ class ImageCreate(BaseModel):
     filepath: str
     added_at: datetime
     ocr_text: str | None = None
-    embedding: list[float] | None = Field(
-        default=None, min_length=1024, max_length=1024
-    )
+    embedding: list[float] | None
 
 
 class ImageUpdate(BaseModel):
     ocr_text: str | None = None
-    embedding: list[float] | None = Field(
-        default=None, min_length=1024, max_length=1024
-    )
+    embedding: list[float] | None
 
 
 class ImageSearchHit(BaseModel):

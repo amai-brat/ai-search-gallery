@@ -18,6 +18,7 @@ from utils.checksums import sha256sum
 from utils.config import CELERY_BROKER
 from utils.database import db_pool, get_db_connection
 from utils.ml_core import get_image_embedding
+from utils.ocr import get_image_text
 
 celery_app = Celery(
     "worker",
@@ -49,12 +50,32 @@ def index_images_task(directory_path: str):
                 # 1. Short transaction: check if we already have it.
                 with get_db_connection() as conn:
                     existing = ImageRepository(conn).get_by_sha256(checksum)
-                    if existing is not None and existing.embedding is not None:
+                    if (
+                        existing is not None
+                        and existing.embedding is not None
+                        and existing.ocr_text is not None
+                    ):
                         logger.info("Skipping (already indexed): %s", filepath)
                         continue
 
-                # 2. Heavy compute, NO connection held.
-                embedding = get_image_embedding(filepath)
+                # 2. Heavy compute, NO connection held. Reuse whatever is
+                # already in the database so partial indexes can be completed
+                # without redoing expensive work.
+                if existing is not None and existing.embedding is not None:
+                    embedding = existing.embedding
+                else:
+                    embedding = get_image_embedding(filepath)
+
+                if existing is not None and existing.ocr_text is not None:
+                    ocr_text = existing.ocr_text
+                else:
+                    try:
+                        ocr_text = get_image_text(filepath)
+                    except Exception as e:  # noqa: BLE001
+                        # OCR should not prevent the image from being indexed
+                        # semantically; the next run will retry it.
+                        logger.warning("OCR failed for %s: %s", filepath, e)
+                        ocr_text = None
 
                 # 3. Short transaction: upsert.
                 with get_db_connection() as conn, conn.transaction():
@@ -64,7 +85,7 @@ def index_images_task(directory_path: str):
                             filepath=filepath,
                             added_at=datetime.now(UTC),
                             embedding=embedding,
-                            ocr_text=None,
+                            ocr_text=ocr_text,
                         )
                     )
 

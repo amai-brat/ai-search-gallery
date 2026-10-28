@@ -4,6 +4,7 @@ from models.image import Image, ImageCreate, ImageSearchHit, ImageUpdate
 from pgvector import Vector
 from psycopg import Connection
 from psycopg.rows import dict_row
+from utils.search_query import compile_ocr_filter
 
 
 class ImageRepository:
@@ -41,7 +42,7 @@ class ImageRepository:
         with self._conn.cursor(row_factory=dict_row) as cur:
             cur.execute(sql, (sha256sum,))
             row = cur.fetchone()
-            return Image.model_validate(row) if row else None
+            return Image.model_validate(self._row_to_dict(row)) if row else None
 
     def get(self, image_id: int) -> Image | None:
         sql = """
@@ -111,6 +112,20 @@ class ImageRepository:
         """
         with self._conn.cursor(row_factory=dict_row) as cur:
             cur.execute(sql, (embedding, limit))
+            return [Image.model_validate(self._row_to_dict(r)) for r in cur.fetchall()]
+
+    def search_ocr(self, query: str, limit: int = 10) -> list[Image]:
+        """Return images whose OCR text matches a Kibana-like query."""
+        condition, params = compile_ocr_filter(query)
+        sql = f"""
+            SELECT id, sha256sum, filepath, added_at, ocr_text, embedding
+            FROM images
+            WHERE ocr_text IS NOT NULL AND ({condition})
+            ORDER BY id
+            LIMIT %s
+        """
+        with self._conn.cursor(row_factory=dict_row) as cur:
+            cur.execute(sql, (*params, limit))  # type: ignore
             return [Image.model_validate(self._row_to_dict(r)) for r in cur.fetchall()]
 
     def nearest_(
