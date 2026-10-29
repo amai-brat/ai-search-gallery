@@ -33,3 +33,26 @@ PADDLEOCR_ENABLE_MKLDNN = os.getenv("PADDLEOCR_ENABLE_MKLDNN", "").lower() in (
     "true",
     "yes",
 )
+
+# Uploaded images and cached thumbnails live here.
+STORAGE_DIR = Path(
+    os.getenv("STORAGE_DIR") or Path(__file__).resolve().parents[2] / "storage"
+)
+
+# Origins allowed to call the API from a browser (the Vite dev server by default).
+CORS_ORIGINS = [
+    o.strip()
+    for o in os.getenv(
+        "CORS_ORIGINS", "http://localhost:5180,http://127.0.0.1:5180"
+    ).split(",")
+    if o.strip()
+]
+
+# Semantic search relevance. SigLIP cosine distances are compressed (relevant and
+# irrelevant hits differ by hundredths) and their scale shifts from query to
+# query, so a fixed cut-off does not work. Instead a hit is kept when its
+# distance is within this window of the best hit for the same query.
+# Tuned on the sample set; increase the windows for a more lenient search.
+SEMANTIC_WINDOW_STRICT = float(os.getenv("SEMANTIC_WINDOW_STRICT", "0.010"))
+SEMANTIC_WINDOW_BALANCED = float(os.getenv("SEMANTIC_WINDOW_BALANCED", "0.018"))
+SEMANTIC_WINDOW_WIDE = float(os.getenv("SEMANTIC_WINDOW_WIDE", "0.035"))

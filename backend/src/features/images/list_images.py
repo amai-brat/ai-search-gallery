@@ -14,10 +14,12 @@ class ImageResponse(BaseModel):
     sha256sum: str
     filepath: str
     added_at: datetime
+    ocr_text: str | None = None
 
 
 class ListImagesResponse(BaseModel):
     results: list[ImageResponse]
+    total: int
 
 
 @router.get("", response_model=ListImagesResponse)
@@ -31,8 +33,13 @@ def list_images(
     return ListImagesResponse(
         results=[
             ImageResponse(
-                id=r.id, sha256sum=r.sha256sum, filepath=r.filepath, added_at=r.added_at
+                id=r.id,
+                sha256sum=r.sha256sum,
+                filepath=r.filepath,
+                added_at=r.added_at,
+                ocr_text=r.ocr_text,
             )
             for r in rows
-        ]
+        ],
+        total=repo.count(),
     )
