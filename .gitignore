@@ -1,2 +1,5 @@
 storage
 .env
+.run
+logs
+test-images

@@ -1,19 +1,38 @@
 services:
     redis:
         container_name: redis
-        image: redis/redis-stack:latest
+        image: redis:7-alpine
         ports:
-        - "6379:6379"
+        - "${REDIS_PORT:-6380}:6379"
         volumes:
-        - ./storage/redis:/data
+        - redis_data:/data
+        healthcheck:
+            test: ["CMD", "redis-cli", "ping"]
+            interval: 5s
+            timeout: 3s
+            retries: 20
 
     pgvector:
         container_name: pgvector
         image: pgvector/pgvector:pg18-trixie
+        # Не 5432/5433/6379: эти порты часто заняты другими проектами и локальным Postgres.
+        # Меняются переменными PG_PORT / REDIS_PORT (и тогда же в backend/.env).
         ports:
-        - "5433:5432"
+        - "${PG_PORT:-5434}:5432"
+        # Именованный том вместо bind-mount: Postgres на NTFS-каталоге из Windows
+        # часто падает из-за прав доступа.
         volumes:
-        - ./storage/pgvector:/var/lib/postgresql
+        - pgvector_data:/var/lib/postgresql
         environment:
             POSTGRES_USER: postgres
             POSTGRES_PASSWORD: password
+            POSTGRES_DB: gallery
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U postgres -d gallery"]
+            interval: 5s
+            timeout: 3s
+            retries: 20
+
+volumes:
+    redis_data:
+    pgvector_data:

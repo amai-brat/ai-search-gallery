@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS images (
     filepath TEXT UNIQUE NOT NULL,
     added_at TIMESTAMP WITH TIME ZONE NOT NULL,
     ocr_text TEXT, 
-    embedding VECTOR(1024)
+    embedding VECTOR(768)
 );
 
 CREATE INDEX IF NOT EXISTS hnsw_index ON images 

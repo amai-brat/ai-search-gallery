@@ -9,7 +9,11 @@ model, preprocess, tokenizer = None, None, None
 def load_model():
     global model, preprocess, tokenizer
     if model is None or preprocess is None or tokenizer is None:
-        model, _, preprocess = open_clip.create_model_and_transforms(CLIP_MODEL_NAME)
+        # require_pretrained: if the weights cannot be downloaded open_clip would
+        # otherwise only log a warning and silently continue with random weights.
+        model, _, preprocess = open_clip.create_model_and_transforms(
+            CLIP_MODEL_NAME, require_pretrained=True
+        )
         tokenizer = open_clip.get_tokenizer(CLIP_MODEL_NAME)
         model.eval()
     return model, preprocess, tokenizer

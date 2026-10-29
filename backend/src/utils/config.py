@@ -1,14 +1,26 @@
 import os
+from pathlib import Path
 
 DATABASE_URL = os.getenv(
-    "DATABASE_URL", "postgresql://postgres:password@localhost:5433/gallery"
+    "DATABASE_URL", "postgresql://postgres:password@localhost:5434/gallery"
 )
 
-CELERY_BROKER = os.getenv("CELERY_BROKER", "redis://localhost:6379")
+CELERY_BROKER = os.getenv("CELERY_BROKER", "redis://localhost:6380")
 
-CLIP_MODEL_NAME = os.getenv("CLIP_MODEL_NAME", "ViT-L-16-SigLIP2-256")
+# Must carry a "hf-hub:" (or "local-dir:") prefix: with a bare model name
+# open_clip would build the architecture with random, untrained weights.
+# The vector size of the model must match images.embedding in the migrations
+# (768 for ViT-B-16-SigLIP2).
+CLIP_MODEL_NAME = os.getenv("CLIP_MODEL_NAME", "hf-hub:timm/ViT-B-16-SigLIP2")
 
-PADDLEOCR_LANG = os.getenv("PADDLEOCR_LANG", "en")
+# Light PP-OCRv5 mobile models. The eslav recognizer reads Russian, Belarusian,
+# Ukrainian and English. Set both to empty strings to let PaddleOCR choose the
+# models from PADDLEOCR_LANG instead (it then picks the heavier server detector).
+PADDLEOCR_DET_MODEL = os.getenv("PADDLEOCR_DET_MODEL", "PP-OCRv5_mobile_det")
+PADDLEOCR_REC_MODEL = os.getenv("PADDLEOCR_REC_MODEL", "eslav_PP-OCRv5_mobile_rec")
+
+# Used only when PADDLEOCR_DET_MODEL and PADDLEOCR_REC_MODEL are both empty.
+PADDLEOCR_LANG = os.getenv("PADDLEOCR_LANG", "ru")
 
 # Examples: "cpu", "gpu", "gpu:0". Leave empty to let PaddleOCR choose
 # (GPU 0 when available, CPU otherwise).
