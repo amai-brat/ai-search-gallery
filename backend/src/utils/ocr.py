@@ -3,9 +3,11 @@ from pathlib import Path
 from typing import Any
 
 from utils.config import (
+    PADDLEOCR_DET_MODEL,
     PADDLEOCR_DEVICE,
     PADDLEOCR_ENABLE_MKLDNN,
     PADDLEOCR_LANG,
+    PADDLEOCR_REC_MODEL,
 )
 
 logger = logging.getLogger(__name__)
@@ -24,7 +26,6 @@ def load_ocr() -> Any:
         from paddleocr import PaddleOCR
 
         kwargs: dict[str, Any] = {
-            "lang": PADDLEOCR_LANG,
             # These stages are not useful for gallery images and would load
             # additional models on every worker start.
             "use_doc_orientation_classify": False,
@@ -32,11 +33,21 @@ def load_ocr() -> Any:
             "use_textline_orientation": False,
             "enable_mkldnn": PADDLEOCR_ENABLE_MKLDNN,
         }
+        # PaddleOCR ignores ``lang`` as soon as any model name is given.
+        if PADDLEOCR_DET_MODEL or PADDLEOCR_REC_MODEL:
+            if PADDLEOCR_DET_MODEL:
+                kwargs["text_detection_model_name"] = PADDLEOCR_DET_MODEL
+            if PADDLEOCR_REC_MODEL:
+                kwargs["text_recognition_model_name"] = PADDLEOCR_REC_MODEL
+        else:
+            kwargs["lang"] = PADDLEOCR_LANG
         if PADDLEOCR_DEVICE:
             kwargs["device"] = PADDLEOCR_DEVICE
 
         logger.info(
-            "Loading PaddleOCR (lang=%s, device=%s)",
+            "Loading PaddleOCR (det=%s, rec=%s, lang=%s, device=%s)",
+            PADDLEOCR_DET_MODEL or "auto",
+            PADDLEOCR_REC_MODEL or "auto",
             PADDLEOCR_LANG,
             PADDLEOCR_DEVICE or "auto",
         )

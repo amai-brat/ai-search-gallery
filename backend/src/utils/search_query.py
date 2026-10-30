@@ -2,8 +2,8 @@
 
 Supported syntax::
 
-    invoice                      # substring match
-    invoice total                # implicit AND
+    invoice                      # substring match, also other word forms
+    invoice total               # implicit AND
     invoice AND total
     invoice OR receipt
     invoice AND NOT cancelled
@@ -51,6 +51,7 @@ class _Node:
 class Term(_Node):
     value: str
     wildcard: bool = False
+    exact: bool = False
 
 
 @dataclass(frozen=True)
@@ -211,7 +212,7 @@ class _Parser:
 
         if token.type is _TokenType.PHRASE:
             self._advance()
-            return Term(value=token.value)
+            return Term(value=token.value, exact=True)
 
         if token.type is _TokenType.EOF:
             raise QuerySyntaxError("Query ended unexpectedly")
@@ -224,6 +225,9 @@ class _Parser:
 def parse_query(query: str) -> _Node:
     """Parse a query string into an AST."""
     return _Parser(_tokenize(query)).parse()
+
+
+_STEM_LANGUAGES = ("russian", "english")
 
 
 def _escape_like(value: str) -> str:
@@ -241,7 +245,20 @@ def _like_pattern(term: Term) -> str:
 
 def _compile(node: _Node, column: str) -> tuple[str, list[str]]:
     if isinstance(node, Term):
-        return f"{column} ILIKE %s ESCAPE '\\'", [_like_pattern(node)]
+        like_sql = f"{column} ILIKE %s ESCAPE '\\'"
+        params = [_like_pattern(node)]
+        if node.wildcard or node.exact:
+            return like_sql, params
+        # Plain words also match other word forms ("яблоки" finds "Яблоко"):
+        # both sides are reduced to stems by the Russian and English dictionaries.
+        stem_sql = " OR ".join(
+            f"to_tsvector('{lang}', {column}) @@ plainto_tsquery('{lang}', %s)"
+            for lang in _STEM_LANGUAGES
+        )
+        return (
+            f"({like_sql} OR {stem_sql})",
+            params + [node.value] * len(_STEM_LANGUAGES),
+        )
 
     if isinstance(node, And):
         left_sql, left_params = _compile(node.left, column)

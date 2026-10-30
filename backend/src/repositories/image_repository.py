@@ -66,6 +66,12 @@ class ImageRepository:
             cur.execute(sql, (offset, limit))
             return [Image.model_validate(self._row_to_dict(r)) for r in cur.fetchall()]
 
+    def count(self) -> int:
+        with self._conn.cursor() as cur:
+            cur.execute("SELECT count(*) FROM images")
+            row = cur.fetchone()
+            return int(row[0]) if row else 0
+
     def update(self, image_id: int, patch: ImageUpdate) -> Image | None:
         fields = patch.model_dump(exclude_unset=True)
         if not fields:
