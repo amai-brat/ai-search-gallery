@@ -1,2 +1,4 @@
 def main() -> None:
-    print("Hello from bench!")
+    from bench.clip_bench import main as clip_main
+
+    clip_main()

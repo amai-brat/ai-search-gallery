@@ -1,0 +1,56 @@
+{
+  "model": "nllb-clip-base-siglip",
+  "pretrained": "v1",
+  "device": "cpu",
+  "n_images": 1000,
+  "n_captions": 4000,
+  "langs": [
+    "en",
+    "ru"
+  ],
+  "chance_recall@1": 0.001,
+  "embed_dim": 768,
+  "params_m": 507.5,
+  "load_s": 583.2,
+  "model_ram_mib": 4751,
+  "img_preprocess_ms": 8.305095300034736,
+  "img_forward_ms": 470.8955738000168,
+  "img_total_ms": 479.2006691000515,
+  "img_peak_rss_mib": 2900.296875,
+  "img_cpu_cores_busy": 5.878878829043404,
+  "query_ms_median": 152.11279999857652,
+  "query_ms_p95": 166.1781550010346,
+  "txt_batch_ms_per_text": 92.25474292499985,
+  "txt_peak_rss_mib": 2922.453125,
+  "txt_cpu_cores_busy": 5.893630853416005,
+  "Recall@1": 0.70875,
+  "Recall@5": 0.90875,
+  "Recall@10": 0.95525,
+  "NDCG@10": 0.8344660364716854,
+  "MRR": 0.7978449099068272,
+  "per_lang": {
+    "en": {
+      "Recall@1": 0.646,
+      "Recall@5": 0.877,
+      "Recall@10": 0.936,
+      "NDCG@10": 0.7914014706629091,
+      "MRR": 0.7484038204283949
+    },
+    "ru": {
+      "Recall@1": 0.7715,
+      "Recall@5": 0.9405,
+      "Recall@10": 0.9745,
+      "NDCG@10": 0.8775306022804618,
+      "MRR": 0.8472859993852592
+    }
+  },
+  "env": {
+    "torch": "2.15.0+cpu",
+    "open_clip": "3.3.0",
+    "torch_threads": 6,
+    "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_count": 6,
+    "ram_gib": 31.3,
+    "gpu": null
+  }
+}

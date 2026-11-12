@@ -1,0 +1,735 @@
+{
+ "system": "paddle-server-det",
+ "load_s": 26.730170599999838,
+ "threads": 2,
+ "preds": {
+  "syn_ru_clean_00.png": {
+   "text": "Левый берег",
+   "ms": 23394.344999998793
+  },
+  "syn_ru_clean_01.png": {
+   "text": "Книжный\nмагазин",
+   "ms": 23309.223199999906
+  },
+  "syn_ru_clean_02.png": {
+   "text": "Двуречье",
+   "ms": 22996.187999999165
+  },
+  "syn_ru_clean_03.png": {
+   "text": "Бар у моста",
+   "ms": 23357.409800000823
+  },
+  "syn_ru_clean_04.png": {
+   "text": "Хлеб",
+   "ms": 26297.9591000003
+  },
+  "syn_ru_clean_05.png": {
+   "text": "Продукты",
+   "ms": 26150.821499999438
+  },
+  "syn_ru_clean_06.png": {
+   "text": "Цветы",
+   "ms": 27732.66700000022
+  },
+  "syn_ru_clean_07.png": {
+   "text": "Тел. 8-800-555-35-35",
+   "ms": 29010.831800000233
+  },
+  "syn_ru_clean_08.png": {
+   "text": "Не курить",
+   "ms": 28134.587599999577
+  },
+  "syn_ru_clean_09.png": {
+   "text": "Магазин\nРадуга",
+   "ms": 28560.87970000044
+  },
+  "syn_ru_clean_10.png": {
+   "text": "Работаем без выходных",
+   "ms": 26348.849500000142
+  },
+  "syn_ru_clean_11.png": {
+   "text": "Кофе с собой",
+   "ms": 29183.955000000424
+  },
+  "syn_ru_clean_12.png": {
+   "text": "Часы работы 9-21",
+   "ms": 27293.09740000099
+  },
+  "syn_ru_clean_13.png": {
+   "text": "Электротовары",
+   "ms": 27760.46690000112
+  },
+  "syn_ru_clean_14.png": {
+   "text": "Улица\nЛенина, 15",
+   "ms": 24917.107999999644
+  },
+  "syn_ru_photo_00.png": {
+   "text": "Аптека\noo",
+   "ms": 29614.06200000056
+  },
+  "syn_ru_photo_01.png": {
+   "text": "Цветы",
+   "ms": 27299.986199999694
+  },
+  "syn_ru_photo_02.png": {
+   "text": "Продукты",
+   "ms": 28496.61439999909
+  },
+  "syn_ru_photo_03.png": {
+   "text": "Часы работы 9-21\nNCE\nME TO DANCE\nIT'S TIME TO DA\nC3\nDEATH\nMAYA\nTEH\nDON\nTOIZ",
+   "ms": 25946.72200000059
+  },
+  "syn_ru_photo_04.png": {
+   "text": "Пекарня №1",
+   "ms": 18695.599599999696
+  },
+  "syn_ru_photo_05.png": {
+   "text": "Левый берег",
+   "ms": 16008.036899998842
+  },
+  "syn_ru_photo_06.png": {
+   "text": "ВЫХОД",
+   "ms": 17820.08180000048
+  },
+  "syn_ru_photo_07.png": {
+   "text": "Тел. 8-800-555-35-35\nFAIRLADY\n2402\n1970",
+   "ms": 16516.87309999943
+  },
+  "syn_ru_photo_08.png": {
+   "text": "Книжный\nмагазин",
+   "ms": 15893.351599999733
+  },
+  "syn_ru_photo_09.png": {
+   "text": "Добро\nпожаловать",
+   "ms": 15599.413699999786
+  },
+  "syn_ru_photo_10.png": {
+   "text": "Электротовары",
+   "ms": 15816.646900000706
+  },
+  "syn_ru_photo_11.png": {
+   "text": "Чай, кофе, сладости",
+   "ms": 15244.02790000022
+  },
+  "syn_ru_photo_12.png": {
+   "text": "Мясо и рыба",
+   "ms": 15160.413800000242
+  },
+  "syn_ru_photo_13.png": {
+   "text": "SnA4\n@YAMANA\nNOKAIR\nОсторожно\nступенька\n-",
+   "ms": 16507.57429999976
+  },
+  "syn_ru_photo_14.png": {
+   "text": "Вход со двора\n3\nк\nLucioBr.co",
+   "ms": 16034.474000000046
+  },
+  "syn_ru_small_00.png": {
+   "text": "Ремонт обуви",
+   "ms": 15593.476199999714
+  },
+  "syn_ru_small_01.png": {
+   "text": "Кофе с собой",
+   "ms": 15470.25930000018
+  },
+  "syn_ru_small_02.png": {
+   "text": "Вход со двора",
+   "ms": 15428.071799999088
+  },
+  "syn_ru_small_03.png": {
+   "text": "Левый берег",
+   "ms": 15761.352100000295
+  },
+  "syn_ru_small_04.png": {
+   "text": "GYIMANA\nNOKAIR\nПекарня №1",
+   "ms": 16506.704100000206
+  },
+  "syn_ru_small_05.png": {
+   "text": "Добро пожаловать",
+   "ms": 15464.710500000365
+  },
+  "syn_ru_small_06.png": {
+   "text": "Улица Ленина, 15",
+   "ms": 15537.302499998987
+  },
+  "syn_ru_small_07.png": {
+   "text": "HIGH PRESSURE\nEPICENRUM\nFIRE BRIGADE\nТел. 8-800-555-35-35",
+   "ms": 16489.516299998286
+  },
+  "syn_ru_small_08.png": {
+   "text": "Чай, кофе, сладости",
+   "ms": 15493.708800000604
+  },
+  "syn_ru_small_09.png": {
+   "text": "Цветы\nHIGH PRESSURE\nEPICENRUM\nFIRE BRIGADE",
+   "ms": 16793.717799999285
+  },
+  "syn_ru_small_10.png": {
+   "text": "Продукты",
+   "ms": 15457.512400000269
+  },
+  "syn_ru_small_11.png": {
+   "text": "Аптека",
+   "ms": 15433.022500001243
+  },
+  "syn_ru_small_12.png": {
+   "text": "Книжныймагазин\n21\nV\nLucioBr.co",
+   "ms": 16526.61739999894
+  },
+  "syn_ru_small_13.png": {
+   "text": "Не курить",
+   "ms": 15620.73319999945
+  },
+  "syn_ru_small_14.png": {
+   "text": "Горячиепирожки",
+   "ms": 15470.284500001071
+  },
+  "syn_ru_rotated_00.png": {
+   "text": "Осторожно, ступенька",
+   "ms": 15649.856800000634
+  },
+  "syn_ru_rotated_01.png": {
+   "text": "Магазин Радуга\nFAIRLADY\n2402\n1970",
+   "ms": 16080.137200000536
+  },
+  "syn_ru_rotated_02.png": {
+   "text": "orbD\nАптека",
+   "ms": 15814.055099999678
+  },
+  "syn_ru_rotated_03.png": {
+   "text": "Горячие пирожки",
+   "ms": 15312.874499999452
+  },
+  "syn_ru_rotated_04.png": {
+   "text": "Пекарня №1",
+   "ms": 15757.54229999984
+  },
+  "syn_ru_rotated_05.png": {
+   "text": "Улица Ленина, 15",
+   "ms": 17102.54680000071
+  },
+  "syn_ru_rotated_06.png": {
+   "text": "ISLS\nRR100\nпожаловать\nДобро",
+   "ms": 16295.905999999377
+  },
+  "syn_ru_rotated_07.png": {
+   "text": "Кофе с собой",
+   "ms": 16549.751299999116
+  },
+  "syn_ru_rotated_08.png": {
+   "text": "Menú\nКнижный магазин",
+   "ms": 16714.98210000027
+  },
+  "syn_ru_rotated_09.png": {
+   "text": "Парикмахерская",
+   "ms": 17437.56140000005
+  },
+  "syn_ru_rotated_10.png": {
+   "text": "2T\nНе курить",
+   "ms": 21149.695400001292
+  },
+  "syn_ru_rotated_11.png": {
+   "text": "Бару моста",
+   "ms": 32513.6020000009
+  },
+  "syn_ru_rotated_12.png": {
+   "text": "Мясо и рыба\n@YAMANA\nNOKAU",
+   "ms": 33316.60229999943
+  },
+  "syn_ru_rotated_13.png": {
+   "text": "ВыХОД",
+   "ms": 29215.543199998137
+  },
+  "syn_ru_rotated_14.png": {
+   "text": "HIGH PRESSURE\nEPICENRUM\nU\nFIRE BRIGADE\nСтанцияметро",
+   "ms": 29598.787800001446
+  },
+  "syn_ru_degraded_00.jpg": {
+   "text": "Бар у моста\nLucioBr.co",
+   "ms": 27109.168399998453
+  },
+  "syn_ru_degraded_01.jpg": {
+   "text": "Двуречье",
+   "ms": 24423.50230000011
+  },
+  "syn_ru_degraded_02.jpg": {
+   "text": "7\n4\n.\nРаботаем без выходных",
+   "ms": 25847.56389999893
+  },
+  "syn_ru_degraded_03.jpg": {
+   "text": "Улица Ленина, 15",
+   "ms": 24656.654499998695
+  },
+  "syn_ru_degraded_04.jpg": {
+   "text": "станция метро\nucioBr.co\nE",
+   "ms": 24573.737299997447
+  },
+  "syn_ru_degraded_05.jpg": {
+   "text": "Цветы",
+   "ms": 23511.384299999918
+  },
+  "syn_ru_degraded_06.jpg": {
+   "text": "Mend\nКофес собой",
+   "ms": 23798.86649999753
+  },
+  "syn_ru_degraded_07.jpg": {
+   "text": "Мясо и рыба",
+   "ms": 24116.067200000543
+  },
+  "syn_ru_degraded_08.jpg": {
+   "text": "PRICE\nRMB\n68\nA\nTIBETSPRINC\n5100\n0B\nЧасы работы 9-21\ncex\nF",
+   "ms": 27645.78999999867
+  },
+  "syn_ru_degraded_09.jpg": {
+   "text": "Горячиепирожки",
+   "ms": 24579.94609999878
+  },
+  "syn_ru_degraded_10.jpg": {
+   "text": "Чайкофе сладости\nEUAT",
+   "ms": 24942.72720000299
+  },
+  "syn_ru_degraded_11.jpg": {
+   "text": "Левый берег",
+   "ms": 23477.858500002185
+  },
+  "syn_ru_degraded_12.jpg": {
+   "text": "AATARI\n5F35\nТeл. 8-800-555-35-35",
+   "ms": 24821.220900001208
+  },
+  "syn_ru_degraded_13.jpg": {
+   "text": "Парикмахерская",
+   "ms": 24011.826300000394
+  },
+  "syn_ru_degraded_14.jpg": {
+   "text": "Магазин Радуга",
+   "ms": 23694.42970000091
+  },
+  "syn_en_clean_00.png": {
+   "text": "Beware of the dog",
+   "ms": 24741.316800002096
+  },
+  "syn_en_clean_01.png": {
+   "text": "No parking",
+   "ms": 24552.878300000884
+  },
+  "syn_en_clean_02.png": {
+   "text": "Pharmacy",
+   "ms": 23777.329500000633
+  },
+  "syn_en_clean_03.png": {
+   "text": "Tel. 555-0199",
+   "ms": 23504.74839999879
+  },
+  "syn_en_clean_04.png": {
+   "text": "Take away",
+   "ms": 24876.661800000875
+  },
+  "syn_en_clean_05.png": {
+   "text": "Exit",
+   "ms": 23860.278899999685
+  },
+  "syn_en_clean_06.png": {
+   "text": "Pizza and pasta",
+   "ms": 23759.60540000233
+  },
+  "syn_en_clean_07.png": {
+   "text": "Ice cream",
+   "ms": 23816.16319999739
+  },
+  "syn_en_clean_08.png": {
+   "text": "Open",
+   "ms": 23580.3190000006
+  },
+  "syn_en_clean_09.png": {
+   "text": "Bike\nrental",
+   "ms": 24431.442199998855
+  },
+  "syn_en_clean_10.png": {
+   "text": "Open 24 hours",
+   "ms": 23829.815000000963
+  },
+  "syn_en_clean_11.png": {
+   "text": "Fresh bakery",
+   "ms": 23480.617000001075
+  },
+  "syn_en_clean_12.png": {
+   "text": "Free Wi-Fi",
+   "ms": 23672.278400001233
+  },
+  "syn_en_clean_13.png": {
+   "text": "Main Street 15",
+   "ms": 23953.81610000186
+  },
+  "syn_en_clean_14.png": {
+   "text": "Central station",
+   "ms": 23810.4373999995
+  },
+  "syn_en_photo_00.png": {
+   "text": "Fish and chips",
+   "ms": 15676.66090000057
+  },
+  "syn_en_photo_01.png": {
+   "text": "Fresh\nbakery",
+   "ms": 15226.468900000327
+  },
+  "syn_en_photo_02.png": {
+   "text": "Main Street 15",
+   "ms": 15246.558099999675
+  },
+  "syn_en_photo_03.png": {
+   "text": "PAIX\nOBJET\nTS\nS\nKeep out",
+   "ms": 16507.201299998997
+  },
+  "syn_en_photo_04.png": {
+   "text": "@YAMANA\nNOKAU\nBar and grill",
+   "ms": 16112.656500001322
+  },
+  "syn_en_photo_05.png": {
+   "text": "Hot dogs",
+   "ms": 15022.032799999579
+  },
+  "syn_en_photo_06.png": {
+   "text": "Sale up\n50%",
+   "ms": 15524.285499999678
+  },
+  "syn_en_photo_07.png": {
+   "text": "Tel. 555-0199",
+   "ms": 15589.071400001558
+  },
+  "syn_en_photo_08.png": {
+   "text": "ррзрорзрзедрезезезезед езе зе зезе зедезезе зезе зе\nKreT\nkreton\"ES\n4GB DDR3-1333-CL9\nPC10600S-9990\nKTH400SC0825-1333A\n0090L1\n104O0\n89024X\nbias\nзмое\nMade in Taiwan\nWarantyvois& removed\nRoHS\nЗЕЭбЗШ\n50060\nDoola\n0070111\n89021X\nDa\n3\n2E0-59F9E064\nEEPION\nELPIOACHN\n02840892011\n088F80\nJ11OREFI\n3-00-\n0180110\nDDRIII\n2GB-1333\n0V0T\nASint\nTM\nSSZ3128M8-EDJEF\nWarranty\nVoid if\nRemoved\nPizza\nand\npasta\nИKЖЧ\nС\nбЭ",
+   "ms": 29679.958100001386
+  },
+  "syn_en_photo_09.png": {
+   "text": "Open 24 hours",
+   "ms": 16276.075699999637
+  },
+  "syn_en_photo_10.png": {
+   "text": "PAIX\nOBJET\nTS\nPharmacy",
+   "ms": 24554.176100002223
+  },
+  "syn_en_photo_11.png": {
+   "text": "Shoe repair",
+   "ms": 15491.018700002314
+  },
+  "syn_en_photo_12.png": {
+   "text": "Opening\nhours\n9-21",
+   "ms": 15415.131500001735
+  },
+  "syn_en_photo_13.png": {
+   "text": "Welcome",
+   "ms": 16689.726199998404
+  },
+  "syn_en_photo_14.png": {
+   "text": "FordFocus\nDER523\nHU-4407\nargz\nOpen",
+   "ms": 16471.704799998406
+  },
+  "syn_en_small_00.png": {
+   "text": "Open 24 hours",
+   "ms": 15627.713199999562
+  },
+  "syn_en_small_01.png": {
+   "text": "Coffee to go",
+   "ms": 15599.465399998735
+  },
+  "syn_en_small_02.png": {
+   "text": "Keep out",
+   "ms": 16867.332000001625
+  },
+  "syn_en_small_03.png": {
+   "text": "PAIX\nOBJET\nTS\nS\nWelcome",
+   "ms": 17535.52750000017
+  },
+  "syn_en_small_04.png": {
+   "text": "Sale up to 50%\nA&F\nTHLETICY",
+   "ms": 17036.805199997616
+  },
+  "syn_en_small_05.png": {
+   "text": "Beware of the dog",
+   "ms": 16774.821500002872
+  },
+  "syn_en_small_06.png": {
+   "text": "Shoe repair",
+   "ms": 16694.41409999854
+  },
+  "syn_en_small_07.png": {
+   "text": "City Museum",
+   "ms": 16638.451500002702
+  },
+  "syn_en_small_08.png": {
+   "text": "Central station",
+   "ms": 16721.99399999954
+  },
+  "syn_en_small_09.png": {
+   "text": "Opening hours 9-21\nFAIRLADY\n2402\n1970",
+   "ms": 17668.430899997475
+  },
+  "syn_en_small_10.png": {
+   "text": "MATARI\nLA\n520ST\n5F35\nCOMPUTER\nOpen\nOWNER'S MANUAL",
+   "ms": 17853.8890000018
+  },
+  "syn_en_small_11.png": {
+   "text": "2\nV\nTel. 555-0199\nLucioBr.co",
+   "ms": 17447.786100001395
+  },
+  "syn_en_small_12.png": {
+   "text": "Car wash",
+   "ms": 16703.31670000087
+  },
+  "syn_en_small_13.png": {
+   "text": "Book store",
+   "ms": 16803.121699998883
+  },
+  "syn_en_small_14.png": {
+   "text": "Free Wi-Fi\nFordFocus\nDE-523\nb\nHU-4407\nargat",
+   "ms": 17899.10510000118
+  },
+  "syn_en_rotated_00.png": {
+   "text": "Barand grill",
+   "ms": 16835.684100002254
+  },
+  "syn_en_rotated_01.png": {
+   "text": "No parking",
+   "ms": 15541.157699997711
+  },
+  "syn_en_rotated_02.png": {
+   "text": "Coffee to go\nq\nso",
+   "ms": 14382.260200000019
+  },
+  "syn_en_rotated_03.png": {
+   "text": "Take away",
+   "ms": 14213.75099999932
+  },
+  "syn_en_rotated_04.png": {
+   "text": "PAIX\nOBJET\nTS\nS\nPizza and pasta",
+   "ms": 15684.099300000526
+  },
+  "syn_en_rotated_05.png": {
+   "text": "Fresh bakery",
+   "ms": 15110.382899998513
+  },
+  "syn_en_rotated_06.png": {
+   "text": "Tel. 555-0199",
+   "ms": 15187.840599999618
+  },
+  "syn_en_rotated_07.png": {
+   "text": "Open\nA&F\nTHLETICY",
+   "ms": 15715.110000001005
+  },
+  "syn_en_rotated_08.png": {
+   "text": "Welcome",
+   "ms": 15202.777200000128
+  },
+  "syn_en_rotated_09.png": {
+   "text": "Open 24 hours",
+   "ms": 15321.11409999925
+  },
+  "syn_en_rotated_10.png": {
+   "text": "Ice cream",
+   "ms": 14753.617099999246
+  },
+  "syn_en_rotated_11.png": {
+   "text": "Menú\nSale up to 50%",
+   "ms": 15205.99829999992
+  },
+  "syn_en_rotated_12.png": {
+   "text": "m\np\ntipbiienh\nTuhalfaslin\n2\ne\nPharmacy\nsPatien",
+   "ms": 16620.907199998328
+  },
+  "syn_en_rotated_13.png": {
+   "text": "Fish. and chips",
+   "ms": 15176.708300001337
+  },
+  "syn_en_rotated_14.png": {
+   "text": "HIGH PRESSURE\nEPICENRUM\nFIRE BRIGADE\nMain Street 15",
+   "ms": 16630.521700000827
+  },
+  "syn_en_degraded_00.jpg": {
+   "text": "Open",
+   "ms": 19507.46739999886
+  },
+  "syn_en_degraded_01.jpg": {
+   "text": "Flower shop",
+   "ms": 19406.470699999772
+  },
+  "syn_en_degraded_02.jpg": {
+   "text": "Hot dogs",
+   "ms": 18727.756899999804
+  },
+  "syn_en_degraded_03.jpg": {
+   "text": "Bar and grill",
+   "ms": 18509.15950000126
+  },
+  "syn_en_degraded_04.jpg": {
+   "text": "Tel. 555-0199",
+   "ms": 16655.446299999312
+  },
+  "syn_en_degraded_05.jpg": {
+   "text": "Cash only",
+   "ms": 15674.516999999469
+  },
+  "syn_en_degraded_06.jpg": {
+   "text": "Open 24 hours",
+   "ms": 14903.384600002028
+  },
+  "syn_en_degraded_07.jpg": {
+   "text": "Bike rental",
+   "ms": 14232.894400000077
+  },
+  "syn_en_degraded_08.jpg": {
+   "text": "Sale up to 50%",
+   "ms": 14292.775599999004
+  },
+  "syn_en_degraded_09.jpg": {
+   "text": "Book store",
+   "ms": 14097.983199997543
+  },
+  "syn_en_degraded_10.jpg": {
+   "text": "Free Wi-Fi",
+   "ms": 14383.012999998755
+  },
+  "syn_en_degraded_11.jpg": {
+   "text": "Fresh bakery",
+   "ms": 14666.30399999849
+  },
+  "syn_en_degraded_12.jpg": {
+   "text": "Take away",
+   "ms": 15298.803699999553
+  },
+  "syn_en_degraded_13.jpg": {
+   "text": "Pharmacy",
+   "ms": 14821.848399998999
+  },
+  "syn_en_degraded_14.jpg": {
+   "text": "1",
+   "ms": 15143.443000000843
+  },
+  "test-images/ru-road-sign_1.jpg": {
+   "text": "p.\nОБЬ\nЮГОРСКИЙ\nMOCT\nДЛИНА\n2110M\nШУРИНА\n14M\nрод\nМОСТЫ ХМАО\nПОСТРОЙКИ: 2000",
+   "ms": 24674.250699998083
+  },
+  "test-images/ru-road-sign_2.jpg": {
+   "text": "ДВУРЕЧЬЕ",
+   "ms": 25120.321800000966
+  },
+  "test-images/ru-road-sign_3.jpg": {
+   "text": "KPACHOAPMEЙCK\nДМИТРОВ\nHOFИHCK\nA 107\nA 107\n300M",
+   "ms": 27518.791800001054
+  },
+  "test-images/ru-road-sign_4.jpg": {
+   "text": "ПЛЕШАКОВСКИЙ",
+   "ms": 24538.251400001172
+  },
+  "test-images/ru-road-sign_5.jpg": {
+   "text": "ПОЛЧАНИНОВКА",
+   "ms": 26131.556100001035
+  },
+  "test-images/ru-road-sign_6.jpg": {
+   "text": "0,3\nЖивоначальной\nТроицы\nTrinity\n-Giving\nЦерковь\nthe\nLife\nChurch\nof",
+   "ms": 25375.865599999088
+  },
+  "test-images/ru-shop-sign_1.jpg": {
+   "text": "КУНДЕАКТ\nKOOE\nТОВАРЫ\nКАЖEТ\nПОВСЕДНЕВНОГО\nБУИЫМДАРЫ\nСПРОСА\nValeo\nCOOLED BY",
+   "ms": 17930.426799997804
+  },
+  "test-images/ru-shop-sign_2.jpg": {
+   "text": "ПРОДОВОПЬСТВЕННЫИ",
+   "ms": 17454.9866999987
+  },
+  "test-images/ru-shop-sign_3.jpg": {
+   "text": "МАГАЗИН\nСnутник",
+   "ms": 21624.956899999233
+  },
+  "test-images/ru-shop-sign_4.jpg": {
+   "text": "bmon\nСПИРТ\nO4",
+   "ms": 23605.760399997962
+  },
+  "test-images/ru-shop-sign_5.jpg": {
+   "text": "",
+   "ms": 25167.507599999226
+  },
+  "test-images/ru-shop-sign_6.jpg": {
+   "text": "",
+   "ms": 22294.72480000186
+  },
+  "test-images/board_apple_ru.png": {
+   "text": "Яблоко",
+   "ms": 14035.002600001462
+  },
+  "test-images/board_cat_ru.png": {
+   "text": "Кошка",
+   "ms": 14013.141299998097
+  },
+  "test-images/board_dog_ru.png": {
+   "text": "Собака",
+   "ms": 14218.796199998906
+  },
+  "test-images/board_banana_ru.png": {
+   "text": "Bанан",
+   "ms": 13575.049600000057
+  },
+  "test-images/board_bicycle_ru.png": {
+   "text": "Велосипед",
+   "ms": 12736.340499999642
+  },
+  "test-images/board_sunflower_ru.png": {
+   "text": "Подсолнух",
+   "ms": 12163.311699998303
+  },
+  "test-images/board_coffee_ru.png": {
+   "text": "Кофе",
+   "ms": 11792.498899998463
+  },
+  "test-images/board_pizza_ru.png": {
+   "text": "Пицца",
+   "ms": 11823.732799999561
+  },
+  "test-images/board_apple_en.png": {
+   "text": "Apple",
+   "ms": 12279.586500000732
+  },
+  "test-images/board_coffee_en.png": {
+   "text": "Coffee",
+   "ms": 13627.88670000009
+  },
+  "test-images/apple_1.jpg": {
+   "text": "",
+   "ms": 31833.873100000346
+  },
+  "test-images/banana_1.jpg": {
+   "text": "2-7.\nT",
+   "ms": 27083.914700000605
+  },
+  "test-images/bicycle_1.jpg": {
+   "text": "HUB\nRADG\nSFSIKPFER\nAGA\nYEn\nMMM&\nDUNCAN.AGESI.PAULS\nSEEN\nMe\nNEKTI\nYOVA\nEN\nEN",
+   "ms": 31990.8448999995
+  },
+  "test-images/cat_1.jpg": {
+   "text": "",
+   "ms": 25311.424600000464
+  },
+  "test-images/coffee_1.jpg": {
+   "text": "",
+   "ms": 28738.01319999984
+  },
+  "test-images/dog_1.jpg": {
+   "text": "",
+   "ms": 53935.588299998926
+  },
+  "test-images/mountain-lake_1.jpg": {
+   "text": "",
+   "ms": 24180.9202000004
+  },
+  "test-images/pizza_1.jpg": {
+   "text": "",
+   "ms": 27567.231000000902
+  },
+  "test-images/sportscar_1.jpg": {
+   "text": "VISIONÄR\nVISIONARY\nDRVE\nLEGENDAR\nLEGENDARY\n-\nf s\nс н\nPOOSCHE\nT\nPORSCHE\nMUSEUM\nL",
+   "ms": 27549.369199998182
+  },
+  "test-images/sunflower_1.jpg": {
+   "text": "",
+   "ms": 25100.566199998866
+  }
+ }
+}

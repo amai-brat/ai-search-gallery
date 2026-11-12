@@ -1,0 +1,56 @@
+{
+  "model": "xlm-roberta-base-ViT-B-32",
+  "pretrained": "laion5b_s13b_b90k",
+  "device": "cpu",
+  "n_images": 1000,
+  "n_captions": 4000,
+  "langs": [
+    "en",
+    "ru"
+  ],
+  "chance_recall@1": 0.001,
+  "embed_dim": 512,
+  "params_m": 366.1,
+  "load_s": 558.0,
+  "model_ram_mib": 3068,
+  "img_preprocess_ms": 11.974956600006408,
+  "img_forward_ms": 69.20440789998429,
+  "img_total_ms": 81.1793644999907,
+  "img_peak_rss_mib": 3647.640625,
+  "img_cpu_cores_busy": 5.931554679372147,
+  "query_ms_median": 132.76979999955074,
+  "query_ms_p95": 138.48746000021492,
+  "txt_batch_ms_per_text": 89.29214402499974,
+  "txt_peak_rss_mib": 2402.5703125,
+  "txt_cpu_cores_busy": 5.840574177091007,
+  "Recall@1": 0.71775,
+  "Recall@5": 0.9175,
+  "Recall@10": 0.954,
+  "NDCG@10": 0.8413088357288137,
+  "MRR": 0.8069553844067495,
+  "per_lang": {
+    "en": {
+      "Recall@1": 0.657,
+      "Recall@5": 0.8835,
+      "Recall@10": 0.932,
+      "NDCG@10": 0.7976702502648734,
+      "MRR": 0.7576400977035953
+    },
+    "ru": {
+      "Recall@1": 0.7785,
+      "Recall@5": 0.9515,
+      "Recall@10": 0.976,
+      "NDCG@10": 0.8849474211927536,
+      "MRR": 0.8562706711099037
+    }
+  },
+  "env": {
+    "torch": "2.15.0+cpu",
+    "open_clip": "3.3.0",
+    "torch_threads": 6,
+    "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_count": 6,
+    "ram_gib": 31.3,
+    "gpu": null
+  }
+}

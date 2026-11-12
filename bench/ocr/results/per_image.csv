@@ -1,0 +1,911 @@
+system,file,group,lang,condition,ref,hyp,exact,n_words_ref,n_hits,word_recall,n_words_pred,ms
+easyocr,syn_ru_clean_00.png,synthetic,ru,clean,Левый берег,Левый берег,True,2,2,1.0,2,6332.310800000414
+easyocr,syn_ru_clean_01.png,synthetic,ru,clean,Книжный магазин,Книжный | магазин,True,2,2,1.0,2,6896.255200001178
+easyocr,syn_ru_clean_02.png,synthetic,ru,clean,Двуречье,Двуречье,True,1,1,1.0,1,6020.685600000434
+easyocr,syn_ru_clean_03.png,synthetic,ru,clean,Бар у моста,Бар у моста,True,3,3,1.0,3,6517.079700000977
+easyocr,syn_ru_clean_04.png,synthetic,ru,clean,Хлеб,Хлеб,True,1,1,1.0,1,6427.1662999999535
+easyocr,syn_ru_clean_05.png,synthetic,ru,clean,Продукты,Продукты,True,1,1,1.0,1,6421.36070000015
+easyocr,syn_ru_clean_06.png,synthetic,ru,clean,Цветы,Цветы,True,1,1,1.0,1,6130.879500000447
+easyocr,syn_ru_clean_07.png,synthetic,ru,clean,Тел. 8-800-555-35-35,Тел . | 8-800-555-35-35,True,6,6,1.0,6,6095.795799999905
+easyocr,syn_ru_clean_08.png,synthetic,ru,clean,Не курить,He курить,False,2,1,0.5,2,6027.979399999822
+easyocr,syn_ru_clean_09.png,synthetic,ru,clean,Магазин Радуга,Магазин | Радуга,True,2,2,1.0,2,6158.8730000003125
+easyocr,syn_ru_clean_10.png,synthetic,ru,clean,Работаем без выходных,Работаем без выходных,True,3,3,1.0,3,6265.174099999058
+easyocr,syn_ru_clean_11.png,synthetic,ru,clean,Кофе с собой,Кофе c собой,False,3,3,1.0,3,6091.67669999988
+easyocr,syn_ru_clean_12.png,synthetic,ru,clean,Часы работы 9-21,Часы работы 9-21,True,4,4,1.0,4,6094.25039999951
+easyocr,syn_ru_clean_13.png,synthetic,ru,clean,Электротовары,Электротовары,True,1,1,1.0,1,6139.871800000037
+easyocr,syn_ru_clean_14.png,synthetic,ru,clean,"Улица Ленина, 15","Улица | Ленина, | 15",True,3,3,1.0,3,6212.923900000533
+easyocr,syn_ru_photo_00.png,synthetic,ru,photo,Аптека,Аптека | docom | ueqpe; | 8,True,1,1,1.0,4,6592.519699999684
+easyocr,syn_ru_photo_01.png,synthetic,ru,photo,Цветы,Цветы,True,1,1,1.0,1,6525.833499999862
+easyocr,syn_ru_photo_02.png,synthetic,ru,photo,Продукты,Продукты,True,1,1,1.0,1,6774.731999999858
+easyocr,syn_ru_photo_03.png,synthetic,ru,photo,Часы работы 9-21,Часы работы 9-21 | [CE | ИMЕТО DANCE | ITS TIMEIO DE | 15г2 | 16wv | DL,True,4,4,1.0,13,7520.311899999797
+easyocr,syn_ru_photo_04.png,synthetic,ru,photo,Пекарня №1,Пекарня Ng1,False,2,2,1.0,2,7067.232600000352
+easyocr,syn_ru_photo_05.png,synthetic,ru,photo,Левый берег,Левый берег,True,2,2,1.0,2,6809.984400000758
+easyocr,syn_ru_photo_06.png,synthetic,ru,photo,Выход,Выход,True,1,1,1.0,1,7103.242600000158
+easyocr,syn_ru_photo_07.png,synthetic,ru,photo,Тел. 8-800-555-35-35,Тел: 8-800-555-35-35 | FARLIDY | Ч90,True,6,6,1.0,8,7359.705400000166
+easyocr,syn_ru_photo_08.png,synthetic,ru,photo,Книжный магазин,Книжный магазин,True,2,2,1.0,2,7416.85040000084
+easyocr,syn_ru_photo_09.png,synthetic,ru,photo,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,7216.182800000752
+easyocr,syn_ru_photo_10.png,synthetic,ru,photo,Электротовары,"SEX PANACE | J | ь | 6 | "" | Электротовары",True,1,1,1.0,6,7927.242199999455
+easyocr,syn_ru_photo_11.png,synthetic,ru,photo,"Чай, кофе, сладости",Чай; кофе; сладости,True,3,3,1.0,3,7457.0761999984825
+easyocr,syn_ru_photo_12.png,synthetic,ru,photo,Мясо и рыба,Мясо и рыба,True,3,3,1.0,3,6892.183200001455
+easyocr,syn_ru_photo_13.png,synthetic,ru,photo,"Осторожно, ступенька","MOKAR | Осторожно, | ступенька",True,2,2,1.0,3,7114.668100000927
+easyocr,syn_ru_photo_14.png,synthetic,ru,photo,Вход со двора,Вход co двора | LucioBr cC,False,3,2,0.6666666666666666,5,8368.97929999941
+easyocr,syn_ru_small_00.png,synthetic,ru,small,Ремонт обуви, |  | Ремонт обуви,True,2,2,1.0,2,11808.666099999755
+easyocr,syn_ru_small_01.png,synthetic,ru,small,Кофе с собой,Кофе с собой,True,3,3,1.0,3,10503.17240000004
+easyocr,syn_ru_small_02.png,synthetic,ru,small,Вход со двора,Вход co двора,False,3,2,0.6666666666666666,3,8419.398800000636
+easyocr,syn_ru_small_03.png,synthetic,ru,small,Левый берег,Левый берег,True,2,2,1.0,2,7857.006499998533
+easyocr,syn_ru_small_04.png,synthetic,ru,small,Пекарня №1,MOKAR | Пекарня Ng1,False,2,2,1.0,3,6503.946500000893
+easyocr,syn_ru_small_05.png,synthetic,ru,small,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,6484.195000000909
+easyocr,syn_ru_small_06.png,synthetic,ru,small,"Улица Ленина, 15",Улица Ленина; 15,True,3,3,1.0,3,6704.669999999169
+easyocr,syn_ru_small_07.png,synthetic,ru,small,Тел. 8-800-555-35-35,[ISH PRESSURE | ёвiсён:RUш | FIRE BRICADE | Тел: 8-800-555-35-35,True,6,6,1.0,12,7031.492599999183
+easyocr,syn_ru_small_08.png,synthetic,ru,small,"Чай, кофе, сладости","Чай, | кофе, | сладости",True,3,3,1.0,3,6690.501099999892
+easyocr,syn_ru_small_09.png,synthetic,ru,small,Цветы,Цветы | [ISH PRESSURE | ёвiсён:RUш | FIRE BRICADE,True,1,1,1.0,7,7662.710900000093
+easyocr,syn_ru_small_10.png,synthetic,ru,small,Продукты,Продукты,True,1,1,1.0,1,7059.412599999632
+easyocr,syn_ru_small_11.png,synthetic,ru,small,Аптека,Аптека,True,1,1,1.0,1,6710.537700000714
+easyocr,syn_ru_small_12.png,synthetic,ru,small,Книжный магазин,Книжный магазин | LucioBr cC,True,2,2,1.0,4,6994.650599999659
+easyocr,syn_ru_small_13.png,synthetic,ru,small,Не курить,He курить,False,2,1,0.5,2,6663.182799999049
+easyocr,syn_ru_small_14.png,synthetic,ru,small,Горячие пирожки,Горячиелирожки,False,2,1,0.5,1,6895.331600000645
+easyocr,syn_ru_rotated_00.png,synthetic,ru,rotated,"Осторожно, ступенька",Осторожно; | ступенька,True,2,2,1.0,2,6853.317600000082
+easyocr,syn_ru_rotated_01.png,synthetic,ru,rotated,Магазин Радуга,FARLIDY | Ч90 | Магазин | Радуга,True,2,2,1.0,4,7187.813100001222
+easyocr,syn_ru_rotated_02.png,synthetic,ru,rotated,Аптека,@нэ | Аптека,True,1,1,1.0,2,7109.1475000012
+easyocr,syn_ru_rotated_03.png,synthetic,ru,rotated,Горячие пирожки,Горячие | пирожки,True,2,2,1.0,2,7790.103199999066
+easyocr,syn_ru_rotated_04.png,synthetic,ru,rotated,Пекарня №1,No1 | Пекарня,False,2,2,1.0,2,7632.7789000006305
+easyocr,syn_ru_rotated_05.png,synthetic,ru,rotated,"Улица Ленина, 15",Улица | Ленина; | 15,True,3,3,1.0,3,8291.049400000702
+easyocr,syn_ru_rotated_06.png,synthetic,ru,rotated,Добро пожаловать,пожаловать | [NIs | aRit& | {@бро,False,2,1,0.5,4,7730.582100000902
+easyocr,syn_ru_rotated_07.png,synthetic,ru,rotated,Кофе с собой,& | собой | Кофе,False,3,3,1.0,2,8546.513600000253
+easyocr,syn_ru_rotated_08.png,synthetic,ru,rotated,Книжный магазин,[ | магазин | Книжный,False,2,2,1.0,2,8453.329300000405
+easyocr,syn_ru_rotated_09.png,synthetic,ru,rotated,Парикмахерская,Парикмахерская,True,1,1,1.0,1,7749.960600000122
+easyocr,syn_ru_rotated_10.png,synthetic,ru,rotated,Не курить, | 1 |  | 1 | He | курить,False,2,1,0.5,4,7904.1851999991195
+easyocr,syn_ru_rotated_11.png,synthetic,ru,rotated,Бар у моста,У | Бар | моста,False,3,3,1.0,3,7621.996100000615
+easyocr,syn_ru_rotated_12.png,synthetic,ru,rotated,Мясо и рыба,И | рЫба | MOKAR | МЯсо,False,3,3,1.0,4,7221.788099999685
+easyocr,syn_ru_rotated_13.png,synthetic,ru,rotated,Выход,Выход,True,1,1,1.0,1,6443.933300000936
+easyocr,syn_ru_rotated_14.png,synthetic,ru,rotated,Станция метро,[ISH PRESSURE | ёвiсён:RUш | FIRE BRICADE | (ащция | MeIО,False,2,0,0.0,8,7029.688199998418
+easyocr,syn_ru_degraded_00.jpg,synthetic,ru,degraded,Бар у моста,у моста | ШucioBrcc | Бар,False,3,3,1.0,4,6530.72659999998
+easyocr,syn_ru_degraded_01.jpg,synthetic,ru,degraded,Двуречье,Двуречье | съ~,True,1,1,1.0,2,6483.344100000977
+easyocr,syn_ru_degraded_02.jpg,synthetic,ru,degraded,Работаем без выходных,Работаем бе3 выХоднь,False,3,1,0.3333333333333333,3,6632.770100000926
+easyocr,syn_ru_degraded_03.jpg,synthetic,ru,degraded,"Улица Ленина, 15",Улица Ленина | 15,True,3,3,1.0,3,6412.65519999979
+easyocr,syn_ru_degraded_04.jpg,synthetic,ru,degraded,Станция метро,(анция Метро | tuclBLec,False,2,1,0.5,3,6596.855300000243
+easyocr,syn_ru_degraded_05.jpg,synthetic,ru,degraded,Цветы,Цветы,True,1,1,1.0,1,6453.035900000032
+easyocr,syn_ru_degraded_06.jpg,synthetic,ru,degraded,Кофе с собой,# | Кофе с собой,True,3,3,1.0,3,6495.580700000573
+easyocr,syn_ru_degraded_07.jpg,synthetic,ru,degraded,Мясо и рыба,Мясо и рыба,True,3,3,1.0,3,6669.706799999403
+easyocr,syn_ru_degraded_08.jpg,synthetic,ru,degraded,Часы работы 9-21,"Ыr PRICE # | нме | Aкm | 682  | TIBEI SPRINE | чди ; , 1 | Э1о0 | шв# | Часы работы | 9-214*",False,4,4,1.0,15,7621.915800000352
+easyocr,syn_ru_degraded_09.jpg,synthetic,ru,degraded,Горячие пирожки,Горячие пирожки,True,2,2,1.0,2,6368.453199998839
+easyocr,syn_ru_degraded_10.jpg,synthetic,ru,degraded,"Чай, кофе, сладости",кофе; сладости | Чай,False,3,3,1.0,3,6748.812599998928
+easyocr,syn_ru_degraded_11.jpg,synthetic,ru,degraded,Левый берег,Левый берег,True,2,2,1.0,2,6289.31090000151
+easyocr,syn_ru_degraded_12.jpg,synthetic,ru,degraded,Тел. 8-800-555-35-35,"(A | Тел: 8-800-555 35,35 | ZAIRI | БFЗ5 | '",True,6,6,1.0,9,6834.156400000211
+easyocr,syn_ru_degraded_13.jpg,synthetic,ru,degraded,Парикмахерская,Парикмахерская,True,1,1,1.0,1,6354.587399999218
+easyocr,syn_ru_degraded_14.jpg,synthetic,ru,degraded,Магазин Радуга,Магазин Радуга,True,2,2,1.0,2,6371.81530000089
+easyocr,syn_en_clean_00.png,synthetic,en,clean,Beware of the dog,Beware of the dog,True,4,4,1.0,4,6520.896399999401
+easyocr,syn_en_clean_01.png,synthetic,en,clean,No parking,No parking,True,2,2,1.0,2,6282.035899999755
+easyocr,syn_en_clean_02.png,synthetic,en,clean,Pharmacy,Pharmacy,True,1,1,1.0,1,6393.223899998702
+easyocr,syn_en_clean_03.png,synthetic,en,clean,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,6441.6338999999425
+easyocr,syn_en_clean_04.png,synthetic,en,clean,Take away,Take away,True,2,2,1.0,2,6485.13770000136
+easyocr,syn_en_clean_05.png,synthetic,en,clean,Exit,Exit,True,1,1,1.0,1,6222.63650000059
+easyocr,syn_en_clean_06.png,synthetic,en,clean,Pizza and pasta,Pizza and pasta,True,3,3,1.0,3,6261.584500000026
+easyocr,syn_en_clean_07.png,synthetic,en,clean,Ice cream,Ice | cream,True,2,2,1.0,2,6297.66969999946
+easyocr,syn_en_clean_08.png,synthetic,en,clean,Open,Open,True,1,1,1.0,1,6041.816500001005
+easyocr,syn_en_clean_09.png,synthetic,en,clean,Bike rental,Bike | rental,True,2,2,1.0,2,6114.321699998982
+easyocr,syn_en_clean_10.png,synthetic,en,clean,Open 24 hours,Open 24 hours,True,3,3,1.0,3,6176.874700000553
+easyocr,syn_en_clean_11.png,synthetic,en,clean,Fresh bakery,Fresh bakery,True,2,2,1.0,2,6270.713099998829
+easyocr,syn_en_clean_12.png,synthetic,en,clean,Free Wi-Fi,Free Wi-Fi,True,3,3,1.0,3,6147.16369999951
+easyocr,syn_en_clean_13.png,synthetic,en,clean,Main Street 15,Main Street 15,True,3,3,1.0,3,6141.568799999732
+easyocr,syn_en_clean_14.png,synthetic,en,clean,Central station,Central station,True,2,2,1.0,2,6156.423200000063
+easyocr,syn_en_photo_00.png,synthetic,en,photo,Fish and chips,fshamchim,False,3,0,0.0,1,6274.681200000487
+easyocr,syn_en_photo_01.png,synthetic,en,photo,Fresh bakery,Fresh bakery,True,2,2,1.0,2,6296.496799999659
+easyocr,syn_en_photo_02.png,synthetic,en,photo,Main Street 15,Main Street 15,True,3,3,1.0,3,6365.606699999262
+easyocr,syn_en_photo_03.png,synthetic,en,photo,Keep out,PAIX | OBJET | '5 | 5 | out | Keep,False,2,2,1.0,6,6622.7545000001555
+easyocr,syn_en_photo_04.png,synthetic,en,photo,Bar and grill,MOKAR | Bar and | grill,True,3,3,1.0,4,6388.336199999685
+easyocr,syn_en_photo_05.png,synthetic,en,photo,Hot dogs,Hot | dogs,True,2,2,1.0,2,6265.985100000762
+easyocr,syn_en_photo_06.png,synthetic,en,photo,Sale up to 50%,Sale up to 50%,True,4,4,1.0,4,6303.534200000286
+easyocr,syn_en_photo_07.png,synthetic,en,photo,Tel. 555-0199,Tel: 555-0199,True,3,3,1.0,3,6451.708900000085
+easyocr,syn_en_photo_08.png,synthetic,en,photo,Pizza and pasta,"Kreton | ES AGBfI 9390333 EtO | ьуl | 6C168095.9990 | KIH COSCOE25 *3334 | nтым | 19 | Iи | Rot 5 | Ъгааг | {ЕJC JЕф | 19v908060 | 2125'0 | 'XF  | Iat |  . ' | DDRIII 2GB-1333 | al | ASint | SSZ312808 EDJEF | HEJLIr J J #лr ЭЦ | Warrary Vo 1 | Romovna | } , : ₽ | Pizza and pasta | 39 | ЁС""~""и""@иt aig | 6 | au $""Шиш""н""",True,3,3,1.0,52,9308.216299999913
+easyocr,syn_en_photo_09.png,synthetic,en,photo,Open 24 hours,Opem 24 hours,False,3,2,0.6666666666666666,3,6367.830999999569
+easyocr,syn_en_photo_10.png,synthetic,en,photo,Pharmacy,PAIX | OBJET | TS | 5 | Pharmacy,True,1,1,1.0,5,6527.160199999344
+easyocr,syn_en_photo_11.png,synthetic,en,photo,Shoe repair,Shoe repair,True,2,2,1.0,2,6208.80390000093
+easyocr,syn_en_photo_12.png,synthetic,en,photo,Opening hours 9-21,Opening | hours | 9-21,True,4,4,1.0,4,6394.6756000004825
+easyocr,syn_en_photo_13.png,synthetic,en,photo,Welcome,Welcome,True,1,1,1.0,1,6171.067200000834
+easyocr,syn_en_photo_14.png,synthetic,en,photo,Open,53 | PI | Omem | Rudkv | 3 = | 939 | @кymzz | 'WN | [ 447,False,1,0,0.0,9,6791.661999999633
+easyocr,syn_en_small_00.png,synthetic,en,small,Open 24 hours,Open 24 hours,True,3,3,1.0,3,6234.867599998324
+easyocr,syn_en_small_01.png,synthetic,en,small,Coffee to go,Coffee to go,True,3,3,1.0,3,6247.953199999756
+easyocr,syn_en_small_02.png,synthetic,en,small,Keep out,Keер @ut,False,2,0,0.0,2,6206.934900001215
+easyocr,syn_en_small_03.png,synthetic,en,small,Welcome,PAIX | OBJET | '5 | 5 | Welcome,True,1,1,1.0,5,6858.543500000451
+easyocr,syn_en_small_04.png,synthetic,en,small,Sale up to 50%,Sale up to 50% | umвhся,True,4,4,1.0,5,6547.971300000427
+easyocr,syn_en_small_05.png,synthetic,en,small,Beware of the dog,Beware of the | dog,True,4,4,1.0,4,6311.036299999614
+easyocr,syn_en_small_06.png,synthetic,en,small,Shoe repair,Shoe repaiг,False,2,1,0.5,2,6199.540300000081
+easyocr,syn_en_small_07.png,synthetic,en,small,City Museum,Museum | City,False,2,2,1.0,2,6330.866700000115
+easyocr,syn_en_small_08.png,synthetic,en,small,Central station,Central station,True,2,2,1.0,2,6447.886899999503
+easyocr,syn_en_small_09.png,synthetic,en,small,Opening hours 9-21,Opening hours 9-21 | FARLIDY | Ч90,True,4,4,1.0,6,6520.7586000015
+easyocr,syn_en_small_10.png,synthetic,en,small,Open,(A | КЕ35 | Open | ЖATARI | 52051 | COMPUER | OWNER'S | 'MANUAL,True,1,1,1.0,9,6849.749099999826
+easyocr,syn_en_small_11.png,synthetic,en,small,Tel. 555-0199,Tela 555-0199 | LucioBr cC,False,3,3,1.0,5,6528.510500000266
+easyocr,syn_en_small_12.png,synthetic,en,small,Car wash,#aruash,False,2,0,0.0,1,6427.142399999866
+easyocr,syn_en_small_13.png,synthetic,en,small,Book store,Book store,True,2,2,1.0,2,6317.873099998906
+easyocr,syn_en_small_14.png,synthetic,en,small,Free Wi-Fi,П#еШНН | 53 | PI | Rudkv | 3 = | 939 | @кymzz | 'WN | [ 447,False,3,0,0.0,10,6750.405800001317
+easyocr,syn_en_rotated_00.png,synthetic,en,rotated,Bar and grill,grill | Bar | and,False,3,3,1.0,3,6198.932100000093
+easyocr,syn_en_rotated_01.png,synthetic,en,rotated,No parking,No | parking,True,2,2,1.0,2,6218.727700001182
+easyocr,syn_en_rotated_02.png,synthetic,en,rotated,Coffee to go,&o | to | Coffee | docome | ueqpe; | 8,False,3,2,0.6666666666666666,6,6541.699999999764
+easyocr,syn_en_rotated_03.png,synthetic,en,rotated,Take away,away | Take,False,2,2,1.0,2,6257.798200000252
+easyocr,syn_en_rotated_04.png,synthetic,en,rotated,Pizza and pasta,PAIX | OBJET | '5 | 5 | Piza | аШ | masa,False,3,0,0.0,7,6443.119700001262
+easyocr,syn_en_rotated_05.png,synthetic,en,rotated,Fresh bakery,Fresh | bakery,True,2,2,1.0,2,6395.282100000259
+easyocr,syn_en_rotated_06.png,synthetic,en,rotated,Tel. 555-0199,Tel | 555-0199,True,3,3,1.0,3,6222.326900000553
+easyocr,syn_en_rotated_07.png,synthetic,en,rotated,Open,umвhся | Open,True,1,1,1.0,2,6267.8152000007685
+easyocr,syn_en_rotated_08.png,synthetic,en,rotated,Welcome,Welcome,True,1,1,1.0,1,6308.719000000565
+easyocr,syn_en_rotated_09.png,synthetic,en,rotated,Open 24 hours,32. | ШUП8 | 24 | (пen,False,3,1,0.3333333333333333,4,6298.214200000075
+easyocr,syn_en_rotated_10.png,synthetic,en,rotated,Ice cream,cream | Ice,False,2,2,1.0,2,6291.700100000526
+easyocr,syn_en_rotated_11.png,synthetic,en,rotated,Sale up to 50%,to | up | [ | 50% | Sale,False,4,4,1.0,4,7039.239399999133
+easyocr,syn_en_rotated_12.png,synthetic,en,rotated,Pharmacy,"""Y | ""; |  | [M5 'plrawt 'x:; | 'нi; | ""quubfт; | Pharmacy",True,1,1,1.0,7,7083.424399999785
+easyocr,syn_en_rotated_13.png,synthetic,en,rotated,Fish and chips,Chips | alnd | Fish,False,3,2,0.6666666666666666,3,6138.342300000659
+easyocr,syn_en_rotated_14.png,synthetic,en,rotated,Main Street 15,[ISH PRESSURE | ёвiсён:RUш | FIRE BRICADE | 15 | Main | Street,False,3,3,1.0,9,6554.271400000289
+easyocr,syn_en_degraded_00.jpg,synthetic,en,degraded,Open,Open,True,1,1,1.0,1,6235.573300000397
+easyocr,syn_en_degraded_01.jpg,synthetic,en,degraded,Flower shop,Flower | shop,True,2,2,1.0,2,6233.7391000000935
+easyocr,syn_en_degraded_02.jpg,synthetic,en,degraded,Hot dogs,Hortogs,False,2,0,0.0,1,6211.965299999065
+easyocr,syn_en_degraded_03.jpg,synthetic,en,degraded,Bar and grill,Barand | ghill,False,3,2,0.6666666666666666,2,6220.143700000335
+easyocr,syn_en_degraded_04.jpg,synthetic,en,degraded,Tel. 555-0199,Tel: 555-0199,True,3,3,1.0,3,6154.124400000001
+easyocr,syn_en_degraded_05.jpg,synthetic,en,degraded,Cash only,Cash only,True,2,2,1.0,2,6138.168299999961
+easyocr,syn_en_degraded_06.jpg,synthetic,en,degraded,Open 24 hours,24 hours | Open,False,3,3,1.0,3,6215.816500000074
+easyocr,syn_en_degraded_07.jpg,synthetic,en,degraded,Bike rental,Bike renlal,False,2,1,0.5,2,6406.020499998704
+easyocr,syn_en_degraded_08.jpg,synthetic,en,degraded,Sale up to 50%,Sale up to | 50%,True,4,4,1.0,4,6248.70650000048
+easyocr,syn_en_degraded_09.jpg,synthetic,en,degraded,Book store,Book store,True,2,2,1.0,2,6209.989799999676
+easyocr,syn_en_degraded_10.jpg,synthetic,en,degraded,Free Wi-Fi,Free Wi-Fi,True,3,3,1.0,3,6182.009899999684
+easyocr,syn_en_degraded_11.jpg,synthetic,en,degraded,Fresh bakery,Fresh bakery,True,2,2,1.0,2,6237.638599999627
+easyocr,syn_en_degraded_12.jpg,synthetic,en,degraded,Take away,Take awаy,False,2,1,0.5,2,6897.558499998922
+easyocr,syn_en_degraded_13.jpg,synthetic,en,degraded,Pharmacy,Pharmacy,True,1,1,1.0,1,7324.020900001415
+easyocr,syn_en_degraded_14.jpg,synthetic,en,degraded,Central station,shtion,False,2,0,0.0,1,6853.973699999187
+easyocr,test-images/ru-road-sign_1.jpg,real_photo,ru,real_photo,югорский мост обь длина ширина 2110,p. ОБЬ | ЮГОРСКИЙ | MOCТ | ДЛИНА | 211ы | ШИРИНА | 14 м | ГОД | шоашиио | ПОСТРОЙКИ: 20UD,,6,4,0.6666666666666666,13,10329.00359999985
+easyocr,test-images/ru-road-sign_2.jpg,real_photo,ru,real_photo,двуречье,ДВУРЕЧЬЕ,,1,1,1.0,1,10969.163600000684
+easyocr,test-images/ru-road-sign_3.jpg,real_photo,ru,real_photo,красноармейск дмитров ногинск,КРАСНОАРМЕЙСК | ДМИТРОВ | НОГИНСК | Aioz | 107 | зоОм,,3,3,1.0,6,12604.760299998816
+easyocr,test-images/ru-road-sign_4.jpg,real_photo,ru,real_photo,плешаковский,ПЛЕШАКОВСКИЙ,,1,1,1.0,1,10250.934200001211
+easyocr,test-images/ru-road-sign_5.jpg,real_photo,ru,real_photo,полчаниновка,ПОЛЧАНИНОВКА,,1,1,1.0,1,11193.270900001153
+easyocr,test-images/ru-road-sign_6.jpg,real_photo,ru,real_photo,церковь троицы живоначальной church trinity,"0,3 | Trinity | of the | Живоначальной | Троицы | Zife-Giving | [Церковь | Church",,5,5,1.0,11,10152.335400000084
+easyocr,test-images/ru-shop-sign_1.jpg,real_photo,ru,real_photo,товары повседневного спроса,KNREEN | K | TаBARLI | ПLРЕТ | D | ШЕВР#ЕВнага | EVWЪДАГЫ | а | РпраНL | COOLED | BY | Иall,,3,0,0.0,13,8905.75269999863
+easyocr,test-images/ru-shop-sign_2.jpg,real_photo,ru,real_photo,продовольственный,ПРОДОВОПЕСШ ШЫ,,1,0,0.0,2,8385.31200000034
+easyocr,test-images/ru-shop-sign_3.jpg,real_photo,ru,real_photo,магазин спутник,"м@Еовин | Q""",,2,0,0.0,3,8633.089799999652
+easyocr,test-images/ru-shop-sign_4.jpg,real_photo,ru,real_photo,спирт,6з068? | СПИРТ,,1,1,1.0,2,8644.43399999982
+easyocr,test-images/ru-shop-sign_5.jpg,real_photo,ru,real_photo,промтовар,`uf,,1,0,0.0,1,8488.871199999267
+easyocr,test-images/ru-shop-sign_6.jpg,real_photo,ru,real_photo,знание,3н | ЕAAПEе,,1,0,0.0,2,8448.00369999939
+easyocr,test-images/board_apple_ru.png,real_board,ru,real_board,яблоко,Яблоко,,1,1,1.0,1,5027.778800000306
+easyocr,test-images/board_cat_ru.png,real_board,ru,real_board,кошка,Кошка,,1,1,1.0,1,5039.821000000302
+easyocr,test-images/board_dog_ru.png,real_board,ru,real_board,собака,Собака,,1,1,1.0,1,5137.4849999992875
+easyocr,test-images/board_banana_ru.png,real_board,ru,real_board,банан,Банан,,1,1,1.0,1,5240.459600001486
+easyocr,test-images/board_bicycle_ru.png,real_board,ru,real_board,велосипед,Велосипед,,1,1,1.0,1,5193.662200001199
+easyocr,test-images/board_sunflower_ru.png,real_board,ru,real_board,подсолнух,Подсолнух,,1,1,1.0,1,5586.190300000453
+easyocr,test-images/board_coffee_ru.png,real_board,ru,real_board,кофе,Кофе,,1,1,1.0,1,5039.010999998936
+easyocr,test-images/board_pizza_ru.png,real_board,ru,real_board,пицца,Пицца,,1,1,1.0,1,5237.296499999502
+easyocr,test-images/board_apple_en.png,real_board,en,real_board,apple,Apple,,1,1,1.0,1,5146.385899999586
+easyocr,test-images/board_coffee_en.png,real_board,en,real_board,coffee,Coffee,,1,1,1.0,1,6172.118599999521
+easyocr,test-images/apple_1.jpg,negative,-,negative,,,,0,0,,0,11595.403699999224
+easyocr,test-images/banana_1.jpg,negative,-,negative,,,,0,0,,0,9788.901900001292
+easyocr,test-images/bicycle_1.jpg,negative,-,negative,,elelvo | ЖАР | LANz | ФЭXуA) L | [innl | %е | Ж4чдэ | [LMNI | } | {E | SEEM | [Ш | 5 | | 2 | иW2 | 0 | ХСИРу | YW | теису | N | 2 | (Чazi,,0,0,,22,11403.58550000019
+easyocr,test-images/cat_1.jpg,negative,-,negative,,,,0,0,,0,8432.475800000248
+easyocr,test-images/coffee_1.jpg,negative,-,negative,,,,0,0,,0,10209.132500000123
+easyocr,test-images/dog_1.jpg,negative,-,negative,,,,0,0,,0,19234.808999999586
+easyocr,test-images/mountain-lake_1.jpg,negative,-,negative,,,,0,0,,0,8546.041199999308
+easyocr,test-images/pizza_1.jpg,negative,-,negative,,,,0,0,,0,9617.437799999607
+easyocr,test-images/sportscar_1.jpg,negative,-,negative,,VISIONAR | VISIONARY | [mam | Шщщш | [ | ₽ = | 5 ! | [ | =77 | FEFSЕHE | MUSEUH | ввгаЕ,,0,0,,9,9263.852000000043
+easyocr,test-images/sunflower_1.jpg,negative,-,negative,,,,0,0,,0,8513.049199998932
+paddle-current,syn_ru_clean_00.png,synthetic,ru,clean,Левый берег,Левый берег,True,2,2,1.0,2,1714.9735999992117
+paddle-current,syn_ru_clean_01.png,synthetic,ru,clean,Книжный магазин,Книжный | магазин,True,2,2,1.0,2,2183.461599999646
+paddle-current,syn_ru_clean_02.png,synthetic,ru,clean,Двуречье,Двуречье,True,1,1,1.0,1,1722.8011999995942
+paddle-current,syn_ru_clean_03.png,synthetic,ru,clean,Бар у моста,Бар у моста,True,3,3,1.0,3,1703.5249000000476
+paddle-current,syn_ru_clean_04.png,synthetic,ru,clean,Хлеб,Хлеб,True,1,1,1.0,1,1894.108699998469
+paddle-current,syn_ru_clean_05.png,synthetic,ru,clean,Продукты,Продукты,True,1,1,1.0,1,1988.3030000000872
+paddle-current,syn_ru_clean_06.png,synthetic,ru,clean,Цветы,Цветы,True,1,1,1.0,1,1712.1652999994694
+paddle-current,syn_ru_clean_07.png,synthetic,ru,clean,Тел. 8-800-555-35-35,Тел. | 8-800-555-35-35,True,6,6,1.0,6,2560.1372000000993
+paddle-current,syn_ru_clean_08.png,synthetic,ru,clean,Не курить,Не курить,True,2,2,1.0,2,1775.9648000010202
+paddle-current,syn_ru_clean_09.png,synthetic,ru,clean,Магазин Радуга,Магазин | Радуга,True,2,2,1.0,2,2026.423999999679
+paddle-current,syn_ru_clean_10.png,synthetic,ru,clean,Работаем без выходных,Работаем без выходных,True,3,3,1.0,3,1793.2195999983378
+paddle-current,syn_ru_clean_11.png,synthetic,ru,clean,Кофе с собой,Кофе с собой,True,3,3,1.0,3,1849.5078000014473
+paddle-current,syn_ru_clean_12.png,synthetic,ru,clean,Часы работы 9-21,Часы работы 9-21,True,4,4,1.0,4,1641.9839999998658
+paddle-current,syn_ru_clean_13.png,synthetic,ru,clean,Электротовары,Электротовары,True,1,1,1.0,1,1741.8636000002152
+paddle-current,syn_ru_clean_14.png,synthetic,ru,clean,"Улица Ленина, 15","Улица Ленина, | 15",True,3,3,1.0,3,2055.007699998896
+paddle-current,syn_ru_photo_00.png,synthetic,ru,photo,Аптека,O | Аптека | q,True,1,1,1.0,3,2887.6478000001953
+paddle-current,syn_ru_photo_01.png,synthetic,ru,photo,Цветы,Цветы,True,1,1,1.0,1,1634.8914000009245
+paddle-current,syn_ru_photo_02.png,synthetic,ru,photo,Продукты,Продукты,True,1,1,1.0,1,1651.4158999998472
+paddle-current,syn_ru_photo_03.png,synthetic,ru,photo,Часы работы 9-21,V | E | Часы работы 9-21 | NCE | ME TO DANCE  IT'S TIME TO DA | H | RA | IDON | TO1,True,4,4,1.0,19,4842.346200000975
+paddle-current,syn_ru_photo_04.png,synthetic,ru,photo,Пекарня №1,Пекарня №1,True,2,2,1.0,2,1608.808400000271
+paddle-current,syn_ru_photo_05.png,synthetic,ru,photo,Левый берег,Левый берег,True,2,2,1.0,2,1998.4258999993472
+paddle-current,syn_ru_photo_06.png,synthetic,ru,photo,Выход,ВыХОД,True,1,1,1.0,1,1653.9278000000195
+paddle-current,syn_ru_photo_07.png,synthetic,ru,photo,Тел. 8-800-555-35-35,Тел. 8-800-555-35-35 | FAIRLADY | 2402 | 1970,True,6,6,1.0,9,3229.734999998982
+paddle-current,syn_ru_photo_08.png,synthetic,ru,photo,Книжный магазин,Книжный | магазин,True,2,2,1.0,2,2260.6199999991077
+paddle-current,syn_ru_photo_09.png,synthetic,ru,photo,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,1685.1165000007313
+paddle-current,syn_ru_photo_10.png,synthetic,ru,photo,Электротовары,* | * | - | SEX PACEA | == | Электротовары,True,1,1,1.0,3,3640.9565000012662
+paddle-current,syn_ru_photo_11.png,synthetic,ru,photo,"Чай, кофе, сладости","Чай, кофе, сладости",True,3,3,1.0,3,1706.4303000006475
+paddle-current,syn_ru_photo_12.png,synthetic,ru,photo,Мясо и рыба,Мясо и рыба,True,3,3,1.0,3,1605.0042000006215
+paddle-current,syn_ru_photo_13.png,synthetic,ru,photo,"Осторожно, ступенька",3YAN | NOKAIR | Осторожно | ступенька,True,2,2,1.0,4,2750.895199998922
+paddle-current,syn_ru_photo_14.png,synthetic,ru,photo,Вход со двора,Вход со двора | 3 | LucioBr.co,True,3,3,1.0,6,2284.0371999991476
+paddle-current,syn_ru_small_00.png,synthetic,ru,small,Ремонт обуви,STOEE | POINT | Ремонт обуви | 00X | 0 | .,True,2,2,1.0,6,3247.87649999962
+paddle-current,syn_ru_small_01.png,synthetic,ru,small,Кофе с собой,Кофе ссобой,False,3,3,1.0,2,1677.7075999998488
+paddle-current,syn_ru_small_02.png,synthetic,ru,small,Вход со двора,Вход со двора,True,3,3,1.0,3,1647.5129999998899
+paddle-current,syn_ru_small_03.png,synthetic,ru,small,Левый берег,Левый берег,True,2,2,1.0,2,1724.7705000008864
+paddle-current,syn_ru_small_04.png,synthetic,ru,small,Пекарня №1,GYMAHA | NOKAIR | Пекарня №1,True,2,2,1.0,4,2279.3653000007907
+paddle-current,syn_ru_small_05.png,synthetic,ru,small,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,1683.305399999881
+paddle-current,syn_ru_small_06.png,synthetic,ru,small,"Улица Ленина, 15","Улица Ленина, 15",True,3,3,1.0,3,1635.7498999987001
+paddle-current,syn_ru_small_07.png,synthetic,ru,small,Тел. 8-800-555-35-35,HIGH PRESSURE | 40 | 2 | EPICENFRUM | FIRE BRIGADE | 000 | 00 | A300K | Тел. 8-800-555-35-35,True,6,6,1.0,16,4415.788499998598
+paddle-current,syn_ru_small_08.png,synthetic,ru,small,"Чай, кофе, сладости","1 | 1 | Чай,кофе, сладости",True,3,3,1.0,5,3165.0511999996525
+paddle-current,syn_ru_small_09.png,synthetic,ru,small,Цветы,Цветы | HIGH PRESSURE | 40 | EPICENTRUM | FIRE BRIGADE | 000 | 00 | A300K,True,1,1,1.0,10,4100.292400000399
+paddle-current,syn_ru_small_10.png,synthetic,ru,small,Продукты,Продукты,True,1,1,1.0,1,1670.5553000010696
+paddle-current,syn_ru_small_11.png,synthetic,ru,small,Аптека,V | Аптека,True,1,1,1.0,2,1964.0162999985478
+paddle-current,syn_ru_small_12.png,synthetic,ru,small,Книжный магазин,Книжныймагазин | 4 | * | -= | в | LucioBr.co,False,2,2,1.0,5,3816.669899999397
+paddle-current,syn_ru_small_13.png,synthetic,ru,small,Не курить,Не курить,True,2,2,1.0,2,1729.2152000009082
+paddle-current,syn_ru_small_14.png,synthetic,ru,small,Горячие пирожки,Горячиепирожки,False,2,2,1.0,1,1778.934500000105
+paddle-current,syn_ru_rotated_00.png,synthetic,ru,rotated,"Осторожно, ступенька","0 | сторожно, | ступенька | .",False,2,1,0.5,3,2581.6125000001193
+paddle-current,syn_ru_rotated_01.png,synthetic,ru,rotated,Магазин Радуга,Магазин Радуга | FAIRLADY | 242 | 1970,True,2,2,1.0,5,2684.621899999911
+paddle-current,syn_ru_rotated_02.png,synthetic,ru,rotated,Аптека,orb | Аптека,True,1,1,1.0,2,2318.2288000007247
+paddle-current,syn_ru_rotated_03.png,synthetic,ru,rotated,Горячие пирожки,Горячие пирожки,True,2,2,1.0,2,1733.8143999986642
+paddle-current,syn_ru_rotated_04.png,synthetic,ru,rotated,Пекарня №1,Пекарня №1,True,2,2,1.0,2,1628.4654999999475
+paddle-current,syn_ru_rotated_05.png,synthetic,ru,rotated,"Улица Ленина, 15",,False,3,0,0.0,0,1372.3255000004428
+paddle-current,syn_ru_rotated_06.png,synthetic,ru,rotated,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,1667.4206999996386
+paddle-current,syn_ru_rotated_07.png,synthetic,ru,rotated,Кофе с собой,Кофе с собой,True,3,3,1.0,3,1603.871799999979
+paddle-current,syn_ru_rotated_08.png,synthetic,ru,rotated,Книжный магазин,Menú | магазин,False,2,1,0.5,2,1903.4542000008514
+paddle-current,syn_ru_rotated_09.png,synthetic,ru,rotated,Парикмахерская,Парикмахерская | 2,True,1,1,1.0,2,2098.6589000003733
+paddle-current,syn_ru_rotated_10.png,synthetic,ru,rotated,Не курить,STAGE | POINT | POINT | 00 | 0 | Не курить,True,2,2,1.0,7,3180.126699999164
+paddle-current,syn_ru_rotated_11.png,synthetic,ru,rotated,Бар у моста,,False,3,0,0.0,0,1520.8734000007098
+paddle-current,syn_ru_rotated_12.png,synthetic,ru,rotated,Мясо и рыба,Мясо и рыба | 1E1A | BYMAHA | NOKAIR,True,3,3,1.0,6,2469.959199999721
+paddle-current,syn_ru_rotated_13.png,synthetic,ru,rotated,Выход,ВыХОд,True,1,1,1.0,1,1565.2346000006219
+paddle-current,syn_ru_rotated_14.png,synthetic,ru,rotated,Станция метро,HIGH PRESSURE | 450 | CEPICENFRUM | FIRE BRIGADE | 000 | 80 | A100K | Станцияметро,False,2,2,1.0,10,3830.862900000284
+paddle-current,syn_ru_degraded_00.jpg,synthetic,ru,degraded,Бар у моста,Бар у моста | H | LucioBr.co,True,3,3,1.0,6,2226.936299999579
+paddle-current,syn_ru_degraded_01.jpg,synthetic,ru,degraded,Двуречье,Двуречье,True,1,1,1.0,1,1596.072100001038
+paddle-current,syn_ru_degraded_02.jpg,synthetic,ru,degraded,Работаем без выходных,Работаем без выходных,True,3,3,1.0,3,1759.597100000974
+paddle-current,syn_ru_degraded_03.jpg,synthetic,ru,degraded,"Улица Ленина, 15","Улица Ленина, 15",True,3,3,1.0,3,1792.814599999474
+paddle-current,syn_ru_degraded_04.jpg,synthetic,ru,degraded,Станция метро,н | Станция метро | Luci | oBгo,True,2,2,1.0,5,2709.366700000828
+paddle-current,syn_ru_degraded_05.jpg,synthetic,ru,degraded,Цветы,Цветы,True,1,1,1.0,1,1587.933000000703
+paddle-current,syn_ru_degraded_06.jpg,synthetic,ru,degraded,Кофе с собой,Mend | Кофес собой,False,3,3,1.0,3,1888.1948999987799
+paddle-current,syn_ru_degraded_07.jpg,synthetic,ru,degraded,Мясо и рыба,Мясо и рыба,True,3,3,1.0,3,1598.5756999998557
+paddle-current,syn_ru_degraded_08.jpg,synthetic,ru,degraded,Часы работы 9-21,PRICE | RMB | 68 | A | TIBETSPRI | 100 | B | Часы работы,False,4,2,0.5,9,3518.5170999993716
+paddle-current,syn_ru_degraded_09.jpg,synthetic,ru,degraded,Горячие пирожки,орячиепирожки,False,2,1,0.5,1,1647.9531999993924
+paddle-current,syn_ru_degraded_10.jpg,synthetic,ru,degraded,"Чай, кофе, сладости","Чай,кофесладости",False,3,3,1.0,2,1692.992399999639
+paddle-current,syn_ru_degraded_11.jpg,synthetic,ru,degraded,Левый берег,Левый берег,True,2,2,1.0,2,1590.70839999913
+paddle-current,syn_ru_degraded_12.jpg,synthetic,ru,degraded,Тел. 8-800-555-35-35,AATARI | 5F35 | Teл. 8-800-555-35-35,False,6,5,0.8333333333333334,8,2396.728100000473
+paddle-current,syn_ru_degraded_13.jpg,synthetic,ru,degraded,Парикмахерская,Парикмахерская,True,1,1,1.0,1,1636.4799000002677
+paddle-current,syn_ru_degraded_14.jpg,synthetic,ru,degraded,Магазин Радуга,Магазин Радуга,True,2,2,1.0,2,1556.6300000009505
+paddle-current,syn_en_clean_00.png,synthetic,en,clean,Beware of the dog,Beware of the dog,True,4,4,1.0,4,1598.1049999991228
+paddle-current,syn_en_clean_01.png,synthetic,en,clean,No parking,No parking,True,2,2,1.0,2,1561.6792000000714
+paddle-current,syn_en_clean_02.png,synthetic,en,clean,Pharmacy,Pharmacy,True,1,1,1.0,1,1616.532099998949
+paddle-current,syn_en_clean_03.png,synthetic,en,clean,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,1606.1513000004197
+paddle-current,syn_en_clean_04.png,synthetic,en,clean,Take away,Take away,True,2,2,1.0,2,1555.3015000004962
+paddle-current,syn_en_clean_05.png,synthetic,en,clean,Exit,Exit,True,1,1,1.0,1,1603.063700000348
+paddle-current,syn_en_clean_06.png,synthetic,en,clean,Pizza and pasta,Pizza and pasta,True,3,3,1.0,3,1598.2974000016839
+paddle-current,syn_en_clean_07.png,synthetic,en,clean,Ice cream,Ice cream,True,2,2,1.0,2,1560.9452999997302
+paddle-current,syn_en_clean_08.png,synthetic,en,clean,Open,Open,True,1,1,1.0,1,1580.3555000002234
+paddle-current,syn_en_clean_09.png,synthetic,en,clean,Bike rental,Bike rental,True,2,2,1.0,2,1626.2253999993845
+paddle-current,syn_en_clean_10.png,synthetic,en,clean,Open 24 hours,Open 24 hours,True,3,3,1.0,3,1568.5040999997
+paddle-current,syn_en_clean_11.png,synthetic,en,clean,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1497.50800000038
+paddle-current,syn_en_clean_12.png,synthetic,en,clean,Free Wi-Fi,Free Wi-Fi,True,3,3,1.0,3,1560.9077000008256
+paddle-current,syn_en_clean_13.png,synthetic,en,clean,Main Street 15,Main Street 15,True,3,3,1.0,3,1596.7629999995552
+paddle-current,syn_en_clean_14.png,synthetic,en,clean,Central station,Central station,True,2,2,1.0,2,1545.5915000002278
+paddle-current,syn_en_photo_00.png,synthetic,en,photo,Fish and chips,Fish and chips,True,3,3,1.0,3,1555.0619999994524
+paddle-current,syn_en_photo_01.png,synthetic,en,photo,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1492.8447999991477
+paddle-current,syn_en_photo_02.png,synthetic,en,photo,Main Street 15,W | Main Street 15,True,3,3,1.0,4,1946.2812000001577
+paddle-current,syn_en_photo_03.png,synthetic,en,photo,Keep out,PAIX | C OBJET | TS | Keep out,True,2,2,1.0,6,2617.19980000089
+paddle-current,syn_en_photo_04.png,synthetic,en,photo,Bar and grill,NOKAIR | Bar and grill,True,3,3,1.0,4,2008.1202000001213
+paddle-current,syn_en_photo_05.png,synthetic,en,photo,Hot dogs,Hot dogs,True,2,2,1.0,2,1618.259599999874
+paddle-current,syn_en_photo_06.png,synthetic,en,photo,Sale up to 50%,V | Sale up | 50%,False,4,3,0.75,4,2665.3061999986676
+paddle-current,syn_en_photo_07.png,synthetic,en,photo,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,2385.160199999518
+paddle-current,syn_en_photo_08.png,synthetic,en,photo,Pizza and pasta,"160 | RYeT | KreTON""ES 4GB DDR3-1333-CL9 | PC10600S-9990 KTH400SC0B25-1333A | 0090L1 | 1O0 | 892HX | 1a0 | E3161 | ЇШМЕ | Made in Taiwan Waranty vois & removed  RoHS | ЗЕЭбЗЩ | 19500064 | Go1a | a | 3E6000000 | мE | ELPIDAS | ELPIDAC | 028401V201 | MTORAFT | 01UV | DDRIII2GB-1333 | ASint | TM | SSZ3128M8-EDJEF | 9 | F | Warranty Void if Removed | Pizza""and pasta | 00",True,3,3,1.0,52,15663.194699998712
+paddle-current,syn_en_photo_09.png,synthetic,en,photo,Open 24 hours,Open 24 hours,True,3,3,1.0,3,2352.9357999996137
+paddle-current,syn_en_photo_10.png,synthetic,en,photo,Pharmacy,PAIX | C OBJET | TS | Pharmacy,True,1,1,1.0,5,3384.346300001198
+paddle-current,syn_en_photo_11.png,synthetic,en,photo,Shoe repair,Shoe repair,True,2,2,1.0,2,1757.7632000011363
+paddle-current,syn_en_photo_12.png,synthetic,en,photo,Opening hours 9-21,Opening | hours | 9-21,True,4,4,1.0,4,2498.0924999999843
+paddle-current,syn_en_photo_13.png,synthetic,en,photo,Welcome,Welcome,True,1,1,1.0,1,1814.5232000006217
+paddle-current,syn_en_photo_14.png,synthetic,en,photo,Open,FordFocus | 210ER33 | HU-4407 | argaz | Open,True,1,1,1.0,6,3438.859100000627
+paddle-current,syn_en_small_00.png,synthetic,en,small,Open 24 hours,Open 24 hours,True,3,3,1.0,3,1732.7799000013329
+paddle-current,syn_en_small_01.png,synthetic,en,small,Coffee to go,Coffee to go,True,3,3,1.0,3,1704.9071000001277
+paddle-current,syn_en_small_02.png,synthetic,en,small,Keep out,Keep out,True,2,2,1.0,2,1701.0233999990305
+paddle-current,syn_en_small_03.png,synthetic,en,small,Welcome,PAIX | OBJET | C | TS | Welcome,True,1,1,1.0,5,2929.4434000003093
+paddle-current,syn_en_small_04.png,synthetic,en,small,Sale up to 50%,Sale up to 50% | A&F,True,4,4,1.0,6,2083.4802000008494
+paddle-current,syn_en_small_05.png,synthetic,en,small,Beware of the dog,Beware of the dog,True,4,4,1.0,4,1892.003200000545
+paddle-current,syn_en_small_06.png,synthetic,en,small,Shoe repair,Shoe repair,True,2,2,1.0,2,1707.9841000013403
+paddle-current,syn_en_small_07.png,synthetic,en,small,City Museum,City Museum,True,2,2,1.0,2,1678.8663000006636
+paddle-current,syn_en_small_08.png,synthetic,en,small,Central station,Central station,True,2,2,1.0,2,1681.3731000002008
+paddle-current,syn_en_small_09.png,synthetic,en,small,Opening hours 9-21,Opening hours 9-21 | FAIRLADY | 1402 | 1970,True,4,4,1.0,7,2918.3711999994557
+paddle-current,syn_en_small_10.png,synthetic,en,small,Open,MATARI | 520ST | F35 | COMPUTER | Open | OWNER'S MANUAL,True,1,1,1.0,8,3273.5560000000987
+paddle-current,syn_en_small_11.png,synthetic,en,small,Tel. 555-0199,4 | Tel. 555-0199 | 5 | LucioBr.co,True,3,3,1.0,7,3141.51160000074
+paddle-current,syn_en_small_12.png,synthetic,en,small,Car wash,Car wash,True,2,2,1.0,2,1734.7515000001295
+paddle-current,syn_en_small_13.png,synthetic,en,small,Book store,Book store,True,2,2,1.0,2,1749.3775000002643
+paddle-current,syn_en_small_14.png,synthetic,en,small,Free Wi-Fi,Free Wi-Fi | FordFocus | 2108-5733 | HU-4407 | argaz,True,3,3,1.0,9,3238.331799999287
+paddle-current,syn_en_rotated_00.png,synthetic,en,rotated,Bar and grill,Bar and | grill,True,3,3,1.0,3,2041.5842999991582
+paddle-current,syn_en_rotated_01.png,synthetic,en,rotated,No parking,No parking,True,2,2,1.0,2,1720.3589999990072
+paddle-current,syn_en_rotated_02.png,synthetic,en,rotated,Coffee to go,offee to go | O | q,False,3,2,0.6666666666666666,5,2969.846099998904
+paddle-current,syn_en_rotated_03.png,synthetic,en,rotated,Take away,M | awa | ake,False,2,0,0.0,3,2377.1006999995734
+paddle-current,syn_en_rotated_04.png,synthetic,en,rotated,Pizza and pasta,PAIX | OBJET | TS | Pizza and pasta,True,3,3,1.0,6,2758.7965999991866
+paddle-current,syn_en_rotated_05.png,synthetic,en,rotated,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1763.5562999985268
+paddle-current,syn_en_rotated_06.png,synthetic,en,rotated,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,1724.157100001321
+paddle-current,syn_en_rotated_07.png,synthetic,en,rotated,Open,Open | A&F,True,1,1,1.0,3,2096.2306999990687
+paddle-current,syn_en_rotated_08.png,synthetic,en,rotated,Welcome,0 | Welcome,True,1,1,1.0,2,2094.937600000776
+paddle-current,syn_en_rotated_09.png,synthetic,en,rotated,Open 24 hours,Open 24 hours,True,3,3,1.0,3,2063.6926000006497
+paddle-current,syn_en_rotated_10.png,synthetic,en,rotated,Ice cream,Ice cream,True,2,2,1.0,2,1706.5323999995599
+paddle-current,syn_en_rotated_11.png,synthetic,en,rotated,Sale up to 50%,Menú | Sale up to 50%,True,4,4,1.0,5,2292.068900000231
+paddle-current,syn_en_rotated_12.png,synthetic,en,rotated,Pharmacy,Pharmacy | SPaten,True,1,1,1.0,2,2716.2958000008075
+paddle-current,syn_en_rotated_13.png,synthetic,en,rotated,Fish and chips,Fish. and chips,True,3,3,1.0,3,2012.2799999990093
+paddle-current,syn_en_rotated_14.png,synthetic,en,rotated,Main Street 15,HIGH PRESSURE | 450 | EPICENFRUM | FIRE BRIGADE | 000 | 00 | A300K | Main Street 15,True,3,3,1.0,12,4565.4083999997965
+paddle-current,syn_en_degraded_00.jpg,synthetic,en,degraded,Open,Open,True,1,1,1.0,1,1707.6273000002402
+paddle-current,syn_en_degraded_01.jpg,synthetic,en,degraded,Flower shop,M | Flower shop,True,2,2,1.0,3,1960.4811999997764
+paddle-current,syn_en_degraded_02.jpg,synthetic,en,degraded,Hot dogs,Hot dogs,True,2,2,1.0,2,1624.10219999947
+paddle-current,syn_en_degraded_03.jpg,synthetic,en,degraded,Bar and grill,Bar and grill,True,3,3,1.0,3,1673.6763999997493
+paddle-current,syn_en_degraded_04.jpg,synthetic,en,degraded,Tel. 555-0199,,False,3,0,0.0,0,1548.688900000343
+paddle-current,syn_en_degraded_05.jpg,synthetic,en,degraded,Cash only,Cash only,True,2,2,1.0,2,1808.4290999995574
+paddle-current,syn_en_degraded_06.jpg,synthetic,en,degraded,Open 24 hours,pen | 24 hours,False,3,2,0.6666666666666666,3,2081.052499999714
+paddle-current,syn_en_degraded_07.jpg,synthetic,en,degraded,Bike rental,Bike rental,True,2,2,1.0,2,1743.1477999998606
+paddle-current,syn_en_degraded_08.jpg,synthetic,en,degraded,Sale up to 50%,Sale up to 50%,True,4,4,1.0,4,2197.695599999861
+paddle-current,syn_en_degraded_09.jpg,synthetic,en,degraded,Book store,Book store,True,2,2,1.0,2,1809.0222999999241
+paddle-current,syn_en_degraded_10.jpg,synthetic,en,degraded,Free Wi-Fi,Free Wi-Fi,True,3,3,1.0,3,1824.7659000007843
+paddle-current,syn_en_degraded_11.jpg,synthetic,en,degraded,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1707.8786000001855
+paddle-current,syn_en_degraded_12.jpg,synthetic,en,degraded,Take away,Take away | :,True,2,2,1.0,2,2049.6430000002874
+paddle-current,syn_en_degraded_13.jpg,synthetic,en,degraded,Pharmacy,Pharmacy,True,1,1,1.0,1,1680.5285000009462
+paddle-current,syn_en_degraded_14.jpg,synthetic,en,degraded,Central station,ntral station,False,2,1,0.5,2,1641.7163999994955
+paddle-current,test-images/ru-road-sign_1.jpg,real_photo,ru,real_photo,югорский мост обь длина ширина 2110,р.ОБЬ | ЮГОРСКИЙ | MOCT | ДЛИНА | 2110M | ШИРИНА | 14M | род | МОСТЫХМАО | ПОСТРОЙКИ: 2000,,6,6,1.0,12,5019.460999999865
+paddle-current,test-images/ru-road-sign_2.jpg,real_photo,ru,real_photo,двуречье,ДВУРЕЧЬЕ,,1,1,1.0,1,2798.007699999289
+paddle-current,test-images/ru-road-sign_3.jpg,real_photo,ru,real_photo,красноармейск дмитров ногинск,KPACHOAPMEЙCK | ДМИТРОВ | HOFИHCK | A107 | A 107 | 300M,,3,1,0.3333333333333333,7,4968.015300000843
+paddle-current,test-images/ru-road-sign_4.jpg,real_photo,ru,real_photo,плешаковский,ПЛЕШАКОВСКИЙ,,1,1,1.0,1,3283.167700001286
+paddle-current,test-images/ru-road-sign_5.jpg,real_photo,ru,real_photo,полчаниновка,ПОЛЧАНИНОВКА,,1,1,1.0,1,2358.1143999999767
+paddle-current,test-images/ru-road-sign_6.jpg,real_photo,ru,real_photo,церковь троицы живоначальной church trinity,"0,3 | Церковь Троицы Живоначальной | Church of the Life-Giving Trinity",,5,5,1.0,11,4090.127299999949
+paddle-current,test-images/ru-shop-sign_1.jpg,real_photo,ru,real_photo,товары повседневного спроса,КУНДЕМКТИ | KOOC | 7 | KАЖEТ | 1 | X | БУЙЫМДАРЫ | СПРОСА | COOLED BY | Valeo,,3,1,0.3333333333333333,11,6224.521199999799
+paddle-current,test-images/ru-shop-sign_2.jpg,real_photo,ru,real_photo,продовольственный,ПРОДОВОЛЬСТВЕННЫЙ,,1,1,1.0,1,2264.827499999228
+paddle-current,test-images/ru-shop-sign_3.jpg,real_photo,ru,real_photo,магазин спутник,МАГАЗИН | H | 6 | 6,,2,1,0.5,4,3604.4627000010223
+paddle-current,test-images/ru-shop-sign_4.jpg,real_photo,ru,real_photo,спирт,b3n | СПИРТ,,1,1,1.0,2,2949.8331000013422
+paddle-current,test-images/ru-shop-sign_5.jpg,real_photo,ru,real_photo,промтовар,*,,1,0,0.0,0,2401.8629000001965
+paddle-current,test-images/ru-shop-sign_6.jpg,real_photo,ru,real_photo,знание,,,1,0,0.0,0,2109.628399999565
+paddle-current,test-images/board_apple_ru.png,real_board,ru,real_board,яблоко,Яблоко,,1,1,1.0,1,1400.678699999844
+paddle-current,test-images/board_cat_ru.png,real_board,ru,real_board,кошка,Кошка,,1,1,1.0,1,1322.5730000012845
+paddle-current,test-images/board_dog_ru.png,real_board,ru,real_board,собака,Собака,,1,1,1.0,1,1539.0091999997821
+paddle-current,test-images/board_banana_ru.png,real_board,ru,real_board,банан,Bанан,,1,0,0.0,1,1354.4120999995357
+paddle-current,test-images/board_bicycle_ru.png,real_board,ru,real_board,велосипед,Велосипед,,1,1,1.0,1,1511.781000001065
+paddle-current,test-images/board_sunflower_ru.png,real_board,ru,real_board,подсолнух,Подсолнух,,1,1,1.0,1,1613.8423000011244
+paddle-current,test-images/board_coffee_ru.png,real_board,ru,real_board,кофе,Кофе,,1,1,1.0,1,1646.0612999999285
+paddle-current,test-images/board_pizza_ru.png,real_board,ru,real_board,пицца,Пицца,,1,1,1.0,1,1431.099900000845
+paddle-current,test-images/board_apple_en.png,real_board,en,real_board,apple,Apple,,1,1,1.0,1,1339.4134999998641
+paddle-current,test-images/board_coffee_en.png,real_board,en,real_board,coffee,Coffee,,1,1,1.0,1,1407.139200000529
+paddle-current,test-images/apple_1.jpg,negative,-,negative,,,,0,0,,0,2729.137399999672
+paddle-current,test-images/banana_1.jpg,negative,-,negative,,3,,0,0,,1,2657.047799999418
+paddle-current,test-images/bicycle_1.jpg,negative,-,negative,,RARDO | HUB | FX | AGWN | 4 | 2 | M3M | MMMS | FER | SEEN | Ne | YOVA | ENg | E | ENE,,0,0,,15,7855.931000000055
+paddle-current,test-images/cat_1.jpg,negative,-,negative,,O,,0,0,,1,2152.886199999557
+paddle-current,test-images/coffee_1.jpg,negative,-,negative,,,,0,0,,0,2525.5337999988114
+paddle-current,test-images/dog_1.jpg,negative,-,negative,,,,0,0,,0,4587.514499999088
+paddle-current,test-images/mountain-lake_1.jpg,negative,-,negative,,,,0,0,,0,2015.9889000005933
+paddle-current,test-images/pizza_1.jpg,negative,-,negative,,,,0,0,,0,2825.1597999988007
+paddle-current,test-images/sportscar_1.jpg,negative,-,negative,,"VISIONÄR | VISIONARY | PORSCHE | PORSC | MUSEUM | "" | Li",,0,0,,6,5523.723900001642
+paddle-current,test-images/sunflower_1.jpg,negative,-,negative,,,,0,0,,0,2370.9429999998974
+paddle-cyrillic,syn_ru_clean_00.png,synthetic,ru,clean,Левый берег,Левый берег,True,2,2,1.0,2,1589.2003999997542
+paddle-cyrillic,syn_ru_clean_01.png,synthetic,ru,clean,Книжный магазин,Книжный | магазин,True,2,2,1.0,2,1943.6869000001025
+paddle-cyrillic,syn_ru_clean_02.png,synthetic,ru,clean,Двуречье,Двуречье,True,1,1,1.0,1,1499.5636999992712
+paddle-cyrillic,syn_ru_clean_03.png,synthetic,ru,clean,Бар у моста,Бар у моста,True,3,3,1.0,3,1536.3813999993
+paddle-cyrillic,syn_ru_clean_04.png,synthetic,ru,clean,Хлеб,Хлеб,True,1,1,1.0,1,1570.1881000004505
+paddle-cyrillic,syn_ru_clean_05.png,synthetic,ru,clean,Продукты,Продукты,True,1,1,1.0,1,1974.4541000000027
+paddle-cyrillic,syn_ru_clean_06.png,synthetic,ru,clean,Цветы,Цветы,True,1,1,1.0,1,1674.979199999143
+paddle-cyrillic,syn_ru_clean_07.png,synthetic,ru,clean,Тел. 8-800-555-35-35,Тел. | 8-800-555-35-35,True,6,6,1.0,6,2739.5773000007466
+paddle-cyrillic,syn_ru_clean_08.png,synthetic,ru,clean,Не курить,Не курить,True,2,2,1.0,2,1775.8860000012646
+paddle-cyrillic,syn_ru_clean_09.png,synthetic,ru,clean,Магазин Радуга,Магазин | Радуга,True,2,2,1.0,2,2120.3069999992294
+paddle-cyrillic,syn_ru_clean_10.png,synthetic,ru,clean,Работаем без выходных,Работаем без выходных,True,3,3,1.0,3,1996.6464999997697
+paddle-cyrillic,syn_ru_clean_11.png,synthetic,ru,clean,Кофе с собой,Кофе с собой,True,3,3,1.0,3,2041.2766999997984
+paddle-cyrillic,syn_ru_clean_12.png,synthetic,ru,clean,Часы работы 9-21,Часы работы 9-21,True,4,4,1.0,4,1561.8475000010221
+paddle-cyrillic,syn_ru_clean_13.png,synthetic,ru,clean,Электротовары,Электротовары,True,1,1,1.0,1,1829.4991000002483
+paddle-cyrillic,syn_ru_clean_14.png,synthetic,ru,clean,"Улица Ленина, 15","Улица Ленина, | 15",True,3,3,1.0,3,2062.676099998498
+paddle-cyrillic,syn_ru_photo_00.png,synthetic,ru,photo,Аптека,O | Аптека | ueqp | SO,True,1,1,1.0,4,2799.7285000001284
+paddle-cyrillic,syn_ru_photo_01.png,synthetic,ru,photo,Цветы,Цветы,True,1,1,1.0,1,1812.615699998787
+paddle-cyrillic,syn_ru_photo_02.png,synthetic,ru,photo,Продукты,Продукты,True,1,1,1.0,1,1675.489999999627
+paddle-cyrillic,syn_ru_photo_03.png,synthetic,ru,photo,Часы работы 9-21,E | Часы работы 9-21 | NCE | ME TO DANCE IT'S TIME TO DA | DA | IJON | 1O1,True,4,4,1.0,17,4928.846700000577
+paddle-cyrillic,syn_ru_photo_04.png,synthetic,ru,photo,Пекарня №1,Пекарня №1,True,2,2,1.0,2,1653.8013000008505
+paddle-cyrillic,syn_ru_photo_05.png,synthetic,ru,photo,Левый берег,Левый берег,True,2,2,1.0,2,1911.7375000005268
+paddle-cyrillic,syn_ru_photo_06.png,synthetic,ru,photo,Выход,ВЫХОД,True,1,1,1.0,1,1586.3238999991154
+paddle-cyrillic,syn_ru_photo_07.png,synthetic,ru,photo,Тел. 8-800-555-35-35,Тел. 8-800-555-35-35 | FAIRLADY | 2492 | 1970,True,6,6,1.0,9,3172.770799999853
+paddle-cyrillic,syn_ru_photo_08.png,synthetic,ru,photo,Книжный магазин,Книжный | магазин,True,2,2,1.0,2,2119.1632999998546
+paddle-cyrillic,syn_ru_photo_09.png,synthetic,ru,photo,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,1626.358399998935
+paddle-cyrillic,syn_ru_photo_10.png,synthetic,ru,photo,Электротовары,* | * | - | SEX PACE | {= | Электротовары,True,1,1,1.0,3,3586.4486999998917
+paddle-cyrillic,syn_ru_photo_11.png,synthetic,ru,photo,"Чай, кофе, сладости","Чай, кофе, сладости",True,3,3,1.0,3,1649.4335000006686
+paddle-cyrillic,syn_ru_photo_12.png,synthetic,ru,photo,Мясо и рыба,Мясо и рыба,True,3,3,1.0,3,1742.6254999991215
+paddle-cyrillic,syn_ru_photo_13.png,synthetic,ru,photo,"Осторожно, ступенька",SYA | NOKAIR | Осторожно | ступенька,True,2,2,1.0,4,2990.20500000006
+paddle-cyrillic,syn_ru_photo_14.png,synthetic,ru,photo,Вход со двора,Вход со двора | 2 | LucioBr.co,True,3,3,1.0,6,2852.6371999996627
+paddle-cyrillic,syn_ru_small_00.png,synthetic,ru,small,Ремонт обуви,STOEE | POINT | Ремонт обуви | 00 | 0,True,2,2,1.0,6,3380.4285999995045
+paddle-cyrillic,syn_ru_small_01.png,synthetic,ru,small,Кофе с собой,Кофе с собой,True,3,3,1.0,3,1584.7850999998627
+paddle-cyrillic,syn_ru_small_02.png,synthetic,ru,small,Вход со двора,Вход со двора,True,3,3,1.0,3,1570.2409999994416
+paddle-cyrillic,syn_ru_small_03.png,synthetic,ru,small,Левый берег,Левый берег,True,2,2,1.0,2,1625.0473000000056
+paddle-cyrillic,syn_ru_small_04.png,synthetic,ru,small,Пекарня №1,GYMANA | NOK AIR | Пекарня №1,True,2,2,1.0,5,2184.5806000001176
+paddle-cyrillic,syn_ru_small_05.png,synthetic,ru,small,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,1678.081399999428
+paddle-cyrillic,syn_ru_small_06.png,synthetic,ru,small,"Улица Ленина, 15","Улица Ленина, 15",True,3,3,1.0,3,1654.5403999989503
+paddle-cyrillic,syn_ru_small_07.png,synthetic,ru,small,Тел. 8-800-555-35-35,HIGH PRESSURE | A00 | 0 | CEPICENTRUM | FIRE BRIGADE | 000 | 00 | A100- | Тел. 8-800-555-35-35,True,6,6,1.0,16,4326.5619999983755
+paddle-cyrillic,syn_ru_small_08.png,synthetic,ru,small,"Чай, кофе, сладости","I | Чай,кофе, сладости",True,3,3,1.0,4,3046.9690000008995
+paddle-cyrillic,syn_ru_small_09.png,synthetic,ru,small,Цветы,Цветы | HIGH PRESSURE | 400 | EPICENTRUM | FIRE BRIGADE | 000 | 00 | A100-,True,1,1,1.0,10,4081.0977999990428
+paddle-cyrillic,syn_ru_small_10.png,synthetic,ru,small,Продукты,Продукты,True,1,1,1.0,1,1563.9781999998377
+paddle-cyrillic,syn_ru_small_11.png,synthetic,ru,small,Аптека,V | Аптека,True,1,1,1.0,2,2144.529200000761
+paddle-cyrillic,syn_ru_small_12.png,synthetic,ru,small,Книжный магазин,"Книжныймагазин | ы | * | ""= | 0 | LucioBr.co",False,2,2,1.0,5,4464.995000000272
+paddle-cyrillic,syn_ru_small_13.png,synthetic,ru,small,Не курить,Не курить,True,2,2,1.0,2,2141.8950999996014
+paddle-cyrillic,syn_ru_small_14.png,synthetic,ru,small,Горячие пирожки,Горячиепирожки,False,2,2,1.0,1,1766.8259000001854
+paddle-cyrillic,syn_ru_rotated_00.png,synthetic,ru,rotated,"Осторожно, ступенька","0 | сторожно, | ступенька | .",False,2,1,0.5,3,2668.401500000982
+paddle-cyrillic,syn_ru_rotated_01.png,synthetic,ru,rotated,Магазин Радуга,Магазин Радуга | FAIRLADY | 242 | 1970,True,2,2,1.0,5,2726.0081000003993
+paddle-cyrillic,syn_ru_rotated_02.png,synthetic,ru,rotated,Аптека,orbl | Аптека,True,1,1,1.0,2,1962.1110999996745
+paddle-cyrillic,syn_ru_rotated_03.png,synthetic,ru,rotated,Горячие пирожки,Горячиепирожки,False,2,2,1.0,1,1719.4701000007626
+paddle-cyrillic,syn_ru_rotated_04.png,synthetic,ru,rotated,Пекарня №1,Пекарня №1,True,2,2,1.0,2,1565.4114999997546
+paddle-cyrillic,syn_ru_rotated_05.png,synthetic,ru,rotated,"Улица Ленина, 15",,False,3,0,0.0,0,1381.2158000000636
+paddle-cyrillic,syn_ru_rotated_06.png,synthetic,ru,rotated,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,1609.4060000013997
+paddle-cyrillic,syn_ru_rotated_07.png,synthetic,ru,rotated,Кофе с собой,Кофе с собой,True,3,3,1.0,3,1570.2225000004546
+paddle-cyrillic,syn_ru_rotated_08.png,synthetic,ru,rotated,Книжный магазин,Menú | магазин,False,2,1,0.5,2,1917.8261999986717
+paddle-cyrillic,syn_ru_rotated_09.png,synthetic,ru,rotated,Парикмахерская,Парикмахерская | 2,True,1,1,1.0,2,2069.9430000004213
+paddle-cyrillic,syn_ru_rotated_10.png,synthetic,ru,rotated,Не курить,STAGE | POINT | POINT | 00 | Не курить,True,2,2,1.0,6,3179.5210000000225
+paddle-cyrillic,syn_ru_rotated_11.png,synthetic,ru,rotated,Бар у моста,,False,3,0,0.0,0,1364.5804000007047
+paddle-cyrillic,syn_ru_rotated_12.png,synthetic,ru,rotated,Мясо и рыба,Мясо и рыба | T1A | SYMANA | NOKAIR,True,3,3,1.0,6,2571.006000000125
+paddle-cyrillic,syn_ru_rotated_13.png,synthetic,ru,rotated,Выход,ВЫХОд,True,1,1,1.0,1,1689.180800000031
+paddle-cyrillic,syn_ru_rotated_14.png,synthetic,ru,rotated,Станция метро,HIGH PRESSURE | 400 | CEPICENTRUM | FIRE BRIGADE | 000 | 00 | R100 | Станция метро,True,2,2,1.0,11,4326.120300000184
+paddle-cyrillic,syn_ru_degraded_00.jpg,synthetic,ru,degraded,Бар у моста,Бар у моста | H | LucioBr.co,True,3,3,1.0,6,2627.130600001692
+paddle-cyrillic,syn_ru_degraded_01.jpg,synthetic,ru,degraded,Двуречье,Двуречье,True,1,1,1.0,1,1716.6606999999203
+paddle-cyrillic,syn_ru_degraded_02.jpg,synthetic,ru,degraded,Работаем без выходных,Работаем без выходных,True,3,3,1.0,3,1850.8534000011423
+paddle-cyrillic,syn_ru_degraded_03.jpg,synthetic,ru,degraded,"Улица Ленина, 15","Улица Ленина, 15",True,3,3,1.0,3,1770.7785999991756
+paddle-cyrillic,syn_ru_degraded_04.jpg,synthetic,ru,degraded,Станция метро,8 | Станция метро | Lucї | iюBr.o,True,2,2,1.0,6,2666.1903000003804
+paddle-cyrillic,syn_ru_degraded_05.jpg,synthetic,ru,degraded,Цветы,Цветы,True,1,1,1.0,1,1621.4877000002161
+paddle-cyrillic,syn_ru_degraded_06.jpg,synthetic,ru,degraded,Кофе с собой,Mod | Кофе с собой,True,3,3,1.0,4,2162.3806999996305
+paddle-cyrillic,syn_ru_degraded_07.jpg,synthetic,ru,degraded,Мясо и рыба,Мясо и рыба,True,3,3,1.0,3,1703.1514000009338
+paddle-cyrillic,syn_ru_degraded_08.jpg,synthetic,ru,degraded,Часы работы 9-21,PRICE | RMB | 68π | ART | TIBET SPRI | 100 | 0 | Часы работы,False,4,2,0.5,10,3554.3788999984827
+paddle-cyrillic,syn_ru_degraded_09.jpg,synthetic,ru,degraded,Горячие пирожки,орячиепирожки,False,2,1,0.5,1,1809.8602999998548
+paddle-cyrillic,syn_ru_degraded_10.jpg,synthetic,ru,degraded,"Чай, кофе, сладости","Чай, кофе, сладости",True,3,3,1.0,3,1810.1005999997142
+paddle-cyrillic,syn_ru_degraded_11.jpg,synthetic,ru,degraded,Левый берег,Левый берег,True,2,2,1.0,2,1686.7745999988983
+paddle-cyrillic,syn_ru_degraded_12.jpg,synthetic,ru,degraded,Тел. 8-800-555-35-35,AATARI | SF35 | Тел. 8-800-555-35-35,True,6,6,1.0,8,2518.0639999998675
+paddle-cyrillic,syn_ru_degraded_13.jpg,synthetic,ru,degraded,Парикмахерская,Парикмахерская,True,1,1,1.0,1,1638.1005000002915
+paddle-cyrillic,syn_ru_degraded_14.jpg,synthetic,ru,degraded,Магазин Радуга,Магазин Радуга,True,2,2,1.0,2,1644.3593000003602
+paddle-cyrillic,syn_en_clean_00.png,synthetic,en,clean,Beware of the dog,Beware of the dog,True,4,4,1.0,4,1648.4536999996635
+paddle-cyrillic,syn_en_clean_01.png,synthetic,en,clean,No parking,No parking,True,2,2,1.0,2,1662.2627999986435
+paddle-cyrillic,syn_en_clean_02.png,synthetic,en,clean,Pharmacy,Pharmacy,True,1,1,1.0,1,1594.9051000006875
+paddle-cyrillic,syn_en_clean_03.png,synthetic,en,clean,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,1630.8795000004466
+paddle-cyrillic,syn_en_clean_04.png,synthetic,en,clean,Take away,Take away,True,2,2,1.0,2,1643.2323000008182
+paddle-cyrillic,syn_en_clean_05.png,synthetic,en,clean,Exit,Exit,True,1,1,1.0,1,1642.6003999986278
+paddle-cyrillic,syn_en_clean_06.png,synthetic,en,clean,Pizza and pasta,Pizza and pasta,True,3,3,1.0,3,1653.4133000004658
+paddle-cyrillic,syn_en_clean_07.png,synthetic,en,clean,Ice cream,Ice cream,True,2,2,1.0,2,1632.1076000003814
+paddle-cyrillic,syn_en_clean_08.png,synthetic,en,clean,Open,Open,True,1,1,1.0,1,1676.7221999998583
+paddle-cyrillic,syn_en_clean_09.png,synthetic,en,clean,Bike rental,Bike rental,True,2,2,1.0,2,1681.7609000008815
+paddle-cyrillic,syn_en_clean_10.png,synthetic,en,clean,Open 24 hours,Open 24 hours,True,3,3,1.0,3,1633.3606000007421
+paddle-cyrillic,syn_en_clean_11.png,synthetic,en,clean,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1623.9212000000407
+paddle-cyrillic,syn_en_clean_12.png,synthetic,en,clean,Free Wi-Fi,Free Wi-Fi,True,3,3,1.0,3,1633.6186999997153
+paddle-cyrillic,syn_en_clean_13.png,synthetic,en,clean,Main Street 15,Main Street 15,True,3,3,1.0,3,1654.3158000004041
+paddle-cyrillic,syn_en_clean_14.png,synthetic,en,clean,Central station,Central station,True,2,2,1.0,2,1734.2715999984648
+paddle-cyrillic,syn_en_photo_00.png,synthetic,en,photo,Fish and chips,Fish and chips,True,3,3,1.0,3,1655.3590000003169
+paddle-cyrillic,syn_en_photo_01.png,synthetic,en,photo,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1667.9471999996167
+paddle-cyrillic,syn_en_photo_02.png,synthetic,en,photo,Main Street 15,W | Main Street 15,True,3,3,1.0,4,1985.08110000148
+paddle-cyrillic,syn_en_photo_03.png,synthetic,en,photo,Keep out,PAIX | C OBJET | TS | Keep out,True,2,2,1.0,6,2511.9484000006196
+paddle-cyrillic,syn_en_photo_04.png,synthetic,en,photo,Bar and grill,NOK AIR | Bar and grill,True,3,3,1.0,5,2009.4884999998612
+paddle-cyrillic,syn_en_photo_05.png,synthetic,en,photo,Hot dogs,Hot dogs,True,2,2,1.0,2,1655.1764999985608
+paddle-cyrillic,syn_en_photo_06.png,synthetic,en,photo,Sale up to 50%,Sale up | 50%,False,4,3,0.75,3,2240.16599999959
+paddle-cyrillic,syn_en_photo_07.png,synthetic,en,photo,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,1625.4582000001392
+paddle-cyrillic,syn_en_photo_08.png,synthetic,en,photo,Pizza and pasta,16 | RYeT | Kreton ES4GB DDR3-1333-CL9 | PC10600S-9990 KTH400S00825-1333A | D090L1 | IOR0C | 80249 | 4a0 | R3101 | ФмФ | Made in Taiwan Waranty void & removed  RoHS | ЗЕбчЗЩ | 4506060 | aoia | 121 | 0 | XE | ELPIDANN | ELPIDAC | 0289014206 | M1OREFI | 0u940 | DDRIII 2GB-1333 | ASint | TM | SSZ3128M8-EDJEF | 0E | 1 | Warranty Void if Removed | Pizza and pasta,True,3,3,1.0,51,13379.901500000415
+paddle-cyrillic,syn_en_photo_09.png,synthetic,en,photo,Open 24 hours,Open 24 hours,True,3,3,1.0,3,1583.6107000013726
+paddle-cyrillic,syn_en_photo_10.png,synthetic,en,photo,Pharmacy,PAIX | C OBJET | TS | Pharmacy,True,1,1,1.0,5,2418.739500000811
+paddle-cyrillic,syn_en_photo_11.png,synthetic,en,photo,Shoe repair,Shoe repair,True,2,2,1.0,2,1643.2519999998476
+paddle-cyrillic,syn_en_photo_12.png,synthetic,en,photo,Opening hours 9-21,Opening | hours | 9-21,True,4,4,1.0,4,2187.1584999989864
+paddle-cyrillic,syn_en_photo_13.png,synthetic,en,photo,Welcome,Welcome,True,1,1,1.0,1,1552.2264999999607
+paddle-cyrillic,syn_en_photo_14.png,synthetic,en,photo,Open,FordFocus | 21DER33 | HU-4407 | argazt | Open,True,1,1,1.0,6,2967.692899999747
+paddle-cyrillic,syn_en_small_00.png,synthetic,en,small,Open 24 hours,Open 24 hours,True,3,3,1.0,3,1561.1855000006472
+paddle-cyrillic,syn_en_small_01.png,synthetic,en,small,Coffee to go,Coffee to go,True,3,3,1.0,3,1567.0419999987644
+paddle-cyrillic,syn_en_small_02.png,synthetic,en,small,Keep out,Keep out,True,2,2,1.0,2,1598.6744000001636
+paddle-cyrillic,syn_en_small_03.png,synthetic,en,small,Welcome,PAIX | OBJET | с | TS | Welcome,True,1,1,1.0,5,3047.977100000935
+paddle-cyrillic,syn_en_small_04.png,synthetic,en,small,Sale up to 50%,Sale up to 50% | ABF,True,4,4,1.0,5,2091.2304000012227
+paddle-cyrillic,syn_en_small_05.png,synthetic,en,small,Beware of the dog,Beware of the dog,True,4,4,1.0,4,2580.6114000006346
+paddle-cyrillic,syn_en_small_06.png,synthetic,en,small,Shoe repair,Shoe repair,True,2,2,1.0,2,1804.5086000001902
+paddle-cyrillic,syn_en_small_07.png,synthetic,en,small,City Museum,City Museum,True,2,2,1.0,2,1597.3331000004691
+paddle-cyrillic,syn_en_small_08.png,synthetic,en,small,Central station,Central station,True,2,2,1.0,2,1576.5243000005285
+paddle-cyrillic,syn_en_small_09.png,synthetic,en,small,Opening hours 9-21,Opening hours 9-21 | FAIRLADY | 142 | 1970,True,4,4,1.0,7,2708.8721999989502
+paddle-cyrillic,syn_en_small_10.png,synthetic,en,small,Open,AATARI | 520ST | SF35 | COMPUTER | Open | OWNER'S MANUAL,True,1,1,1.0,8,2995.030600000973
+paddle-cyrillic,syn_en_small_11.png,synthetic,en,small,Tel. 555-0199,ы | Tel. 555-0199 | 5 | LucioBr.co,True,3,3,1.0,7,2753.160799999023
+paddle-cyrillic,syn_en_small_12.png,synthetic,en,small,Car wash,Car wash,True,2,2,1.0,2,1590.5365999988135
+paddle-cyrillic,syn_en_small_13.png,synthetic,en,small,Book store,Book store,True,2,2,1.0,2,1649.046599999565
+paddle-cyrillic,syn_en_small_14.png,synthetic,en,small,Free Wi-Fi,Free Wi-Fi | FordFocus | 210E-5233 | HU-4407 | argazt,True,3,3,1.0,9,3014.5343000003777
+paddle-cyrillic,syn_en_rotated_00.png,synthetic,en,rotated,Bar and grill,Bar and | grill,True,3,3,1.0,3,2505.02890000098
+paddle-cyrillic,syn_en_rotated_01.png,synthetic,en,rotated,No parking,No parking,True,2,2,1.0,2,1825.9369999996125
+paddle-cyrillic,syn_en_rotated_02.png,synthetic,en,rotated,Coffee to go,offee to go | O | ueq | Ss,False,3,2,0.6666666666666666,6,4407.223799998974
+paddle-cyrillic,syn_en_rotated_03.png,synthetic,en,rotated,Take away,M | awa | ake,False,2,0,0.0,3,2493.191100000331
+paddle-cyrillic,syn_en_rotated_04.png,synthetic,en,rotated,Pizza and pasta,PAIX | OBJET | TS | Pizza and pasta,True,3,3,1.0,6,2616.952799999126
+paddle-cyrillic,syn_en_rotated_05.png,synthetic,en,rotated,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1612.1951000004628
+paddle-cyrillic,syn_en_rotated_06.png,synthetic,en,rotated,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,2257.433900000251
+paddle-cyrillic,syn_en_rotated_07.png,synthetic,en,rotated,Open,Open | ABF,True,1,1,1.0,2,1898.5800000009476
+paddle-cyrillic,syn_en_rotated_08.png,synthetic,en,rotated,Welcome,0 | Welcome,True,1,1,1.0,2,1890.9340999998676
+paddle-cyrillic,syn_en_rotated_09.png,synthetic,en,rotated,Open 24 hours,Open 24 hours,True,3,3,1.0,3,2123.4991000001173
+paddle-cyrillic,syn_en_rotated_10.png,synthetic,en,rotated,Ice cream,Ice cream,True,2,2,1.0,2,1893.1035999994492
+paddle-cyrillic,syn_en_rotated_11.png,synthetic,en,rotated,Sale up to 50%,Menú | Sale up to 50%,True,4,4,1.0,5,2339.9360999992496
+paddle-cyrillic,syn_en_rotated_12.png,synthetic,en,rotated,Pharmacy,Pharmacy | SPaten,True,1,1,1.0,2,2446.569300000192
+paddle-cyrillic,syn_en_rotated_13.png,synthetic,en,rotated,Fish and chips,Fish. and chips,True,3,3,1.0,3,1676.075100000162
+paddle-cyrillic,syn_en_rotated_14.png,synthetic,en,rotated,Main Street 15,HIGH PRESSURE | 400 | CEPICENTRUM | FIRE BRIGADE | 000 | 00 | A100- | Main Street 15,True,3,3,1.0,12,4255.574799999522
+paddle-cyrillic,syn_en_degraded_00.jpg,synthetic,en,degraded,Open,Open,True,1,1,1.0,1,1719.5421999986138
+paddle-cyrillic,syn_en_degraded_01.jpg,synthetic,en,degraded,Flower shop,M | Flower shop,True,2,2,1.0,3,2042.326899998443
+paddle-cyrillic,syn_en_degraded_02.jpg,synthetic,en,degraded,Hot dogs,Hot dogs,True,2,2,1.0,2,1691.4746000002197
+paddle-cyrillic,syn_en_degraded_03.jpg,synthetic,en,degraded,Bar and grill,Bar and grill,True,3,3,1.0,3,1685.7815999992454
+paddle-cyrillic,syn_en_degraded_04.jpg,synthetic,en,degraded,Tel. 555-0199,,False,3,0,0.0,0,1469.4509000000835
+paddle-cyrillic,syn_en_degraded_05.jpg,synthetic,en,degraded,Cash only,Cash only,True,2,2,1.0,2,1665.2948000009928
+paddle-cyrillic,syn_en_degraded_06.jpg,synthetic,en,degraded,Open 24 hours,pen | 24 hours,False,3,2,0.6666666666666666,3,2008.7199000008695
+paddle-cyrillic,syn_en_degraded_07.jpg,synthetic,en,degraded,Bike rental,Bike rental,True,2,2,1.0,2,1651.8490000016754
+paddle-cyrillic,syn_en_degraded_08.jpg,synthetic,en,degraded,Sale up to 50%,Sale up to 50%,True,4,4,1.0,4,1989.4682000012835
+paddle-cyrillic,syn_en_degraded_09.jpg,synthetic,en,degraded,Book store,Book store,True,2,2,1.0,2,1634.3440000000555
+paddle-cyrillic,syn_en_degraded_10.jpg,synthetic,en,degraded,Free Wi-Fi,Free Wi-Fi,True,3,3,1.0,3,1710.0635999995575
+paddle-cyrillic,syn_en_degraded_11.jpg,synthetic,en,degraded,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1659.4554999992397
+paddle-cyrillic,syn_en_degraded_12.jpg,synthetic,en,degraded,Take away,Take away | :,True,2,2,1.0,2,2019.8966000007204
+paddle-cyrillic,syn_en_degraded_13.jpg,synthetic,en,degraded,Pharmacy,Pharmacy,True,1,1,1.0,1,1710.1539000013872
+paddle-cyrillic,syn_en_degraded_14.jpg,synthetic,en,degraded,Central station,ntral-station,False,2,1,0.5,2,1706.08220000031
+paddle-cyrillic,test-images/ru-road-sign_1.jpg,real_photo,ru,real_photo,югорский мост обь длина ширина 2110,р.ОБЬ | ЮГОРСКИЙ | MOCT | ДЛИНА | 2110M | ШИРИНА | 14M | род | МОСТЫХМАО | ПОСТРОЙКИ: 2000,,6,6,1.0,12,4938.4014999996
+paddle-cyrillic,test-images/ru-road-sign_2.jpg,real_photo,ru,real_photo,двуречье,ДВУРЕЧЬЕ,,1,1,1.0,1,2467.4603000003117
+paddle-cyrillic,test-images/ru-road-sign_3.jpg,real_photo,ru,real_photo,красноармейск дмитров ногинск,KPACHOAPMEЙCK | ДМИТРОВ | HOГИHCK | A 107 | A 107 | 300M,,3,1,0.3333333333333333,8,4297.511699998722
+paddle-cyrillic,test-images/ru-road-sign_4.jpg,real_photo,ru,real_photo,плешаковский,ПЛЕШАКОВСКИЙ,,1,1,1.0,1,3344.6903999993083
+paddle-cyrillic,test-images/ru-road-sign_5.jpg,real_photo,ru,real_photo,полчаниновка,ПОЛЧАНИНОВКА,,1,1,1.0,1,2480.2632000009908
+paddle-cyrillic,test-images/ru-road-sign_6.jpg,real_photo,ru,real_photo,церковь троицы живоначальной church trinity,"0,3 | Церковь Троицы Живоначальной | Chrch o the Lie-Giving Trinity",,5,4,0.8,11,4169.018600001436
+paddle-cyrillic,test-images/ru-shop-sign_1.jpg,real_photo,ru,real_photo,товары повседневного спроса,КУНДЕАКТИ | KOOE | Y | - | KAЖET | . | БУНЫМДАРЫ | СПРОС | COOLED BY | Valeo,,3,0,0.0,9,5255.4858999992575
+paddle-cyrillic,test-images/ru-shop-sign_2.jpg,real_photo,ru,real_photo,продовольственный,ПРОДОВОЛЬСТВЕННЫИ,,1,0,0.0,1,2062.064499999906
+paddle-cyrillic,test-images/ru-shop-sign_3.jpg,real_photo,ru,real_photo,магазин спутник,МАГАЗИН | H | 0,,2,1,0.5,3,3377.745199999481
+paddle-cyrillic,test-images/ru-shop-sign_4.jpg,real_photo,ru,real_photo,спирт,b3n68n | СПИРТ | 34,,1,1,1.0,3,2779.7052999994776
+paddle-cyrillic,test-images/ru-shop-sign_5.jpg,real_photo,ru,real_photo,промтовар,,,1,0,0.0,0,2154.911899999206
+paddle-cyrillic,test-images/ru-shop-sign_6.jpg,real_photo,ru,real_photo,знание,,,1,0,0.0,0,2108.3865000000515
+paddle-cyrillic,test-images/board_apple_ru.png,real_board,ru,real_board,яблоко,Яблоко,,1,1,1.0,1,1394.9842000001809
+paddle-cyrillic,test-images/board_cat_ru.png,real_board,ru,real_board,кошка,Кошка,,1,1,1.0,1,1419.709400001011
+paddle-cyrillic,test-images/board_dog_ru.png,real_board,ru,real_board,собака,Собака,,1,1,1.0,1,1433.838700000706
+paddle-cyrillic,test-images/board_banana_ru.png,real_board,ru,real_board,банан,Банaн,,1,0,0.0,1,1395.2073000000382
+paddle-cyrillic,test-images/board_bicycle_ru.png,real_board,ru,real_board,велосипед,Велосипед,,1,1,1.0,1,1448.574699999881
+paddle-cyrillic,test-images/board_sunflower_ru.png,real_board,ru,real_board,подсолнух,Подсолнух,,1,1,1.0,1,1450.322300001062
+paddle-cyrillic,test-images/board_coffee_ru.png,real_board,ru,real_board,кофе,Кофе,,1,1,1.0,1,1429.091600000902
+paddle-cyrillic,test-images/board_pizza_ru.png,real_board,ru,real_board,пицца,Пицца,,1,1,1.0,1,1486.2148000011075
+paddle-cyrillic,test-images/board_apple_en.png,real_board,en,real_board,apple,Apple,,1,1,1.0,1,1413.0349999995815
+paddle-cyrillic,test-images/board_coffee_en.png,real_board,en,real_board,coffee,Coffee,,1,1,1.0,1,1403.6756999994395
+paddle-cyrillic,test-images/apple_1.jpg,negative,-,negative,,,,0,0,,0,3295.7523000004585
+paddle-cyrillic,test-images/banana_1.jpg,negative,-,negative,,3,,0,0,,1,2452.505100000053
+paddle-cyrillic,test-images/bicycle_1.jpg,negative,-,negative,,RARDO | HUB | BTSX | AGNN | 2. | MEE2M | MMM | VRFER | Ve | SEEN | NURe | MA | YOVA | ENG | N,,0,0,,15,7821.042700001271
+paddle-cyrillic,test-images/cat_1.jpg,negative,-,negative,,,,0,0,,0,2010.5574000008346
+paddle-cyrillic,test-images/coffee_1.jpg,negative,-,negative,,.,,0,0,,0,2527.064199999586
+paddle-cyrillic,test-images/dog_1.jpg,negative,-,negative,,,,0,0,,0,4238.063700000566
+paddle-cyrillic,test-images/mountain-lake_1.jpg,negative,-,negative,,,,0,0,,0,1859.8256000004767
+paddle-cyrillic,test-images/pizza_1.jpg,negative,-,negative,,,,0,0,,0,2064.432899998792
+paddle-cyrillic,test-images/sportscar_1.jpg,negative,-,negative,,VISIONÁR | VISIONARY | DORSCHE | PORSC | MUSEUM | . | 1.,,0,0,,6,3923.333700000512
+paddle-cyrillic,test-images/sunflower_1.jpg,negative,-,negative,,,,0,0,,0,2149.3065999984537
+paddle-server-det,syn_ru_clean_00.png,synthetic,ru,clean,Левый берег,Левый берег,True,2,2,1.0,2,23394.344999998793
+paddle-server-det,syn_ru_clean_01.png,synthetic,ru,clean,Книжный магазин,Книжный | магазин,True,2,2,1.0,2,23309.223199999906
+paddle-server-det,syn_ru_clean_02.png,synthetic,ru,clean,Двуречье,Двуречье,True,1,1,1.0,1,22996.187999999165
+paddle-server-det,syn_ru_clean_03.png,synthetic,ru,clean,Бар у моста,Бар у моста,True,3,3,1.0,3,23357.409800000823
+paddle-server-det,syn_ru_clean_04.png,synthetic,ru,clean,Хлеб,Хлеб,True,1,1,1.0,1,26297.9591000003
+paddle-server-det,syn_ru_clean_05.png,synthetic,ru,clean,Продукты,Продукты,True,1,1,1.0,1,26150.821499999438
+paddle-server-det,syn_ru_clean_06.png,synthetic,ru,clean,Цветы,Цветы,True,1,1,1.0,1,27732.66700000022
+paddle-server-det,syn_ru_clean_07.png,synthetic,ru,clean,Тел. 8-800-555-35-35,Тел. 8-800-555-35-35,True,6,6,1.0,6,29010.831800000233
+paddle-server-det,syn_ru_clean_08.png,synthetic,ru,clean,Не курить,Не курить,True,2,2,1.0,2,28134.587599999577
+paddle-server-det,syn_ru_clean_09.png,synthetic,ru,clean,Магазин Радуга,Магазин | Радуга,True,2,2,1.0,2,28560.87970000044
+paddle-server-det,syn_ru_clean_10.png,synthetic,ru,clean,Работаем без выходных,Работаем без выходных,True,3,3,1.0,3,26348.849500000142
+paddle-server-det,syn_ru_clean_11.png,synthetic,ru,clean,Кофе с собой,Кофе с собой,True,3,3,1.0,3,29183.955000000424
+paddle-server-det,syn_ru_clean_12.png,synthetic,ru,clean,Часы работы 9-21,Часы работы 9-21,True,4,4,1.0,4,27293.09740000099
+paddle-server-det,syn_ru_clean_13.png,synthetic,ru,clean,Электротовары,Электротовары,True,1,1,1.0,1,27760.46690000112
+paddle-server-det,syn_ru_clean_14.png,synthetic,ru,clean,"Улица Ленина, 15","Улица | Ленина, 15",True,3,3,1.0,3,24917.107999999644
+paddle-server-det,syn_ru_photo_00.png,synthetic,ru,photo,Аптека,Аптека | oo,True,1,1,1.0,2,29614.06200000056
+paddle-server-det,syn_ru_photo_01.png,synthetic,ru,photo,Цветы,Цветы,True,1,1,1.0,1,27299.986199999694
+paddle-server-det,syn_ru_photo_02.png,synthetic,ru,photo,Продукты,Продукты,True,1,1,1.0,1,28496.61439999909
+paddle-server-det,syn_ru_photo_03.png,synthetic,ru,photo,Часы работы 9-21,Часы работы 9-21 | NCE | ME TO DANCE | IT'S TIME TO DA | C3 | DEATH | MAYA | TEH | DON | TOIZ,True,4,4,1.0,19,25946.72200000059
+paddle-server-det,syn_ru_photo_04.png,synthetic,ru,photo,Пекарня №1,Пекарня №1,True,2,2,1.0,2,18695.599599999696
+paddle-server-det,syn_ru_photo_05.png,synthetic,ru,photo,Левый берег,Левый берег,True,2,2,1.0,2,16008.036899998842
+paddle-server-det,syn_ru_photo_06.png,synthetic,ru,photo,Выход,ВЫХОД,True,1,1,1.0,1,17820.08180000048
+paddle-server-det,syn_ru_photo_07.png,synthetic,ru,photo,Тел. 8-800-555-35-35,Тел. 8-800-555-35-35 | FAIRLADY | 2402 | 1970,True,6,6,1.0,9,16516.87309999943
+paddle-server-det,syn_ru_photo_08.png,synthetic,ru,photo,Книжный магазин,Книжный | магазин,True,2,2,1.0,2,15893.351599999733
+paddle-server-det,syn_ru_photo_09.png,synthetic,ru,photo,Добро пожаловать,Добро | пожаловать,True,2,2,1.0,2,15599.413699999786
+paddle-server-det,syn_ru_photo_10.png,synthetic,ru,photo,Электротовары,Электротовары,True,1,1,1.0,1,15816.646900000706
+paddle-server-det,syn_ru_photo_11.png,synthetic,ru,photo,"Чай, кофе, сладости","Чай, кофе, сладости",True,3,3,1.0,3,15244.02790000022
+paddle-server-det,syn_ru_photo_12.png,synthetic,ru,photo,Мясо и рыба,Мясо и рыба,True,3,3,1.0,3,15160.413800000242
+paddle-server-det,syn_ru_photo_13.png,synthetic,ru,photo,"Осторожно, ступенька",SnA4 | @YAMANA | NOKAIR | Осторожно | ступенька | -,True,2,2,1.0,5,16507.57429999976
+paddle-server-det,syn_ru_photo_14.png,synthetic,ru,photo,Вход со двора,Вход со двора | 3 | к | LucioBr.co,True,3,3,1.0,7,16034.474000000046
+paddle-server-det,syn_ru_small_00.png,synthetic,ru,small,Ремонт обуви,Ремонт обуви,True,2,2,1.0,2,15593.476199999714
+paddle-server-det,syn_ru_small_01.png,synthetic,ru,small,Кофе с собой,Кофе с собой,True,3,3,1.0,3,15470.25930000018
+paddle-server-det,syn_ru_small_02.png,synthetic,ru,small,Вход со двора,Вход со двора,True,3,3,1.0,3,15428.071799999088
+paddle-server-det,syn_ru_small_03.png,synthetic,ru,small,Левый берег,Левый берег,True,2,2,1.0,2,15761.352100000295
+paddle-server-det,syn_ru_small_04.png,synthetic,ru,small,Пекарня №1,GYIMANA | NOKAIR | Пекарня №1,True,2,2,1.0,4,16506.704100000206
+paddle-server-det,syn_ru_small_05.png,synthetic,ru,small,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,15464.710500000365
+paddle-server-det,syn_ru_small_06.png,synthetic,ru,small,"Улица Ленина, 15","Улица Ленина, 15",True,3,3,1.0,3,15537.302499998987
+paddle-server-det,syn_ru_small_07.png,synthetic,ru,small,Тел. 8-800-555-35-35,HIGH PRESSURE | EPICENRUM | FIRE BRIGADE | Тел. 8-800-555-35-35,True,6,6,1.0,11,16489.516299998286
+paddle-server-det,syn_ru_small_08.png,synthetic,ru,small,"Чай, кофе, сладости","Чай, кофе, сладости",True,3,3,1.0,3,15493.708800000604
+paddle-server-det,syn_ru_small_09.png,synthetic,ru,small,Цветы,Цветы | HIGH PRESSURE | EPICENRUM | FIRE BRIGADE,True,1,1,1.0,6,16793.717799999285
+paddle-server-det,syn_ru_small_10.png,synthetic,ru,small,Продукты,Продукты,True,1,1,1.0,1,15457.512400000269
+paddle-server-det,syn_ru_small_11.png,synthetic,ru,small,Аптека,Аптека,True,1,1,1.0,1,15433.022500001243
+paddle-server-det,syn_ru_small_12.png,synthetic,ru,small,Книжный магазин,Книжныймагазин | 21 | V | LucioBr.co,False,2,2,1.0,5,16526.61739999894
+paddle-server-det,syn_ru_small_13.png,synthetic,ru,small,Не курить,Не курить,True,2,2,1.0,2,15620.73319999945
+paddle-server-det,syn_ru_small_14.png,synthetic,ru,small,Горячие пирожки,Горячиепирожки,False,2,2,1.0,1,15470.284500001071
+paddle-server-det,syn_ru_rotated_00.png,synthetic,ru,rotated,"Осторожно, ступенька","Осторожно, ступенька",True,2,2,1.0,2,15649.856800000634
+paddle-server-det,syn_ru_rotated_01.png,synthetic,ru,rotated,Магазин Радуга,Магазин Радуга | FAIRLADY | 2402 | 1970,True,2,2,1.0,5,16080.137200000536
+paddle-server-det,syn_ru_rotated_02.png,synthetic,ru,rotated,Аптека,orbD | Аптека,True,1,1,1.0,2,15814.055099999678
+paddle-server-det,syn_ru_rotated_03.png,synthetic,ru,rotated,Горячие пирожки,Горячие пирожки,True,2,2,1.0,2,15312.874499999452
+paddle-server-det,syn_ru_rotated_04.png,synthetic,ru,rotated,Пекарня №1,Пекарня №1,True,2,2,1.0,2,15757.54229999984
+paddle-server-det,syn_ru_rotated_05.png,synthetic,ru,rotated,"Улица Ленина, 15","Улица Ленина, 15",True,3,3,1.0,3,17102.54680000071
+paddle-server-det,syn_ru_rotated_06.png,synthetic,ru,rotated,Добро пожаловать,ISLS | RR100 | пожаловать | Добро,False,2,2,1.0,4,16295.905999999377
+paddle-server-det,syn_ru_rotated_07.png,synthetic,ru,rotated,Кофе с собой,Кофе с собой,True,3,3,1.0,3,16549.751299999116
+paddle-server-det,syn_ru_rotated_08.png,synthetic,ru,rotated,Книжный магазин,Menú | Книжный магазин,True,2,2,1.0,3,16714.98210000027
+paddle-server-det,syn_ru_rotated_09.png,synthetic,ru,rotated,Парикмахерская,Парикмахерская,True,1,1,1.0,1,17437.56140000005
+paddle-server-det,syn_ru_rotated_10.png,synthetic,ru,rotated,Не курить,2T | Не курить,True,2,2,1.0,3,21149.695400001292
+paddle-server-det,syn_ru_rotated_11.png,synthetic,ru,rotated,Бар у моста,Бару моста,False,3,3,1.0,2,32513.6020000009
+paddle-server-det,syn_ru_rotated_12.png,synthetic,ru,rotated,Мясо и рыба,Мясо и рыба | @YAMANA | NOKAU,True,3,3,1.0,5,33316.60229999943
+paddle-server-det,syn_ru_rotated_13.png,synthetic,ru,rotated,Выход,ВыХОД,True,1,1,1.0,1,29215.543199998137
+paddle-server-det,syn_ru_rotated_14.png,synthetic,ru,rotated,Станция метро,HIGH PRESSURE | EPICENRUM | U | FIRE BRIGADE | Станцияметро,False,2,2,1.0,7,29598.787800001446
+paddle-server-det,syn_ru_degraded_00.jpg,synthetic,ru,degraded,Бар у моста,Бар у моста | LucioBr.co,True,3,3,1.0,5,27109.168399998453
+paddle-server-det,syn_ru_degraded_01.jpg,synthetic,ru,degraded,Двуречье,Двуречье,True,1,1,1.0,1,24423.50230000011
+paddle-server-det,syn_ru_degraded_02.jpg,synthetic,ru,degraded,Работаем без выходных,7 | 4 | . | Работаем без выходных,True,3,3,1.0,5,25847.56389999893
+paddle-server-det,syn_ru_degraded_03.jpg,synthetic,ru,degraded,"Улица Ленина, 15","Улица Ленина, 15",True,3,3,1.0,3,24656.654499998695
+paddle-server-det,syn_ru_degraded_04.jpg,synthetic,ru,degraded,Станция метро,станция метро | ucioBr.co | E,True,2,2,1.0,5,24573.737299997447
+paddle-server-det,syn_ru_degraded_05.jpg,synthetic,ru,degraded,Цветы,Цветы,True,1,1,1.0,1,23511.384299999918
+paddle-server-det,syn_ru_degraded_06.jpg,synthetic,ru,degraded,Кофе с собой,Mend | Кофес собой,False,3,3,1.0,3,23798.86649999753
+paddle-server-det,syn_ru_degraded_07.jpg,synthetic,ru,degraded,Мясо и рыба,Мясо и рыба,True,3,3,1.0,3,24116.067200000543
+paddle-server-det,syn_ru_degraded_08.jpg,synthetic,ru,degraded,Часы работы 9-21,PRICE | RMB | 68 | A | TIBETSPRINC | 5100 | 0B | Часы работы 9-21 | cex | F,True,4,4,1.0,13,27645.78999999867
+paddle-server-det,syn_ru_degraded_09.jpg,synthetic,ru,degraded,Горячие пирожки,Горячиепирожки,False,2,2,1.0,1,24579.94609999878
+paddle-server-det,syn_ru_degraded_10.jpg,synthetic,ru,degraded,"Чай, кофе, сладости",Чайкофе сладости | EUAT,False,3,3,1.0,3,24942.72720000299
+paddle-server-det,syn_ru_degraded_11.jpg,synthetic,ru,degraded,Левый берег,Левый берег,True,2,2,1.0,2,23477.858500002185
+paddle-server-det,syn_ru_degraded_12.jpg,synthetic,ru,degraded,Тел. 8-800-555-35-35,AATARI | 5F35 | Тeл. 8-800-555-35-35,False,6,5,0.8333333333333334,8,24821.220900001208
+paddle-server-det,syn_ru_degraded_13.jpg,synthetic,ru,degraded,Парикмахерская,Парикмахерская,True,1,1,1.0,1,24011.826300000394
+paddle-server-det,syn_ru_degraded_14.jpg,synthetic,ru,degraded,Магазин Радуга,Магазин Радуга,True,2,2,1.0,2,23694.42970000091
+paddle-server-det,syn_en_clean_00.png,synthetic,en,clean,Beware of the dog,Beware of the dog,True,4,4,1.0,4,24741.316800002096
+paddle-server-det,syn_en_clean_01.png,synthetic,en,clean,No parking,No parking,True,2,2,1.0,2,24552.878300000884
+paddle-server-det,syn_en_clean_02.png,synthetic,en,clean,Pharmacy,Pharmacy,True,1,1,1.0,1,23777.329500000633
+paddle-server-det,syn_en_clean_03.png,synthetic,en,clean,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,23504.74839999879
+paddle-server-det,syn_en_clean_04.png,synthetic,en,clean,Take away,Take away,True,2,2,1.0,2,24876.661800000875
+paddle-server-det,syn_en_clean_05.png,synthetic,en,clean,Exit,Exit,True,1,1,1.0,1,23860.278899999685
+paddle-server-det,syn_en_clean_06.png,synthetic,en,clean,Pizza and pasta,Pizza and pasta,True,3,3,1.0,3,23759.60540000233
+paddle-server-det,syn_en_clean_07.png,synthetic,en,clean,Ice cream,Ice cream,True,2,2,1.0,2,23816.16319999739
+paddle-server-det,syn_en_clean_08.png,synthetic,en,clean,Open,Open,True,1,1,1.0,1,23580.3190000006
+paddle-server-det,syn_en_clean_09.png,synthetic,en,clean,Bike rental,Bike | rental,True,2,2,1.0,2,24431.442199998855
+paddle-server-det,syn_en_clean_10.png,synthetic,en,clean,Open 24 hours,Open 24 hours,True,3,3,1.0,3,23829.815000000963
+paddle-server-det,syn_en_clean_11.png,synthetic,en,clean,Fresh bakery,Fresh bakery,True,2,2,1.0,2,23480.617000001075
+paddle-server-det,syn_en_clean_12.png,synthetic,en,clean,Free Wi-Fi,Free Wi-Fi,True,3,3,1.0,3,23672.278400001233
+paddle-server-det,syn_en_clean_13.png,synthetic,en,clean,Main Street 15,Main Street 15,True,3,3,1.0,3,23953.81610000186
+paddle-server-det,syn_en_clean_14.png,synthetic,en,clean,Central station,Central station,True,2,2,1.0,2,23810.4373999995
+paddle-server-det,syn_en_photo_00.png,synthetic,en,photo,Fish and chips,Fish and chips,True,3,3,1.0,3,15676.66090000057
+paddle-server-det,syn_en_photo_01.png,synthetic,en,photo,Fresh bakery,Fresh | bakery,True,2,2,1.0,2,15226.468900000327
+paddle-server-det,syn_en_photo_02.png,synthetic,en,photo,Main Street 15,Main Street 15,True,3,3,1.0,3,15246.558099999675
+paddle-server-det,syn_en_photo_03.png,synthetic,en,photo,Keep out,PAIX | OBJET | TS | S | Keep out,True,2,2,1.0,6,16507.201299998997
+paddle-server-det,syn_en_photo_04.png,synthetic,en,photo,Bar and grill,@YAMANA | NOKAU | Bar and grill,True,3,3,1.0,5,16112.656500001322
+paddle-server-det,syn_en_photo_05.png,synthetic,en,photo,Hot dogs,Hot dogs,True,2,2,1.0,2,15022.032799999579
+paddle-server-det,syn_en_photo_06.png,synthetic,en,photo,Sale up to 50%,Sale up | 50%,False,4,3,0.75,3,15524.285499999678
+paddle-server-det,syn_en_photo_07.png,synthetic,en,photo,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,15589.071400001558
+paddle-server-det,syn_en_photo_08.png,synthetic,en,photo,Pizza and pasta,"ррзрорзрзедрезезезезед езе зе зезе зедезезе зезе зе | KreT | kreton""ES | 4GB DDR3-1333-CL9 | PC10600S-9990 | KTH400SC0825-1333A | 0090L1 | 104O0 | 89024X | bias | змое | Made in Taiwan | Warantyvois& removed | RoHS | ЗЕЭбЗШ | 50060 | Doola | 0070111 | 89021X | Da | 3 | 2E0-59F9E064 | EEPION | ELPIOACHN | 02840892011 | 088F80 | J11OREFI | 3-00- | 0180110 | DDRIII | 2GB-1333 | 0V0T | ASint | TM | SSZ3128M8-EDJEF | Warranty | Void if | Removed | Pizza | and | pasta | ИKЖЧ | С | бЭ",True,3,3,1.0,64,29679.958100001386
+paddle-server-det,syn_en_photo_09.png,synthetic,en,photo,Open 24 hours,Open 24 hours,True,3,3,1.0,3,16276.075699999637
+paddle-server-det,syn_en_photo_10.png,synthetic,en,photo,Pharmacy,PAIX | OBJET | TS | Pharmacy,True,1,1,1.0,4,24554.176100002223
+paddle-server-det,syn_en_photo_11.png,synthetic,en,photo,Shoe repair,Shoe repair,True,2,2,1.0,2,15491.018700002314
+paddle-server-det,syn_en_photo_12.png,synthetic,en,photo,Opening hours 9-21,Opening | hours | 9-21,True,4,4,1.0,4,15415.131500001735
+paddle-server-det,syn_en_photo_13.png,synthetic,en,photo,Welcome,Welcome,True,1,1,1.0,1,16689.726199998404
+paddle-server-det,syn_en_photo_14.png,synthetic,en,photo,Open,FordFocus | DER523 | HU-4407 | argz | Open,True,1,1,1.0,6,16471.704799998406
+paddle-server-det,syn_en_small_00.png,synthetic,en,small,Open 24 hours,Open 24 hours,True,3,3,1.0,3,15627.713199999562
+paddle-server-det,syn_en_small_01.png,synthetic,en,small,Coffee to go,Coffee to go,True,3,3,1.0,3,15599.465399998735
+paddle-server-det,syn_en_small_02.png,synthetic,en,small,Keep out,Keep out,True,2,2,1.0,2,16867.332000001625
+paddle-server-det,syn_en_small_03.png,synthetic,en,small,Welcome,PAIX | OBJET | TS | S | Welcome,True,1,1,1.0,5,17535.52750000017
+paddle-server-det,syn_en_small_04.png,synthetic,en,small,Sale up to 50%,Sale up to 50% | A&F | THLETICY,True,4,4,1.0,7,17036.805199997616
+paddle-server-det,syn_en_small_05.png,synthetic,en,small,Beware of the dog,Beware of the dog,True,4,4,1.0,4,16774.821500002872
+paddle-server-det,syn_en_small_06.png,synthetic,en,small,Shoe repair,Shoe repair,True,2,2,1.0,2,16694.41409999854
+paddle-server-det,syn_en_small_07.png,synthetic,en,small,City Museum,City Museum,True,2,2,1.0,2,16638.451500002702
+paddle-server-det,syn_en_small_08.png,synthetic,en,small,Central station,Central station,True,2,2,1.0,2,16721.99399999954
+paddle-server-det,syn_en_small_09.png,synthetic,en,small,Opening hours 9-21,Opening hours 9-21 | FAIRLADY | 2402 | 1970,True,4,4,1.0,7,17668.430899997475
+paddle-server-det,syn_en_small_10.png,synthetic,en,small,Open,MATARI | LA | 520ST | 5F35 | COMPUTER | Open | OWNER'S MANUAL,True,1,1,1.0,9,17853.8890000018
+paddle-server-det,syn_en_small_11.png,synthetic,en,small,Tel. 555-0199,2 | V | Tel. 555-0199 | LucioBr.co,True,3,3,1.0,7,17447.786100001395
+paddle-server-det,syn_en_small_12.png,synthetic,en,small,Car wash,Car wash,True,2,2,1.0,2,16703.31670000087
+paddle-server-det,syn_en_small_13.png,synthetic,en,small,Book store,Book store,True,2,2,1.0,2,16803.121699998883
+paddle-server-det,syn_en_small_14.png,synthetic,en,small,Free Wi-Fi,Free Wi-Fi | FordFocus | DE-523 | b | HU-4407 | argat,True,3,3,1.0,10,17899.10510000118
+paddle-server-det,syn_en_rotated_00.png,synthetic,en,rotated,Bar and grill,Barand grill,False,3,3,1.0,2,16835.684100002254
+paddle-server-det,syn_en_rotated_01.png,synthetic,en,rotated,No parking,No parking,True,2,2,1.0,2,15541.157699997711
+paddle-server-det,syn_en_rotated_02.png,synthetic,en,rotated,Coffee to go,Coffee to go | q | so,True,3,3,1.0,5,14382.260200000019
+paddle-server-det,syn_en_rotated_03.png,synthetic,en,rotated,Take away,Take away,True,2,2,1.0,2,14213.75099999932
+paddle-server-det,syn_en_rotated_04.png,synthetic,en,rotated,Pizza and pasta,PAIX | OBJET | TS | S | Pizza and pasta,True,3,3,1.0,7,15684.099300000526
+paddle-server-det,syn_en_rotated_05.png,synthetic,en,rotated,Fresh bakery,Fresh bakery,True,2,2,1.0,2,15110.382899998513
+paddle-server-det,syn_en_rotated_06.png,synthetic,en,rotated,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,15187.840599999618
+paddle-server-det,syn_en_rotated_07.png,synthetic,en,rotated,Open,Open | A&F | THLETICY,True,1,1,1.0,4,15715.110000001005
+paddle-server-det,syn_en_rotated_08.png,synthetic,en,rotated,Welcome,Welcome,True,1,1,1.0,1,15202.777200000128
+paddle-server-det,syn_en_rotated_09.png,synthetic,en,rotated,Open 24 hours,Open 24 hours,True,3,3,1.0,3,15321.11409999925
+paddle-server-det,syn_en_rotated_10.png,synthetic,en,rotated,Ice cream,Ice cream,True,2,2,1.0,2,14753.617099999246
+paddle-server-det,syn_en_rotated_11.png,synthetic,en,rotated,Sale up to 50%,Menú | Sale up to 50%,True,4,4,1.0,5,15205.99829999992
+paddle-server-det,syn_en_rotated_12.png,synthetic,en,rotated,Pharmacy,m | p | tipbiienh | Tuhalfaslin | 2 | e | Pharmacy | sPatien,True,1,1,1.0,8,16620.907199998328
+paddle-server-det,syn_en_rotated_13.png,synthetic,en,rotated,Fish and chips,Fish. and chips,True,3,3,1.0,3,15176.708300001337
+paddle-server-det,syn_en_rotated_14.png,synthetic,en,rotated,Main Street 15,HIGH PRESSURE | EPICENRUM | FIRE BRIGADE | Main Street 15,True,3,3,1.0,8,16630.521700000827
+paddle-server-det,syn_en_degraded_00.jpg,synthetic,en,degraded,Open,Open,True,1,1,1.0,1,19507.46739999886
+paddle-server-det,syn_en_degraded_01.jpg,synthetic,en,degraded,Flower shop,Flower shop,True,2,2,1.0,2,19406.470699999772
+paddle-server-det,syn_en_degraded_02.jpg,synthetic,en,degraded,Hot dogs,Hot dogs,True,2,2,1.0,2,18727.756899999804
+paddle-server-det,syn_en_degraded_03.jpg,synthetic,en,degraded,Bar and grill,Bar and grill,True,3,3,1.0,3,18509.15950000126
+paddle-server-det,syn_en_degraded_04.jpg,synthetic,en,degraded,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,16655.446299999312
+paddle-server-det,syn_en_degraded_05.jpg,synthetic,en,degraded,Cash only,Cash only,True,2,2,1.0,2,15674.516999999469
+paddle-server-det,syn_en_degraded_06.jpg,synthetic,en,degraded,Open 24 hours,Open 24 hours,True,3,3,1.0,3,14903.384600002028
+paddle-server-det,syn_en_degraded_07.jpg,synthetic,en,degraded,Bike rental,Bike rental,True,2,2,1.0,2,14232.894400000077
+paddle-server-det,syn_en_degraded_08.jpg,synthetic,en,degraded,Sale up to 50%,Sale up to 50%,True,4,4,1.0,4,14292.775599999004
+paddle-server-det,syn_en_degraded_09.jpg,synthetic,en,degraded,Book store,Book store,True,2,2,1.0,2,14097.983199997543
+paddle-server-det,syn_en_degraded_10.jpg,synthetic,en,degraded,Free Wi-Fi,Free Wi-Fi,True,3,3,1.0,3,14383.012999998755
+paddle-server-det,syn_en_degraded_11.jpg,synthetic,en,degraded,Fresh bakery,Fresh bakery,True,2,2,1.0,2,14666.30399999849
+paddle-server-det,syn_en_degraded_12.jpg,synthetic,en,degraded,Take away,Take away,True,2,2,1.0,2,15298.803699999553
+paddle-server-det,syn_en_degraded_13.jpg,synthetic,en,degraded,Pharmacy,Pharmacy,True,1,1,1.0,1,14821.848399998999
+paddle-server-det,syn_en_degraded_14.jpg,synthetic,en,degraded,Central station,1,False,2,0,0.0,1,15143.443000000843
+paddle-server-det,test-images/ru-road-sign_1.jpg,real_photo,ru,real_photo,югорский мост обь длина ширина 2110,p. | ОБЬ | ЮГОРСКИЙ | MOCT | ДЛИНА | 2110M | ШУРИНА | 14M | род | МОСТЫ ХМАО | ПОСТРОЙКИ: 2000,,6,5,0.8333333333333334,13,24674.250699998083
+paddle-server-det,test-images/ru-road-sign_2.jpg,real_photo,ru,real_photo,двуречье,ДВУРЕЧЬЕ,,1,1,1.0,1,25120.321800000966
+paddle-server-det,test-images/ru-road-sign_3.jpg,real_photo,ru,real_photo,красноармейск дмитров ногинск,KPACHOAPMEЙCK | ДМИТРОВ | HOFИHCK | A 107 | A 107 | 300M,,3,1,0.3333333333333333,8,27518.791800001054
+paddle-server-det,test-images/ru-road-sign_4.jpg,real_photo,ru,real_photo,плешаковский,ПЛЕШАКОВСКИЙ,,1,1,1.0,1,24538.251400001172
+paddle-server-det,test-images/ru-road-sign_5.jpg,real_photo,ru,real_photo,полчаниновка,ПОЛЧАНИНОВКА,,1,1,1.0,1,26131.556100001035
+paddle-server-det,test-images/ru-road-sign_6.jpg,real_photo,ru,real_photo,церковь троицы живоначальной church trinity,"0,3 | Живоначальной | Троицы | Trinity | -Giving | Церковь | the | Life | Church | of",,5,5,1.0,11,25375.865599999088
+paddle-server-det,test-images/ru-shop-sign_1.jpg,real_photo,ru,real_photo,товары повседневного спроса,КУНДЕАКТ | KOOE | ТОВАРЫ | КАЖEТ | ПОВСЕДНЕВНОГО | БУИЫМДАРЫ | СПРОСА | Valeo | COOLED BY,,3,3,1.0,10,17930.426799997804
+paddle-server-det,test-images/ru-shop-sign_2.jpg,real_photo,ru,real_photo,продовольственный,ПРОДОВОПЬСТВЕННЫИ,,1,0,0.0,1,17454.9866999987
+paddle-server-det,test-images/ru-shop-sign_3.jpg,real_photo,ru,real_photo,магазин спутник,МАГАЗИН | Сnутник,,2,1,0.5,2,21624.956899999233
+paddle-server-det,test-images/ru-shop-sign_4.jpg,real_photo,ru,real_photo,спирт,bmon | СПИРТ | O4,,1,1,1.0,3,23605.760399997962
+paddle-server-det,test-images/ru-shop-sign_5.jpg,real_photo,ru,real_photo,промтовар,,,1,0,0.0,0,25167.507599999226
+paddle-server-det,test-images/ru-shop-sign_6.jpg,real_photo,ru,real_photo,знание,,,1,0,0.0,0,22294.72480000186
+paddle-server-det,test-images/board_apple_ru.png,real_board,ru,real_board,яблоко,Яблоко,,1,1,1.0,1,14035.002600001462
+paddle-server-det,test-images/board_cat_ru.png,real_board,ru,real_board,кошка,Кошка,,1,1,1.0,1,14013.141299998097
+paddle-server-det,test-images/board_dog_ru.png,real_board,ru,real_board,собака,Собака,,1,1,1.0,1,14218.796199998906
+paddle-server-det,test-images/board_banana_ru.png,real_board,ru,real_board,банан,Bанан,,1,0,0.0,1,13575.049600000057
+paddle-server-det,test-images/board_bicycle_ru.png,real_board,ru,real_board,велосипед,Велосипед,,1,1,1.0,1,12736.340499999642
+paddle-server-det,test-images/board_sunflower_ru.png,real_board,ru,real_board,подсолнух,Подсолнух,,1,1,1.0,1,12163.311699998303
+paddle-server-det,test-images/board_coffee_ru.png,real_board,ru,real_board,кофе,Кофе,,1,1,1.0,1,11792.498899998463
+paddle-server-det,test-images/board_pizza_ru.png,real_board,ru,real_board,пицца,Пицца,,1,1,1.0,1,11823.732799999561
+paddle-server-det,test-images/board_apple_en.png,real_board,en,real_board,apple,Apple,,1,1,1.0,1,12279.586500000732
+paddle-server-det,test-images/board_coffee_en.png,real_board,en,real_board,coffee,Coffee,,1,1,1.0,1,13627.88670000009
+paddle-server-det,test-images/apple_1.jpg,negative,-,negative,,,,0,0,,0,31833.873100000346
+paddle-server-det,test-images/banana_1.jpg,negative,-,negative,,2-7. | T,,0,0,,3,27083.914700000605
+paddle-server-det,test-images/bicycle_1.jpg,negative,-,negative,,HUB | RADG | SFSIKPFER | AGA | YEn | MMM& | DUNCAN.AGESI.PAULS | SEEN | Me | NEKTI | YOVA | EN | EN,,0,0,,15,31990.8448999995
+paddle-server-det,test-images/cat_1.jpg,negative,-,negative,,,,0,0,,0,25311.424600000464
+paddle-server-det,test-images/coffee_1.jpg,negative,-,negative,,,,0,0,,0,28738.01319999984
+paddle-server-det,test-images/dog_1.jpg,negative,-,negative,,,,0,0,,0,53935.588299998926
+paddle-server-det,test-images/mountain-lake_1.jpg,negative,-,negative,,,,0,0,,0,24180.9202000004
+paddle-server-det,test-images/pizza_1.jpg,negative,-,negative,,,,0,0,,0,27567.231000000902
+paddle-server-det,test-images/sportscar_1.jpg,negative,-,negative,,VISIONÄR | VISIONARY | DRVE | LEGENDAR | LEGENDARY | - | f s | с н | POOSCHE | T | PORSCHE | MUSEUM | L,,0,0,,14,27549.369199998182
+paddle-server-det,test-images/sunflower_1.jpg,negative,-,negative,,,,0,0,,0,25100.566199998866
+paddle-v3-cyrillic,syn_ru_clean_00.png,synthetic,ru,clean,Левый берег,Левый берег,True,2,2,1.0,2,1139.9778999984846
+paddle-v3-cyrillic,syn_ru_clean_01.png,synthetic,ru,clean,Книжный магазин,нижный | магазин,False,2,1,0.5,2,1315.0748000007297
+paddle-v3-cyrillic,syn_ru_clean_02.png,synthetic,ru,clean,Двуречье,вуречье,False,1,0,0.0,1,1177.9676000005566
+paddle-v3-cyrillic,syn_ru_clean_03.png,synthetic,ru,clean,Бар у моста,ар у моста,False,3,2,0.6666666666666666,3,1117.000199999893
+paddle-v3-cyrillic,syn_ru_clean_04.png,synthetic,ru,clean,Хлеб,Хлеб,True,1,1,1.0,1,1131.6391000000294
+paddle-v3-cyrillic,syn_ru_clean_05.png,synthetic,ru,clean,Продукты,родукты,False,1,0,0.0,1,1106.82259999885
+paddle-v3-cyrillic,syn_ru_clean_06.png,synthetic,ru,clean,Цветы,веты,False,1,0,0.0,1,1144.3962000012107
+paddle-v3-cyrillic,syn_ru_clean_07.png,synthetic,ru,clean,Тел. 8-800-555-35-35,TeJ. | 8-800-555-35-35,False,6,5,0.8333333333333334,6,1384.4625999990967
+paddle-v3-cyrillic,syn_ru_clean_08.png,synthetic,ru,clean,Не курить,Hе кyриTь,False,2,0,0.0,2,1124.7073999984423
+paddle-v3-cyrillic,syn_ru_clean_09.png,synthetic,ru,clean,Магазин Радуга,Магазин | Радуга,True,2,2,1.0,2,1258.9683000005607
+paddle-v3-cyrillic,syn_ru_clean_10.png,synthetic,ru,clean,Работаем без выходных,Pаботаем без Bыходных,False,3,1,0.3333333333333333,3,1266.6768000017328
+paddle-v3-cyrillic,syn_ru_clean_11.png,synthetic,ru,clean,Кофе с собой,Kофe c cобой,False,3,0,0.0,3,1209.5671000024595
+paddle-v3-cyrillic,syn_ru_clean_12.png,synthetic,ru,clean,Часы работы 9-21,Yacb1 pa6оTb1 9-21,False,4,2,0.5,4,1143.2913999997254
+paddle-v3-cyrillic,syn_ru_clean_13.png,synthetic,ru,clean,Электротовары,электротовары,True,1,1,1.0,1,1167.8766000004543
+paddle-v3-cyrillic,syn_ru_clean_14.png,synthetic,ru,clean,"Улица Ленина, 15",Yлица Jенина | 15,False,3,1,0.3333333333333333,3,1363.3527000019967
+paddle-v3-cyrillic,syn_ru_photo_00.png,synthetic,ru,photo,Аптека,Aптека | иеар | шso?,False,1,0,0.0,3,1556.865900001867
+paddle-v3-cyrillic,syn_ru_photo_01.png,synthetic,ru,photo,Цветы,веты,False,1,0,0.0,1,1117.8020000006654
+paddle-v3-cyrillic,syn_ru_photo_02.png,synthetic,ru,photo,Продукты,родукты,False,1,0,0.0,1,1129.0349999981117
+paddle-v3-cyrillic,syn_ru_photo_03.png,synthetic,ru,photo,Часы работы 9-21,H | н | Yасы работыг9:2 | NCE | IME TO DANCEEIT'S TIME TO DE | N | ? | юсю | т,False,4,2,0.5,16,2444.2268000020704
+paddle-v3-cyrillic,syn_ru_photo_04.png,synthetic,ru,photo,Пекарня №1,eкapHя No,False,2,0,0.0,2,1129.118600001675
+paddle-v3-cyrillic,syn_ru_photo_05.png,synthetic,ru,photo,Левый берег,Левый берег | I,True,2,2,1.0,3,1243.2957000019087
+paddle-v3-cyrillic,syn_ru_photo_06.png,synthetic,ru,photo,Выход,Bыход,False,1,0,0.0,1,1093.2291999997688
+paddle-v3-cyrillic,syn_ru_photo_07.png,synthetic,ru,photo,Тел. 8-800-555-35-35,Teл.8-800-555-35-35 | FAIRLAD | й | g,False,6,5,0.8333333333333334,9,1869.1238999999769
+paddle-v3-cyrillic,syn_ru_photo_08.png,synthetic,ru,photo,Книжный магазин,нижный | магазин,False,2,1,0.5,2,1421.173099999578
+paddle-v3-cyrillic,syn_ru_photo_09.png,synthetic,ru,photo,Добро пожаловать,Добро пожаловать,True,2,2,1.0,2,1145.7807000006142
+paddle-v3-cyrillic,syn_ru_photo_10.png,synthetic,ru,photo,Электротовары,х | х | I statice. | i. | aa! | Электротовары,True,1,1,1.0,7,2026.609799999278
+paddle-v3-cyrillic,syn_ru_photo_11.png,synthetic,ru,photo,"Чай, кофе, сладости","Yай, koфe, cлaдocти",False,3,0,0.0,3,1196.9321999968088
+paddle-v3-cyrillic,syn_ru_photo_12.png,synthetic,ru,photo,Мясо и рыба,Mясои рыба,False,3,2,0.6666666666666666,2,1172.3839000005682
+paddle-v3-cyrillic,syn_ru_photo_13.png,synthetic,ru,photo,"Осторожно, ступенька",Tour | Oсторожно | ступенька,False,2,1,0.5,3,1621.360299999651
+paddle-v3-cyrillic,syn_ru_photo_14.png,synthetic,ru,photo,Вход со двора,Bходсодвора | г | LucioBrc.,False,3,2,0.6666666666666666,3,1352.8369999985443
+paddle-v3-cyrillic,syn_ru_small_00.png,synthetic,ru,small,Ремонт обуви,Pемонт обуви,False,2,1,0.5,2,1849.8290999996243
+paddle-v3-cyrillic,syn_ru_small_01.png,synthetic,ru,small,Кофе с собой,Кофe ссо6ой,False,3,1,0.3333333333333333,2,1160.968000000139
+paddle-v3-cyrillic,syn_ru_small_02.png,synthetic,ru,small,Вход со двора,Bход содвора,False,3,2,0.6666666666666666,2,1174.195999999938
+paddle-v3-cyrillic,syn_ru_small_03.png,synthetic,ru,small,Левый берег,Левыйберег,False,2,2,1.0,1,1133.520799998223
+paddle-v3-cyrillic,syn_ru_small_04.png,synthetic,ru,small,Пекарня №1,Egtn. | екapHя N8,False,2,0,0.0,3,1401.0145000029297
+paddle-v3-cyrillic,syn_ru_small_05.png,synthetic,ru,small,Добро пожаловать,Добропожаловать,False,2,2,1.0,1,1169.7143999990658
+paddle-v3-cyrillic,syn_ru_small_06.png,synthetic,ru,small,"Улица Ленина, 15","Yлица Ленина, 15",False,3,2,0.6666666666666666,3,1163.150600001245
+paddle-v3-cyrillic,syn_ru_small_07.png,synthetic,ru,small,Тел. 8-800-555-35-35,"Hsh pressurE | Iee | ен | eelfcghee ui | ffeeifi.ede | E | е | Iee if | Te1, 8-800-555-35-35",False,6,5,0.8333333333333334,18,2333.242099997733
+paddle-v3-cyrillic,syn_ru_small_08.png,synthetic,ru,small,"Чай, кофе, сладости","бй | Yай,кофe,сладоси",False,3,0,0.0,4,1743.3798999991268
+paddle-v3-cyrillic,syn_ru_small_09.png,synthetic,ru,small,Цветы,веты | Hieh pressuhe | Iiee | Ieрlicgхr u | ffeeifi.ede | E | е | Iee if,False,1,0,0.0,12,2138.439999998809
+paddle-v3-cyrillic,syn_ru_small_10.png,synthetic,ru,small,Продукты,родукты,False,1,0,0.0,1,1198.69060000201
+paddle-v3-cyrillic,syn_ru_small_11.png,synthetic,ru,small,Аптека,Aлтеkа,False,1,0,0.0,1,1246.5090999976383
+paddle-v3-cyrillic,syn_ru_small_12.png,synthetic,ru,small,Книжный магазин,Книжныймагазин | I | Ife | не | LucioBrc.,False,2,2,1.0,5,1938.3453000009467
+paddle-v3-cyrillic,syn_ru_small_13.png,synthetic,ru,small,Не курить,екурить,False,2,1,0.5,1,1143.8054999998712
+paddle-v3-cyrillic,syn_ru_small_14.png,synthetic,ru,small,Горячие пирожки,орячиепирожки,False,2,1,0.5,1,1119.607000000542
+paddle-v3-cyrillic,syn_ru_rotated_00.png,synthetic,ru,rotated,"Осторожно, ступенька",cOpOжHO. | ступенька,False,2,1,0.5,2,1467.3347999996622
+paddle-v3-cyrillic,syn_ru_rotated_01.png,synthetic,ru,rotated,Магазин Радуга,МагазинРадуга | FAIRLAD | ц,False,2,2,1.0,3,1652.544399999897
+paddle-v3-cyrillic,syn_ru_rotated_02.png,synthetic,ru,rotated,Аптека,рь | Aлтekа,False,1,0,0.0,2,1271.113199996762
+paddle-v3-cyrillic,syn_ru_rotated_03.png,synthetic,ru,rotated,Горячие пирожки,орячиеирожки,False,2,0,0.0,1,1215.8906999975443
+paddle-v3-cyrillic,syn_ru_rotated_04.png,synthetic,ru,rotated,Пекарня №1,eкapH: N9,False,2,0,0.0,2,1148.4128999982204
+paddle-v3-cyrillic,syn_ru_rotated_05.png,synthetic,ru,rotated,"Улица Ленина, 15",,False,3,0,0.0,0,1044.1248999995878
+paddle-v3-cyrillic,syn_ru_rotated_06.png,synthetic,ru,rotated,Добро пожаловать,Добро пожаловатђ,False,2,1,0.5,2,1197.6699000006192
+paddle-v3-cyrillic,syn_ru_rotated_07.png,synthetic,ru,rotated,Кофе с собой,Koфe c cобoй,False,3,0,0.0,3,1152.2494000018924
+paddle-v3-cyrillic,syn_ru_rotated_08.png,synthetic,ru,rotated,Книжный магазин,Ment | магазин,False,2,1,0.5,2,1228.4475000014936
+paddle-v3-cyrillic,syn_ru_rotated_09.png,synthetic,ru,rotated,Парикмахерская,арикмахерская,False,1,0,0.0,1,1338.7240000010934
+paddle-v3-cyrillic,syn_ru_rotated_10.png,synthetic,ru,rotated,Не курить,Hе куриTь,False,2,0,0.0,2,1871.9621000018378
+paddle-v3-cyrillic,syn_ru_rotated_11.png,synthetic,ru,rotated,Бар у моста,,False,3,0,0.0,0,1043.928799997957
+paddle-v3-cyrillic,syn_ru_rotated_12.png,synthetic,ru,rotated,Мясо и рыба,Mясо и рыба | gld,False,3,2,0.6666666666666666,4,1467.4521000015375
+paddle-v3-cyrillic,syn_ru_rotated_13.png,synthetic,ru,rotated,Выход,Выход,True,1,1,1.0,1,1095.7319000008283
+paddle-v3-cyrillic,syn_ru_rotated_14.png,synthetic,ru,rotated,Станция метро,Hsh pressurE | Iiee | ерicGeвu | ffeeifi.ede | E | е | Heeeti | CтанциА Mетро,False,2,0,0.0,11,2257.604700000229
+paddle-v3-cyrillic,syn_ru_degraded_00.jpg,synthetic,ru,degraded,Бар у моста,Бар у моста | Hutiobre.,True,3,3,1.0,4,1392.882299998746
+paddle-v3-cyrillic,syn_ru_degraded_01.jpg,synthetic,ru,degraded,Двуречье,дврешрс,False,1,0,0.0,1,1110.693700000411
+paddle-v3-cyrillic,syn_ru_degraded_02.jpg,synthetic,ru,degraded,Работаем без выходных,Paoo taeмoreethodin,False,3,0,0.0,2,1252.1804999996675
+paddle-v3-cyrillic,syn_ru_degraded_03.jpg,synthetic,ru,degraded,"Улица Ленина, 15",лица лeнинаs,False,3,0,0.0,2,1125.3455999976723
+paddle-v3-cyrillic,syn_ru_degraded_04.jpg,synthetic,ru,degraded,Станция метро,н | Cthциам | д | г,False,2,0,0.0,4,1482.3598000002676
+paddle-v3-cyrillic,syn_ru_degraded_05.jpg,synthetic,ru,degraded,Цветы,ветђ,False,1,0,0.0,1,1130.363700001908
+paddle-v3-cyrillic,syn_ru_degraded_06.jpg,synthetic,ru,degraded,Кофе с собой,T | Кофe с собой,False,3,2,0.6666666666666666,4,1252.5403999970877
+paddle-v3-cyrillic,syn_ru_degraded_07.jpg,synthetic,ru,degraded,Мясо и рыба,масоирыба,False,3,2,0.6666666666666666,1,1129.1887999977916
+paddle-v3-cyrillic,syn_ru_degraded_08.jpg,synthetic,ru,degraded,Часы работы 9-21,I ut phiee iih | Hрй | вл | ий | Hle pilgte. | ч | р? | Uacђipaбotb!.,False,4,0,0.0,12,1932.6755000001867
+paddle-v3-cyrillic,syn_ru_degraded_09.jpg,synthetic,ru,degraded,Горячие пирожки,орячиепиржки,False,2,0,0.0,1,1130.222199997661
+paddle-v3-cyrillic,syn_ru_degraded_10.jpg,synthetic,ru,degraded,"Чай, кофе, сладости",Yайkоde cладости,False,3,0,0.0,2,1119.5425000005343
+paddle-v3-cyrillic,syn_ru_degraded_11.jpg,synthetic,ru,degraded,Левый берег,Левыйбере,False,2,1,0.5,1,1172.7258999999322
+paddle-v3-cyrillic,syn_ru_degraded_12.jpg,synthetic,ru,degraded,Тел. 8-800-555-35-35,"йг | гэђ | Teл, 8 8oO-555 35 35",False,6,4,0.6666666666666666,8,1526.7980999997235
+paddle-v3-cyrillic,syn_ru_degraded_13.jpg,synthetic,ru,degraded,Парикмахерская,Парикмахерская,True,1,1,1.0,1,1142.6265999980387
+paddle-v3-cyrillic,syn_ru_degraded_14.jpg,synthetic,ru,degraded,Магазин Радуга,МагазинРадуга,False,2,2,1.0,1,1138.722499999858
+paddle-v3-cyrillic,syn_en_clean_00.png,synthetic,en,clean,Beware of the dog,Beware of the dog,True,4,4,1.0,4,1193.368799999007
+paddle-v3-cyrillic,syn_en_clean_01.png,synthetic,en,clean,No parking,No parking,True,2,2,1.0,2,1154.9137000001792
+paddle-v3-cyrillic,syn_en_clean_02.png,synthetic,en,clean,Pharmacy,Phаrтаcy,False,1,0,0.0,1,1130.9973999996146
+paddle-v3-cyrillic,syn_en_clean_03.png,synthetic,en,clean,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,1122.8817000010167
+paddle-v3-cyrillic,syn_en_clean_04.png,synthetic,en,clean,Take away,Take away,True,2,2,1.0,2,1141.5235000022221
+paddle-v3-cyrillic,syn_en_clean_05.png,synthetic,en,clean,Exit,Exit,True,1,1,1.0,1,1106.2272000017401
+paddle-v3-cyrillic,syn_en_clean_06.png,synthetic,en,clean,Pizza and pasta,Pizza and pasta,True,3,3,1.0,3,1107.9232000010961
+paddle-v3-cyrillic,syn_en_clean_07.png,synthetic,en,clean,Ice cream,Ice cream,True,2,2,1.0,2,1092.6265999987663
+paddle-v3-cyrillic,syn_en_clean_08.png,synthetic,en,clean,Open,Oрen,False,1,0,0.0,1,1123.6231999973825
+paddle-v3-cyrillic,syn_en_clean_09.png,synthetic,en,clean,Bike rental,Bike renta,False,2,1,0.5,2,1142.8309999973862
+paddle-v3-cyrillic,syn_en_clean_10.png,synthetic,en,clean,Open 24 hours,Open 24 hours,True,3,3,1.0,3,1134.3706000006932
+paddle-v3-cyrillic,syn_en_clean_11.png,synthetic,en,clean,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1145.3966000008222
+paddle-v3-cyrillic,syn_en_clean_12.png,synthetic,en,clean,Free Wi-Fi,Free wi-Fi,True,3,3,1.0,3,1213.7234000001627
+paddle-v3-cyrillic,syn_en_clean_13.png,synthetic,en,clean,Main Street 15,Main Street 15,True,3,3,1.0,3,1135.6649000008474
+paddle-v3-cyrillic,syn_en_clean_14.png,synthetic,en,clean,Central station,Central station,True,2,2,1.0,2,1103.4999000003154
+paddle-v3-cyrillic,syn_en_photo_00.png,synthetic,en,photo,Fish and chips,Fish and chips,True,3,3,1.0,3,1120.2491000003647
+paddle-v3-cyrillic,syn_en_photo_01.png,synthetic,en,photo,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1175.8647999995446
+paddle-v3-cyrillic,syn_en_photo_02.png,synthetic,en,photo,Main Street 15,Main Street 15,True,3,3,1.0,3,1272.329899999022
+paddle-v3-cyrillic,syn_en_photo_03.png,synthetic,en,photo,Keep out,РДХ | CobueI. | тs | Keep out,True,2,2,1.0,5,1529.222999997728
+paddle-v3-cyrillic,syn_en_photo_04.png,synthetic,en,photo,Bar and grill,Edlle | Bar and grill,True,3,3,1.0,4,1293.971799997962
+paddle-v3-cyrillic,syn_en_photo_05.png,synthetic,en,photo,Hot dogs,Hot dogs,True,2,2,1.0,2,1116.4795000004233
+paddle-v3-cyrillic,syn_en_photo_06.png,synthetic,en,photo,Sale up to 50%,Sale up | ооо,False,4,2,0.5,3,1344.5512000034796
+paddle-v3-cyrillic,syn_en_photo_07.png,synthetic,en,photo,Tel. 555-0199,Te1. 555-0199,False,3,2,0.6666666666666666,3,1110.8119999989867
+paddle-v3-cyrillic,syn_en_photo_08.png,synthetic,en,photo,Pizza and pasta,T | Kreton Es.ge dris.sss clg. | eeidabss ogao khigoscoeasulggs. | дддй | й | шрй | Eeeee | Wte dr e mernurd nthgnnr tele t umerugu euildhts | Eгдш | Lstsoeobo | ш | Jeed.du | шй | rшle.eee | тэрн | й | Wanrot. | дй | DDR!Il 2GB-1333 | ASint | Th | SSZ3128M3-EDJEE | Iete egepte je | Nare ntyavon id rornovna | Pizza and pasta | W wtйэ в,True,3,3,1.0,56,5659.585800000059
+paddle-v3-cyrillic,syn_en_photo_09.png,synthetic,en,photo,Open 24 hours,Open 24 hours,True,3,3,1.0,3,1142.2820999978285
+paddle-v3-cyrillic,syn_en_photo_10.png,synthetic,en,photo,Pharmacy,РДХ | t obuat | т | Phаrmаcy,False,1,0,0.0,5,1511.7832999967504
+paddle-v3-cyrillic,syn_en_photo_11.png,synthetic,en,photo,Shoe repair,Shoe repair,True,2,2,1.0,2,1193.2892000004358
+paddle-v3-cyrillic,syn_en_photo_12.png,synthetic,en,photo,Opening hours 9-21,Opening | hours | 9-21,True,4,4,1.0,4,1466.2867000006372
+paddle-v3-cyrillic,syn_en_photo_13.png,synthetic,en,photo,Welcome,Welcome,True,1,1,1.0,1,1134.1283999972802
+paddle-v3-cyrillic,syn_en_photo_14.png,synthetic,en,photo,Open,оћд | yre t? | HU LO | длt | й | Oрen,False,1,0,0.0,8,1722.724899998866
+paddle-v3-cyrillic,syn_en_small_00.png,synthetic,en,small,Open 24 hours,Open 24 hours,True,3,3,1.0,3,1116.6513999996823
+paddle-v3-cyrillic,syn_en_small_01.png,synthetic,en,small,Coffee to go,Coffee to go,True,3,3,1.0,3,1107.2888999988209
+paddle-v3-cyrillic,syn_en_small_02.png,synthetic,en,small,Keep out,Keep out,True,2,2,1.0,2,1158.170999999129
+paddle-v3-cyrillic,syn_en_small_03.png,synthetic,en,small,Welcome,РДХ | obuet | й | тs | Welcome,True,1,1,1.0,5,1589.0629999994417
+paddle-v3-cyrillic,syn_en_small_04.png,synthetic,en,small,Sale up to 50%,Sale up to 509. | el,False,4,4,1.0,5,1284.7738999989815
+paddle-v3-cyrillic,syn_en_small_05.png,synthetic,en,small,Beware of the dog,Beware of the dog,True,4,4,1.0,4,1196.7832000009366
+paddle-v3-cyrillic,syn_en_small_06.png,synthetic,en,small,Shoe repair,Shoe repair,True,2,2,1.0,2,1176.7113999994763
+paddle-v3-cyrillic,syn_en_small_07.png,synthetic,en,small,City Museum,City Museum,True,2,2,1.0,2,1144.6887999991304
+paddle-v3-cyrillic,syn_en_small_08.png,synthetic,en,small,Central station,Central station,True,2,2,1.0,2,1145.7097999991674
+paddle-v3-cyrillic,syn_en_small_09.png,synthetic,en,small,Opening hours 9-21,Opening hours 9-21 | FAIRLAD,True,4,4,1.0,5,1590.9240999972099
+paddle-v3-cyrillic,syn_en_small_10.png,synthetic,en,small,Open,ЖTARI | 52ost | ёз5 | gиeргr | Oреn | OIVNEE'S MANVUAL,False,1,0,0.0,8,1688.9045999996597
+paddle-v3-cyrillic,syn_en_small_11.png,synthetic,en,small,Tel. 555-0199,Ife | Tel. 555-0199 | LucioBrc.,True,3,3,1.0,5,1601.3903000020946
+paddle-v3-cyrillic,syn_en_small_12.png,synthetic,en,small,Car wash,Car wash,True,2,2,1.0,2,1193.368600001122
+paddle-v3-cyrillic,syn_en_small_13.png,synthetic,en,small,Book store,Book store,True,2,2,1.0,2,1155.2092000019911
+paddle-v3-cyrillic,syn_en_small_14.png,synthetic,en,small,Free Wi-Fi,Free Wi Fi | du | ргe t? | HU LO | длt | й,True,3,3,1.0,10,1706.5935999999056
+paddle-v3-cyrillic,syn_en_rotated_00.png,synthetic,en,rotated,Bar and grill,Bar and. | Srill,False,3,2,0.6666666666666666,3,1249.2753000005905
+paddle-v3-cyrillic,syn_en_rotated_01.png,synthetic,en,rotated,No parking,No parking,True,2,2,1.0,2,1087.669199998345
+paddle-v3-cyrillic,syn_en_rotated_02.png,synthetic,en,rotated,Coffee to go,Offee to go | игар | шso?,False,3,2,0.6666666666666666,5,1558.2662000015262
+paddle-v3-cyrillic,syn_en_rotated_03.png,synthetic,en,rotated,Take away,аwа | аke,False,2,0,0.0,2,1421.1078000007547
+paddle-v3-cyrillic,syn_en_rotated_04.png,synthetic,en,rotated,Pizza and pasta,РДХ | OвuEт | тs | Pizza and pasta,True,3,3,1.0,6,1543.4458000017912
+paddle-v3-cyrillic,syn_en_rotated_05.png,synthetic,en,rotated,Fresh bakery,Fresh bakery,True,2,2,1.0,2,1183.4525000012945
+paddle-v3-cyrillic,syn_en_rotated_06.png,synthetic,en,rotated,Tel. 555-0199,Tel. 555-0199,True,3,3,1.0,3,1193.8732999988133
+paddle-v3-cyrillic,syn_en_rotated_07.png,synthetic,en,rotated,Open,Open | el,True,1,1,1.0,2,1305.0266999998712
+paddle-v3-cyrillic,syn_en_rotated_08.png,synthetic,en,rotated,Welcome,б | Welcome,True,1,1,1.0,2,1281.1646000009205
+paddle-v3-cyrillic,syn_en_rotated_09.png,synthetic,en,rotated,Open 24 hours,боэ | Open 24 hours.,True,3,3,1.0,4,1292.736800001876
+paddle-v3-cyrillic,syn_en_rotated_10.png,synthetic,en,rotated,Ice cream,Ice cream,True,2,2,1.0,2,1176.2884999989183
+paddle-v3-cyrillic,syn_en_rotated_11.png,synthetic,en,rotated,Sale up to 50%,Ment | Sale up to 500lo,False,4,4,1.0,5,1274.8958000011044
+paddle-v3-cyrillic,syn_en_rotated_12.png,synthetic,en,rotated,Pharmacy,хгжсллиий | Pђаrтасy | бгй,False,1,0,0.0,3,1366.87080000047
+paddle-v3-cyrillic,syn_en_rotated_13.png,synthetic,en,rotated,Fish and chips,"Fish, and chips",True,3,3,1.0,3,1114.0817000014067
+paddle-v3-cyrillic,syn_en_rotated_14.png,synthetic,en,rotated,Main Street 15,Heh pressu he | Iiee | eeiice hee u | ffeeifi.ede | En | е | Iee if | Main Street i5,False,3,2,0.6666666666666666,16,2045.909100001154
+paddle-v3-cyrillic,syn_en_degraded_00.jpg,synthetic,en,degraded,Open,реп,False,1,0,0.0,1,1192.1034999977564
+paddle-v3-cyrillic,syn_en_degraded_01.jpg,synthetic,en,degraded,Flower shop,I | Flower shop,True,2,2,1.0,3,1330.7591000011598
+paddle-v3-cyrillic,syn_en_degraded_02.jpg,synthetic,en,degraded,Hot dogs,Hot dogs,True,2,2,1.0,2,1152.1575000006123
+paddle-v3-cyrillic,syn_en_degraded_03.jpg,synthetic,en,degraded,Bar and grill,Bar and gri,False,3,2,0.6666666666666666,3,1103.791599998658
+paddle-v3-cyrillic,syn_en_degraded_04.jpg,synthetic,en,degraded,Tel. 555-0199,,False,3,0,0.0,0,1041.4025999998557
+paddle-v3-cyrillic,syn_en_degraded_05.jpg,synthetic,en,degraded,Cash only,Cash only,True,2,2,1.0,2,1139.7810000016761
+paddle-v3-cyrillic,syn_en_degraded_06.jpg,synthetic,en,degraded,Open 24 hours,рер | ићour?,False,3,0,0.0,2,1284.159799997724
+paddle-v3-cyrillic,syn_en_degraded_07.jpg,synthetic,en,degraded,Bike rental,Bike rental,True,2,2,1.0,2,1163.514199997735
+paddle-v3-cyrillic,syn_en_degraded_08.jpg,synthetic,en,degraded,Sale up to 50%,Sale up to 509.,False,4,4,1.0,4,1251.1114999979327
+paddle-v3-cyrillic,syn_en_degraded_09.jpg,synthetic,en,degraded,Book store,Book store,True,2,2,1.0,2,1132.452400001057
+paddle-v3-cyrillic,syn_en_degraded_10.jpg,synthetic,en,degraded,Free Wi-Fi,Free WiFi,False,3,3,1.0,2,1144.5284000001266
+paddle-v3-cyrillic,syn_en_degraded_11.jpg,synthetic,en,degraded,Fresh bakery,Fresh baker.,False,2,1,0.5,2,1100.3914000029908
+paddle-v3-cyrillic,syn_en_degraded_12.jpg,synthetic,en,degraded,Take away,Take aay,False,2,1,0.5,2,1236.2490000014077
+paddle-v3-cyrillic,syn_en_degraded_13.jpg,synthetic,en,degraded,Pharmacy,Pharmacy,True,1,1,1.0,1,1079.9563999971724
+paddle-v3-cyrillic,syn_en_degraded_14.jpg,synthetic,en,degraded,Central station,nlaletattmn.,False,2,0,0.0,1,1092.3013999999966
+paddle-v3-cyrillic,test-images/ru-road-sign_1.jpg,real_photo,ru,real_photo,югорский мост обь длина ширина 2110,p. O5ь | югорский | MOCТ | длина | Q | ширина | год | Hoethi krh. | OCTPOЙKИ 1,,6,3,0.5,12,2728.160400001798
+paddle-v3-cyrillic,test-images/ru-road-sign_2.jpg,real_photo,ru,real_photo,двуречье,двуречье,,1,1,1.0,1,1665.8829000007245
+paddle-v3-cyrillic,test-images/ru-road-sign_3.jpg,real_photo,ru,real_photo,красноармейск дмитров ногинск,Kрасноармейск | дмитров | ногинск | Aо | Aој | 3оом,,3,2,0.6666666666666666,6,2415.8420999992813
+paddle-v3-cyrillic,test-images/ru-road-sign_4.jpg,real_photo,ru,real_photo,плешаковский,плЕшАковский | тшитгйн | тэргeггнгтйн.,,1,1,1.0,3,1973.0187999994087
+paddle-v3-cyrillic,test-images/ru-road-sign_5.jpg,real_photo,ru,real_photo,полчаниновка,олчаниновка,,1,0,0.0,1,1624.8914999996487
+paddle-v3-cyrillic,test-images/ru-road-sign_6.jpg,real_photo,ru,real_photo,церковь троицы живоначальной church trinity,"O,3 | Церковь ТроицьЖивоначальной | Cchurch of the Life-Giving Trinity",,5,4,0.8,10,2281.1543000025267
+paddle-v3-cyrillic,test-images/ru-shop-sign_1.jpg,real_photo,ru,real_photo,товары повседневного спроса,yh.eakt! | ose | kет | р | бyibmeapь! | Gieoe. | COOled by | Vаlео | д,,3,0,0.0,11,2757.163100002799
+paddle-v3-cyrillic,test-images/ru-shop-sign_2.jpg,real_photo,ru,real_photo,продовольственный,роповолотзеи,,1,0,0.0,1,1328.9766999987478
+paddle-v3-cyrillic,test-images/ru-shop-sign_3.jpg,real_photo,ru,real_photo,магазин спутник,мгвин | Imнши | е | х,,2,0,0.0,4,1964.2129999992903
+paddle-v3-cyrillic,test-images/ru-shop-sign_4.jpg,real_photo,ru,real_photo,спирт,Said. | спиртТ,,1,1,1.0,2,1772.7401000011014
+paddle-v3-cyrillic,test-images/ru-shop-sign_5.jpg,real_photo,ru,real_photo,промтовар,e,,1,0,0.0,1,1497.138900002028
+paddle-v3-cyrillic,test-images/ru-shop-sign_6.jpg,real_photo,ru,real_photo,знание,е,,1,0,0.0,1,1389.0223000016704
+paddle-v3-cyrillic,test-images/board_apple_ru.png,real_board,ru,real_board,яблоко,Яблоко,,1,1,1.0,1,924.6339000019361
+paddle-v3-cyrillic,test-images/board_cat_ru.png,real_board,ru,real_board,кошка,Кошка,,1,1,1.0,1,932.5118999986444
+paddle-v3-cyrillic,test-images/board_dog_ru.png,real_board,ru,real_board,собака,Собака,,1,1,1.0,1,905.0949000011315
+paddle-v3-cyrillic,test-images/board_banana_ru.png,real_board,ru,real_board,банан,Банан,,1,1,1.0,1,920.2054999987013
+paddle-v3-cyrillic,test-images/board_bicycle_ru.png,real_board,ru,real_board,велосипед,Bелосипед,,1,0,0.0,1,977.7385999987018
+paddle-v3-cyrillic,test-images/board_sunflower_ru.png,real_board,ru,real_board,подсолнух,одсолнух,,1,0,0.0,1,964.8304999973334
+paddle-v3-cyrillic,test-images/board_coffee_ru.png,real_board,ru,real_board,кофе,Кофе,,1,1,1.0,1,935.3913999984798
+paddle-v3-cyrillic,test-images/board_pizza_ru.png,real_board,ru,real_board,пицца,ицца,,1,0,0.0,1,931.4124999982596
+paddle-v3-cyrillic,test-images/board_apple_en.png,real_board,en,real_board,apple,Apрlе,,1,0,0.0,1,926.3829000010446
+paddle-v3-cyrillic,test-images/board_coffee_en.png,real_board,en,real_board,coffee,Coffee,,1,1,1.0,1,908.6595000007947
+paddle-v3-cyrillic,test-images/apple_1.jpg,negative,-,negative,,,,0,0,,0,1716.6217000012693
+paddle-v3-cyrillic,test-images/banana_1.jpg,negative,-,negative,,н,,0,0,,1,1657.0396999995864
+paddle-v3-cyrillic,test-images/bicycle_1.jpg,negative,-,negative,,хр | Е | Hunk | Aнчэ. | ooyn? | шeeш | Pmmo? | iХeХ | ? | GeEl | хэ | Owk | дz: | юА | хс | Yeх | зх,,0,0,,16,3823.314699999173
+paddle-v3-cyrillic,test-images/cat_1.jpg,negative,-,negative,,о,,0,0,,1,1527.9511000007915
+paddle-v3-cyrillic,test-images/coffee_1.jpg,negative,-,negative,,,,0,0,,0,1798.5305000001972
+paddle-v3-cyrillic,test-images/dog_1.jpg,negative,-,negative,,,,0,0,,0,3044.2374999984168
+paddle-v3-cyrillic,test-images/mountain-lake_1.jpg,negative,-,negative,,,,0,0,,0,1392.5256000002264
+paddle-v3-cyrillic,test-images/pizza_1.jpg,negative,-,negative,,,,0,0,,0,1535.8670999994501
+paddle-v3-cyrillic,test-images/sportscar_1.jpg,negative,-,negative,,ISIONAR | VISIONARY | Ererm. | Eеeе | Huseuh | l | Itaite Te'i.,,0,0,,9,2220.593900001404
+paddle-v3-cyrillic,test-images/sunflower_1.jpg,negative,-,negative,,,,0,0,,0,1372.9880999999295

@@ -1,0 +1,32 @@
+{
+ "paddle-current": {
+  "threads": 6,
+  "n": 31,
+  "median_ms": 1231.2210999989475,
+  "mean_ms": 1654.9507999999707
+ },
+ "paddle-cyrillic": {
+  "threads": 6,
+  "n": 31,
+  "median_ms": 1319.3101000033494,
+  "mean_ms": 1722.5059387101576
+ },
+ "paddle-server-det": {
+  "threads": 6,
+  "n": 31,
+  "median_ms": 11789.253499999177,
+  "mean_ms": 12748.895403225868
+ },
+ "paddle-v3-cyrillic": {
+  "threads": 6,
+  "n": 31,
+  "median_ms": 1165.6173999981547,
+  "mean_ms": 1409.0647451611726
+ },
+ "easyocr": {
+  "threads": 6,
+  "n": 31,
+  "median_ms": 2447.2915999976976,
+  "mean_ms": 2562.276603225802
+ }
+}
