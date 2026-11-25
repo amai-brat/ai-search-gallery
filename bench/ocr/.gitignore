@@ -2,3 +2,4 @@
 __pycache__/
 data/images/
 .ipynb_checkpoints/
+models/

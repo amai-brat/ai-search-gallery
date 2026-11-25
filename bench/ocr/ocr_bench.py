@@ -59,7 +59,54 @@ SYSTEMS: dict[str, dict[str, str]] = {
         "title": "PP-OCRv5 det + cyrillic v3 (старый распознаватель)",
     },
     "easyocr": {"title": "EasyOCR (ru+en)"},
+    # The same PP-OCRv5 models on ONNX Runtime (RapidOCR), with PaddleOCR's detector
+    # thresholds. "max_side" downscales the image before detection.
+    "rapid-eslav": {"rapid": "1", "max_side": "100000", "title": "RapidOCR (ONNX), те же модели"},
+    "rapid-eslav-960": {"rapid": "1", "max_side": "960", "title": "RapidOCR (ONNX), до 960 px"},
+    "rapid-eslav-1280": {"rapid": "1", "max_side": "1280", "title": "RapidOCR (ONNX), до 1280 px"},
+    # PaddleOCR does not dilate the detector mask, RapidOCR does by default.
+    "rapid-eslav-nodil": {"rapid": "1", "max_side": "100000", "dilation": "",
+                          "title": "RapidOCR (ONNX), без расширения маски"},
+    "rapid-eslav-960-nodil": {"rapid": "1", "max_side": "960", "dilation": "",
+                              "title": "RapidOCR (ONNX), до 960 px, без расширения маски"},
 }
+
+# RapidOCR settings matching the PaddleOCR pipeline above (see backend/src/utils/ocr.py).
+RAPID_MODELS = HERE / "models"
+
+
+def make_rapid(cfg: dict[str, str], threads: int) -> Callable[[str], str]:
+    from rapidocr import EngineType, LangDet, LangRec, ModelType, OCRVersion, RapidOCR
+
+    RAPID_MODELS.mkdir(exist_ok=True)
+    ocr = RapidOCR(params={
+        "Global.model_root_dir": str(RAPID_MODELS),
+        "Global.log_level": "warning",
+        "Global.use_cls": False,
+        "Global.max_side_len": int(cfg["max_side"]),
+        "Global.text_score": 0.0,
+        "Det.engine_type": EngineType.ONNXRUNTIME,
+        "Det.lang_type": LangDet.CH,
+        "Det.model_type": ModelType.MOBILE,
+        "Det.ocr_version": OCRVersion.PPOCRV5,
+        "Det.limit_side_len": int(cfg.get("limit_side", "64")),
+        "Det.limit_type": "min",
+        "Det.thresh": 0.3,
+        "Det.box_thresh": 0.6,
+        "Det.unclip_ratio": 1.5,
+        "Det.use_dilation": bool(cfg.get("dilation", "1")),
+        "Rec.engine_type": EngineType.ONNXRUNTIME,
+        "Rec.lang_type": LangRec.ESLAV,
+        "Rec.model_type": ModelType.MOBILE,
+        "Rec.ocr_version": OCRVersion.PPOCRV5,
+        "EngineConfig.onnxruntime.intra_op_num_threads": threads,
+    })
+
+    def run_rapid(path: str) -> str:
+        result = ocr(path, use_cls=False)
+        return "\n".join(t.strip() for t in (result.txts or ()) if t.strip())
+
+    return run_rapid
 
 
 # --------------------------------------------------------------------------- #
@@ -67,6 +114,8 @@ SYSTEMS: dict[str, dict[str, str]] = {
 # --------------------------------------------------------------------------- #
 def make_engine(system: str, threads: int) -> Callable[[str], str]:
     cfg = SYSTEMS[system]
+    if cfg.get("rapid"):
+        return make_rapid(cfg, threads)
     if system == "easyocr":
         import easyocr
         import torch

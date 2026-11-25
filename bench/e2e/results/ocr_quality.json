@@ -1,0 +1,20 @@
+{
+ "paddle-current": {
+  "synthetic_ru": 0.9444444444444444,
+  "synthetic_en": 0.9544444444444444,
+  "real_photo": 0.6805555555555556,
+  "real_board": 0.9,
+  "cer": 0.04154809334092203,
+  "junk": 2.3,
+  "ms": 1811.772750000273
+ },
+ "rapid-eslav-960-nodil": {
+  "synthetic_ru": 0.96,
+  "synthetic_en": 0.9855555555555555,
+  "real_photo": 0.625,
+  "real_board": 0.9,
+  "cer": 0.030734206033010813,
+  "junk": 1.9,
+  "ms": 192.88695001159795
+ }
+}
