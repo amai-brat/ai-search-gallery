@@ -1,6 +1,6 @@
 # AI Search Gallery
 
-Локальный поиск по изображениям: по смыслу (CLIP, SigLIP2) и по тексту на картинке (PaddleOCR).
+Локальный поиск по изображениям: по смыслу (CLIP, SigLIP2) и по тексту на картинке (OCR, PP-OCRv5).
 Русский и английский поддерживаются обеими моделями.
 
 ## Как начать
@@ -38,12 +38,7 @@ uv sync
 source .venv/bin/activate
 ```
 
-Модель OpenCLIP скачается сама при первом запуске (`CLIP_MODEL_NAME=hf-hub:...`, см. раздел «Модели»).
-Либо скачать её в локальную папку из HuggingFace и указать в `.env` `CLIP_MODEL_NAME=local-dir:<папка>`.
-Например:
-```bash
-hf download timm/ViT-B-16-SigLIP2 --local-dir '/tmp/models/ViT-B-16-SigLIP2'
-```
+Модели (ONNX) скачаются сами при первом запуске в `backend/models`, см. раздел «Модели».
 
 Заполнить `.env` по `.env.example`
 ```bash
@@ -138,8 +133,11 @@ Wikimedia Commons (нужен интернет), доски рисуются л�
 
 | Что | Модель | Размер | Где лежит |
 | --- | --- | --- | --- |
-| CLIP | `timm/ViT-B-16-SigLIP2` (мультиязычная, вектор 768) | ~1.5 ГБ | `%USERPROFILE%\.cache\huggingface\hub` |
-| OCR | `PP-OCRv5_mobile_det` + `eslav_PP-OCRv5_mobile_rec` | десятки МБ | `%USERPROFILE%\.paddlex\official_models` |
+| CLIP | `ViT-B-16-SigLIP2` (мультиязычная, вектор 768), ONNX-экспорт `immich-app/ViT-B-16-SigLIP2__webli` | ~1.5 ГБ | `backend\models\clip` |
+| OCR | `PP-OCRv5_mobile_det` + `eslav_PP-OCRv5_mobile_rec` в ONNX (RapidOCR) | 13 МБ | `backend\models\rapidocr` |
+
+Обе модели работают на ONNX Runtime, только CPU; torch и PaddlePaddle не нужны. Папка моделей меняется
+переменной `MODELS_DIR`.
 
 Скачать заранее (делает и `setup.ps1`):
 
@@ -150,25 +148,22 @@ uv run --env-file .env python scripts/download_models.py
 
 Поменять модель — в `backend/.env`:
 
-- `CLIP_MODEL_NAME` — обязательно с префиксом `hf-hub:` (или `local-dir:`), иначе веса будут случайными.
-  Если у новой модели другая размерность вектора, поменяйте `VECTOR(768)` в
-  `backend/src/migrations/001_init.sql`, пересоздайте базу (`stop.ps1 -WipeData`) и проиндексируйте заново.
-- `PADDLEOCR_DET_MODEL`, `PADDLEOCR_REC_MODEL` — модели PaddleOCR (см. настройки ниже).
+- `CLIP_MODEL_NAME` — имя модели, ONNX-экспорт берётся из `immich-app/<имя>__webli` (или задайте
+  `CLIP_MODEL_REPO`). Например, `ViT-B-32-SigLIP2-256`: кодирует картинки в несколько раз быстрее при
+  чуть меньшей точности (см. `bench/README.md`). После смены модели нужна полная переиндексация
+  (`stop.ps1 -WipeData`), а если у модели другая размерность вектора, ещё и `VECTOR(768)` в
+  `backend/src/migrations/001_init.sql`.
 
 ## OCR-поиск
 
-При индексации изображений Celery-воркер распознаёт текст через PaddleOCR и
-сохраняет его в поле `images.ocr_text`. Модели OCR скачиваются автоматически
-при первом запуске воркера в `~/.paddlex/official_models`.
+При индексации изображений Celery-воркер распознаёт текст через RapidOCR (модели PP-OCRv5 на
+ONNX Runtime) и сохраняет его в поле `images.ocr_text`.
 
 Настройки OCR (`.env`):
 
 ```bash
-PADDLEOCR_DET_MODEL=PP-OCRv5_mobile_det        # лёгкие mobile-модели; если обе пустые, модели выбираются по PADDLEOCR_LANG
-PADDLEOCR_REC_MODEL=eslav_PP-OCRv5_mobile_rec  # читает русский, украинский, белорусский и английский
-PADDLEOCR_LANG=ru                 # используется, только если обе модели выше пустые (для русского: ru)
-# PADDLEOCR_DEVICE=gpu:0          # по умолчанию GPU 0, если доступен, иначе CPU
-# PADDLEOCR_ENABLE_MKLDNN=false   # oneDNN отключён по умолчанию (падает на CPU)
+# OCR_MAX_SIDE=960   # картинки больше уменьшаются перед распознаванием (0 — не уменьшать)
+# OCR_THREADS=0      # потоков ONNX Runtime на модель, 0 — автоматически
 ```
 
 Если изображения были проиндексированы раньше, запустите индексацию каталога
