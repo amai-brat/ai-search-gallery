@@ -28,7 +28,7 @@ function Card({
         <span className="card-missing">Файл недоступен</span>
       ) : (
         <img
-          src={api.thumbUrl(image.id)}
+          src={api.thumbUrl(image)}
           alt={name}
           loading="lazy"
           onLoad={() => setLoaded(true)}

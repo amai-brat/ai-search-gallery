@@ -67,10 +67,26 @@ def health() -> dict[str, str]:
 
 app.include_router(api)
 
+
+class FrontendFiles(StaticFiles):
+    """The built site. Without Cache-Control browsers cache index.html by
+    heuristics, sometimes for hours, and keep running the old version of the
+    site after an update; files in assets/ have a content hash in their names."""
+
+    async def get_response(self, path, scope):
+        response = await super().get_response(path, scope)
+        # On Windows Starlette passes the path with backslashes.
+        if path.replace("\\", "/").startswith("assets/"):
+            response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+        else:
+            response.headers["Cache-Control"] = "no-cache"
+        return response
+
+
 # The built frontend (npm run build); in development the Vite dev server is
 # used instead and proxies /api here.
 if (FRONTEND_DIST / "index.html").is_file():
-    app.mount("/", StaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")
+    app.mount("/", FrontendFiles(directory=FRONTEND_DIST, html=True), name="frontend")
 else:
     logger.warning(
         "No built frontend in %s: run `npm run build` in frontend/ "

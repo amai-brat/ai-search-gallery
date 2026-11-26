@@ -77,7 +77,7 @@ export function Lightbox({
 
       <div className="lb-body" onClick={(e) => e.stopPropagation()}>
         <div className="lb-stage">
-          <img key={image.id} src={api.fileUrl(image.id)} alt={fileName(image.filepath)} />
+          <img key={image.id} src={api.fileUrl(image)} alt={fileName(image.filepath)} />
         </div>
 
         <aside className="lb-info">
@@ -111,7 +111,7 @@ export function Lightbox({
 
           <a
             className="btn ghost"
-            href={api.fileUrl(image.id)}
+            href={api.fileUrl(image)}
             target="_blank"
             rel="noreferrer"
           >
