@@ -1,0 +1,2019 @@
+[
+ {
+  "file": "syn_ru_clean_00.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Левый берег",
+  "words": [
+   "левый",
+   "берег"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_01.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Книжный магазин",
+  "words": [
+   "книжный",
+   "магазин"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_02.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Двуречье",
+  "words": [
+   "двуречье"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_03.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Бар у моста",
+  "words": [
+   "бар",
+   "у",
+   "моста"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_04.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Хлеб",
+  "words": [
+   "хлеб"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_05.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Продукты",
+  "words": [
+   "продукты"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_06.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Цветы",
+  "words": [
+   "цветы"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_07.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Тел. 8-800-555-35-35",
+  "words": [
+   "тел",
+   "8",
+   "800",
+   "555",
+   "35",
+   "35"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_08.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Не курить",
+  "words": [
+   "не",
+   "курить"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_09.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Магазин Радуга",
+  "words": [
+   "магазин",
+   "радуга"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_10.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Работаем без выходных",
+  "words": [
+   "работаем",
+   "без",
+   "выходных"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_11.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Кофе с собой",
+  "words": [
+   "кофе",
+   "с",
+   "собой"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_12.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Часы работы 9-21",
+  "words": [
+   "часы",
+   "работы",
+   "9",
+   "21"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_13.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Электротовары",
+  "words": [
+   "электротовары"
+  ]
+ },
+ {
+  "file": "syn_ru_clean_14.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "clean",
+  "text": "Улица Ленина, 15",
+  "words": [
+   "улица",
+   "ленина",
+   "15"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_00.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Аптека",
+  "words": [
+   "аптека"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_01.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Цветы",
+  "words": [
+   "цветы"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_02.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Продукты",
+  "words": [
+   "продукты"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_03.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Часы работы 9-21",
+  "words": [
+   "часы",
+   "работы",
+   "9",
+   "21"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_04.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Пекарня №1",
+  "words": [
+   "пекарня",
+   "1"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_05.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Левый берег",
+  "words": [
+   "левый",
+   "берег"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_06.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Выход",
+  "words": [
+   "выход"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_07.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Тел. 8-800-555-35-35",
+  "words": [
+   "тел",
+   "8",
+   "800",
+   "555",
+   "35",
+   "35"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_08.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Книжный магазин",
+  "words": [
+   "книжный",
+   "магазин"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_09.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Добро пожаловать",
+  "words": [
+   "добро",
+   "пожаловать"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_10.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Электротовары",
+  "words": [
+   "электротовары"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_11.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Чай, кофе, сладости",
+  "words": [
+   "чай",
+   "кофе",
+   "сладости"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_12.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Мясо и рыба",
+  "words": [
+   "мясо",
+   "и",
+   "рыба"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_13.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Осторожно, ступенька",
+  "words": [
+   "осторожно",
+   "ступенька"
+  ]
+ },
+ {
+  "file": "syn_ru_photo_14.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "photo",
+  "text": "Вход со двора",
+  "words": [
+   "вход",
+   "со",
+   "двора"
+  ]
+ },
+ {
+  "file": "syn_ru_small_00.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Ремонт обуви",
+  "words": [
+   "ремонт",
+   "обуви"
+  ]
+ },
+ {
+  "file": "syn_ru_small_01.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Кофе с собой",
+  "words": [
+   "кофе",
+   "с",
+   "собой"
+  ]
+ },
+ {
+  "file": "syn_ru_small_02.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Вход со двора",
+  "words": [
+   "вход",
+   "со",
+   "двора"
+  ]
+ },
+ {
+  "file": "syn_ru_small_03.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Левый берег",
+  "words": [
+   "левый",
+   "берег"
+  ]
+ },
+ {
+  "file": "syn_ru_small_04.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Пекарня №1",
+  "words": [
+   "пекарня",
+   "1"
+  ]
+ },
+ {
+  "file": "syn_ru_small_05.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Добро пожаловать",
+  "words": [
+   "добро",
+   "пожаловать"
+  ]
+ },
+ {
+  "file": "syn_ru_small_06.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Улица Ленина, 15",
+  "words": [
+   "улица",
+   "ленина",
+   "15"
+  ]
+ },
+ {
+  "file": "syn_ru_small_07.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Тел. 8-800-555-35-35",
+  "words": [
+   "тел",
+   "8",
+   "800",
+   "555",
+   "35",
+   "35"
+  ]
+ },
+ {
+  "file": "syn_ru_small_08.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Чай, кофе, сладости",
+  "words": [
+   "чай",
+   "кофе",
+   "сладости"
+  ]
+ },
+ {
+  "file": "syn_ru_small_09.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Цветы",
+  "words": [
+   "цветы"
+  ]
+ },
+ {
+  "file": "syn_ru_small_10.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Продукты",
+  "words": [
+   "продукты"
+  ]
+ },
+ {
+  "file": "syn_ru_small_11.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Аптека",
+  "words": [
+   "аптека"
+  ]
+ },
+ {
+  "file": "syn_ru_small_12.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Книжный магазин",
+  "words": [
+   "книжный",
+   "магазин"
+  ]
+ },
+ {
+  "file": "syn_ru_small_13.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Не курить",
+  "words": [
+   "не",
+   "курить"
+  ]
+ },
+ {
+  "file": "syn_ru_small_14.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "small",
+  "text": "Горячие пирожки",
+  "words": [
+   "горячие",
+   "пирожки"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_00.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Осторожно, ступенька",
+  "words": [
+   "осторожно",
+   "ступенька"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_01.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Магазин Радуга",
+  "words": [
+   "магазин",
+   "радуга"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_02.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Аптека",
+  "words": [
+   "аптека"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_03.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Горячие пирожки",
+  "words": [
+   "горячие",
+   "пирожки"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_04.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Пекарня №1",
+  "words": [
+   "пекарня",
+   "1"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_05.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Улица Ленина, 15",
+  "words": [
+   "улица",
+   "ленина",
+   "15"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_06.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Добро пожаловать",
+  "words": [
+   "добро",
+   "пожаловать"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_07.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Кофе с собой",
+  "words": [
+   "кофе",
+   "с",
+   "собой"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_08.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Книжный магазин",
+  "words": [
+   "книжный",
+   "магазин"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_09.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Парикмахерская",
+  "words": [
+   "парикмахерская"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_10.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Не курить",
+  "words": [
+   "не",
+   "курить"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_11.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Бар у моста",
+  "words": [
+   "бар",
+   "у",
+   "моста"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_12.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Мясо и рыба",
+  "words": [
+   "мясо",
+   "и",
+   "рыба"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_13.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Выход",
+  "words": [
+   "выход"
+  ]
+ },
+ {
+  "file": "syn_ru_rotated_14.png",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "rotated",
+  "text": "Станция метро",
+  "words": [
+   "станция",
+   "метро"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_00.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Бар у моста",
+  "words": [
+   "бар",
+   "у",
+   "моста"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_01.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Двуречье",
+  "words": [
+   "двуречье"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_02.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Работаем без выходных",
+  "words": [
+   "работаем",
+   "без",
+   "выходных"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_03.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Улица Ленина, 15",
+  "words": [
+   "улица",
+   "ленина",
+   "15"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_04.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Станция метро",
+  "words": [
+   "станция",
+   "метро"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_05.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Цветы",
+  "words": [
+   "цветы"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_06.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Кофе с собой",
+  "words": [
+   "кофе",
+   "с",
+   "собой"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_07.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Мясо и рыба",
+  "words": [
+   "мясо",
+   "и",
+   "рыба"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_08.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Часы работы 9-21",
+  "words": [
+   "часы",
+   "работы",
+   "9",
+   "21"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_09.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Горячие пирожки",
+  "words": [
+   "горячие",
+   "пирожки"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_10.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Чай, кофе, сладости",
+  "words": [
+   "чай",
+   "кофе",
+   "сладости"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_11.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Левый берег",
+  "words": [
+   "левый",
+   "берег"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_12.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Тел. 8-800-555-35-35",
+  "words": [
+   "тел",
+   "8",
+   "800",
+   "555",
+   "35",
+   "35"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_13.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Парикмахерская",
+  "words": [
+   "парикмахерская"
+  ]
+ },
+ {
+  "file": "syn_ru_degraded_14.jpg",
+  "group": "synthetic",
+  "lang": "ru",
+  "condition": "degraded",
+  "text": "Магазин Радуга",
+  "words": [
+   "магазин",
+   "радуга"
+  ]
+ },
+ {
+  "file": "syn_en_clean_00.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Beware of the dog",
+  "words": [
+   "beware",
+   "of",
+   "the",
+   "dog"
+  ]
+ },
+ {
+  "file": "syn_en_clean_01.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "No parking",
+  "words": [
+   "no",
+   "parking"
+  ]
+ },
+ {
+  "file": "syn_en_clean_02.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Pharmacy",
+  "words": [
+   "pharmacy"
+  ]
+ },
+ {
+  "file": "syn_en_clean_03.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Tel. 555-0199",
+  "words": [
+   "tel",
+   "555",
+   "0199"
+  ]
+ },
+ {
+  "file": "syn_en_clean_04.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Take away",
+  "words": [
+   "take",
+   "away"
+  ]
+ },
+ {
+  "file": "syn_en_clean_05.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Exit",
+  "words": [
+   "exit"
+  ]
+ },
+ {
+  "file": "syn_en_clean_06.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Pizza and pasta",
+  "words": [
+   "pizza",
+   "and",
+   "pasta"
+  ]
+ },
+ {
+  "file": "syn_en_clean_07.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Ice cream",
+  "words": [
+   "ice",
+   "cream"
+  ]
+ },
+ {
+  "file": "syn_en_clean_08.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Open",
+  "words": [
+   "open"
+  ]
+ },
+ {
+  "file": "syn_en_clean_09.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Bike rental",
+  "words": [
+   "bike",
+   "rental"
+  ]
+ },
+ {
+  "file": "syn_en_clean_10.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Open 24 hours",
+  "words": [
+   "open",
+   "24",
+   "hours"
+  ]
+ },
+ {
+  "file": "syn_en_clean_11.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Fresh bakery",
+  "words": [
+   "fresh",
+   "bakery"
+  ]
+ },
+ {
+  "file": "syn_en_clean_12.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Free Wi-Fi",
+  "words": [
+   "free",
+   "wi",
+   "fi"
+  ]
+ },
+ {
+  "file": "syn_en_clean_13.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Main Street 15",
+  "words": [
+   "main",
+   "street",
+   "15"
+  ]
+ },
+ {
+  "file": "syn_en_clean_14.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "clean",
+  "text": "Central station",
+  "words": [
+   "central",
+   "station"
+  ]
+ },
+ {
+  "file": "syn_en_photo_00.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Fish and chips",
+  "words": [
+   "fish",
+   "and",
+   "chips"
+  ]
+ },
+ {
+  "file": "syn_en_photo_01.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Fresh bakery",
+  "words": [
+   "fresh",
+   "bakery"
+  ]
+ },
+ {
+  "file": "syn_en_photo_02.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Main Street 15",
+  "words": [
+   "main",
+   "street",
+   "15"
+  ]
+ },
+ {
+  "file": "syn_en_photo_03.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Keep out",
+  "words": [
+   "keep",
+   "out"
+  ]
+ },
+ {
+  "file": "syn_en_photo_04.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Bar and grill",
+  "words": [
+   "bar",
+   "and",
+   "grill"
+  ]
+ },
+ {
+  "file": "syn_en_photo_05.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Hot dogs",
+  "words": [
+   "hot",
+   "dogs"
+  ]
+ },
+ {
+  "file": "syn_en_photo_06.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Sale up to 50%",
+  "words": [
+   "sale",
+   "up",
+   "to",
+   "50"
+  ]
+ },
+ {
+  "file": "syn_en_photo_07.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Tel. 555-0199",
+  "words": [
+   "tel",
+   "555",
+   "0199"
+  ]
+ },
+ {
+  "file": "syn_en_photo_08.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Pizza and pasta",
+  "words": [
+   "pizza",
+   "and",
+   "pasta"
+  ]
+ },
+ {
+  "file": "syn_en_photo_09.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Open 24 hours",
+  "words": [
+   "open",
+   "24",
+   "hours"
+  ]
+ },
+ {
+  "file": "syn_en_photo_10.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Pharmacy",
+  "words": [
+   "pharmacy"
+  ]
+ },
+ {
+  "file": "syn_en_photo_11.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Shoe repair",
+  "words": [
+   "shoe",
+   "repair"
+  ]
+ },
+ {
+  "file": "syn_en_photo_12.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Opening hours 9-21",
+  "words": [
+   "opening",
+   "hours",
+   "9",
+   "21"
+  ]
+ },
+ {
+  "file": "syn_en_photo_13.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Welcome",
+  "words": [
+   "welcome"
+  ]
+ },
+ {
+  "file": "syn_en_photo_14.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "photo",
+  "text": "Open",
+  "words": [
+   "open"
+  ]
+ },
+ {
+  "file": "syn_en_small_00.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Open 24 hours",
+  "words": [
+   "open",
+   "24",
+   "hours"
+  ]
+ },
+ {
+  "file": "syn_en_small_01.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Coffee to go",
+  "words": [
+   "coffee",
+   "to",
+   "go"
+  ]
+ },
+ {
+  "file": "syn_en_small_02.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Keep out",
+  "words": [
+   "keep",
+   "out"
+  ]
+ },
+ {
+  "file": "syn_en_small_03.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Welcome",
+  "words": [
+   "welcome"
+  ]
+ },
+ {
+  "file": "syn_en_small_04.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Sale up to 50%",
+  "words": [
+   "sale",
+   "up",
+   "to",
+   "50"
+  ]
+ },
+ {
+  "file": "syn_en_small_05.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Beware of the dog",
+  "words": [
+   "beware",
+   "of",
+   "the",
+   "dog"
+  ]
+ },
+ {
+  "file": "syn_en_small_06.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Shoe repair",
+  "words": [
+   "shoe",
+   "repair"
+  ]
+ },
+ {
+  "file": "syn_en_small_07.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "City Museum",
+  "words": [
+   "city",
+   "museum"
+  ]
+ },
+ {
+  "file": "syn_en_small_08.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Central station",
+  "words": [
+   "central",
+   "station"
+  ]
+ },
+ {
+  "file": "syn_en_small_09.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Opening hours 9-21",
+  "words": [
+   "opening",
+   "hours",
+   "9",
+   "21"
+  ]
+ },
+ {
+  "file": "syn_en_small_10.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Open",
+  "words": [
+   "open"
+  ]
+ },
+ {
+  "file": "syn_en_small_11.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Tel. 555-0199",
+  "words": [
+   "tel",
+   "555",
+   "0199"
+  ]
+ },
+ {
+  "file": "syn_en_small_12.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Car wash",
+  "words": [
+   "car",
+   "wash"
+  ]
+ },
+ {
+  "file": "syn_en_small_13.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Book store",
+  "words": [
+   "book",
+   "store"
+  ]
+ },
+ {
+  "file": "syn_en_small_14.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "small",
+  "text": "Free Wi-Fi",
+  "words": [
+   "free",
+   "wi",
+   "fi"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_00.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Bar and grill",
+  "words": [
+   "bar",
+   "and",
+   "grill"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_01.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "No parking",
+  "words": [
+   "no",
+   "parking"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_02.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Coffee to go",
+  "words": [
+   "coffee",
+   "to",
+   "go"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_03.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Take away",
+  "words": [
+   "take",
+   "away"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_04.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Pizza and pasta",
+  "words": [
+   "pizza",
+   "and",
+   "pasta"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_05.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Fresh bakery",
+  "words": [
+   "fresh",
+   "bakery"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_06.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Tel. 555-0199",
+  "words": [
+   "tel",
+   "555",
+   "0199"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_07.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Open",
+  "words": [
+   "open"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_08.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Welcome",
+  "words": [
+   "welcome"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_09.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Open 24 hours",
+  "words": [
+   "open",
+   "24",
+   "hours"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_10.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Ice cream",
+  "words": [
+   "ice",
+   "cream"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_11.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Sale up to 50%",
+  "words": [
+   "sale",
+   "up",
+   "to",
+   "50"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_12.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Pharmacy",
+  "words": [
+   "pharmacy"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_13.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Fish and chips",
+  "words": [
+   "fish",
+   "and",
+   "chips"
+  ]
+ },
+ {
+  "file": "syn_en_rotated_14.png",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "rotated",
+  "text": "Main Street 15",
+  "words": [
+   "main",
+   "street",
+   "15"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_00.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Open",
+  "words": [
+   "open"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_01.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Flower shop",
+  "words": [
+   "flower",
+   "shop"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_02.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Hot dogs",
+  "words": [
+   "hot",
+   "dogs"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_03.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Bar and grill",
+  "words": [
+   "bar",
+   "and",
+   "grill"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_04.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Tel. 555-0199",
+  "words": [
+   "tel",
+   "555",
+   "0199"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_05.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Cash only",
+  "words": [
+   "cash",
+   "only"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_06.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Open 24 hours",
+  "words": [
+   "open",
+   "24",
+   "hours"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_07.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Bike rental",
+  "words": [
+   "bike",
+   "rental"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_08.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Sale up to 50%",
+  "words": [
+   "sale",
+   "up",
+   "to",
+   "50"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_09.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Book store",
+  "words": [
+   "book",
+   "store"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_10.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Free Wi-Fi",
+  "words": [
+   "free",
+   "wi",
+   "fi"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_11.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Fresh bakery",
+  "words": [
+   "fresh",
+   "bakery"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_12.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Take away",
+  "words": [
+   "take",
+   "away"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_13.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Pharmacy",
+  "words": [
+   "pharmacy"
+  ]
+ },
+ {
+  "file": "syn_en_degraded_14.jpg",
+  "group": "synthetic",
+  "lang": "en",
+  "condition": "degraded",
+  "text": "Central station",
+  "words": [
+   "central",
+   "station"
+  ]
+ },
+ {
+  "file": "test-images/ru-road-sign_1.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "югорский мост обь длина ширина 2110",
+  "words": [
+   "югорский",
+   "мост",
+   "обь",
+   "длина",
+   "ширина",
+   "2110"
+  ]
+ },
+ {
+  "file": "test-images/ru-road-sign_2.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "двуречье",
+  "words": [
+   "двуречье"
+  ]
+ },
+ {
+  "file": "test-images/ru-road-sign_3.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "красноармейск дмитров ногинск",
+  "words": [
+   "красноармейск",
+   "дмитров",
+   "ногинск"
+  ]
+ },
+ {
+  "file": "test-images/ru-road-sign_4.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "плешаковский",
+  "words": [
+   "плешаковский"
+  ]
+ },
+ {
+  "file": "test-images/ru-road-sign_5.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "полчаниновка",
+  "words": [
+   "полчаниновка"
+  ]
+ },
+ {
+  "file": "test-images/ru-road-sign_6.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "церковь троицы живоначальной church trinity",
+  "words": [
+   "церковь",
+   "троицы",
+   "живоначальной",
+   "church",
+   "trinity"
+  ]
+ },
+ {
+  "file": "test-images/ru-shop-sign_1.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "товары повседневного спроса",
+  "words": [
+   "товары",
+   "повседневного",
+   "спроса"
+  ]
+ },
+ {
+  "file": "test-images/ru-shop-sign_2.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "продовольственный",
+  "words": [
+   "продовольственный"
+  ]
+ },
+ {
+  "file": "test-images/ru-shop-sign_3.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "магазин спутник",
+  "words": [
+   "магазин",
+   "спутник"
+  ]
+ },
+ {
+  "file": "test-images/ru-shop-sign_4.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "спирт",
+  "words": [
+   "спирт"
+  ]
+ },
+ {
+  "file": "test-images/ru-shop-sign_5.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "промтовар",
+  "words": [
+   "промтовар"
+  ]
+ },
+ {
+  "file": "test-images/ru-shop-sign_6.jpg",
+  "group": "real_photo",
+  "lang": "ru",
+  "condition": "real_photo",
+  "text": "знание",
+  "words": [
+   "знание"
+  ]
+ },
+ {
+  "file": "test-images/board_apple_ru.png",
+  "group": "real_board",
+  "lang": "ru",
+  "condition": "real_board",
+  "text": "яблоко",
+  "words": [
+   "яблоко"
+  ]
+ },
+ {
+  "file": "test-images/board_cat_ru.png",
+  "group": "real_board",
+  "lang": "ru",
+  "condition": "real_board",
+  "text": "кошка",
+  "words": [
+   "кошка"
+  ]
+ },
+ {
+  "file": "test-images/board_dog_ru.png",
+  "group": "real_board",
+  "lang": "ru",
+  "condition": "real_board",
+  "text": "собака",
+  "words": [
+   "собака"
+  ]
+ },
+ {
+  "file": "test-images/board_banana_ru.png",
+  "group": "real_board",
+  "lang": "ru",
+  "condition": "real_board",
+  "text": "банан",
+  "words": [
+   "банан"
+  ]
+ },
+ {
+  "file": "test-images/board_bicycle_ru.png",
+  "group": "real_board",
+  "lang": "ru",
+  "condition": "real_board",
+  "text": "велосипед",
+  "words": [
+   "велосипед"
+  ]
+ },
+ {
+  "file": "test-images/board_sunflower_ru.png",
+  "group": "real_board",
+  "lang": "ru",
+  "condition": "real_board",
+  "text": "подсолнух",
+  "words": [
+   "подсолнух"
+  ]
+ },
+ {
+  "file": "test-images/board_coffee_ru.png",
+  "group": "real_board",
+  "lang": "ru",
+  "condition": "real_board",
+  "text": "кофе",
+  "words": [
+   "кофе"
+  ]
+ },
+ {
+  "file": "test-images/board_pizza_ru.png",
+  "group": "real_board",
+  "lang": "ru",
+  "condition": "real_board",
+  "text": "пицца",
+  "words": [
+   "пицца"
+  ]
+ },
+ {
+  "file": "test-images/board_apple_en.png",
+  "group": "real_board",
+  "lang": "en",
+  "condition": "real_board",
+  "text": "apple",
+  "words": [
+   "apple"
+  ]
+ },
+ {
+  "file": "test-images/board_coffee_en.png",
+  "group": "real_board",
+  "lang": "en",
+  "condition": "real_board",
+  "text": "coffee",
+  "words": [
+   "coffee"
+  ]
+ },
+ {
+  "file": "test-images/apple_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/banana_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/bicycle_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/cat_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/coffee_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/dog_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/mountain-lake_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/pizza_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/sportscar_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ },
+ {
+  "file": "test-images/sunflower_1.jpg",
+  "group": "negative",
+  "lang": "-",
+  "condition": "negative",
+  "text": "",
+  "words": []
+ }
+]

@@ -1,0 +1,33 @@
+{
+  "_comment": "Ручная разметка реальных фото из test-images (их собирает backend/scripts/fetch_test_images.py). words - ключевые слова, которые хорошо видны на фото и по которым картинку должен находить ocrQuery. Слова в нижнем регистре, ё=е; совпадение ищется как подстрока.",
+  "photos": [
+    {"file": "ru-road-sign_1.jpg", "lang": "ru", "words": ["югорский", "мост", "обь", "длина", "ширина", "2110"]},
+    {"file": "ru-road-sign_2.jpg", "lang": "ru", "words": ["двуречье"]},
+    {"file": "ru-road-sign_3.jpg", "lang": "ru", "words": ["красноармейск", "дмитров", "ногинск"]},
+    {"file": "ru-road-sign_4.jpg", "lang": "ru", "words": ["плешаковский"]},
+    {"file": "ru-road-sign_5.jpg", "lang": "ru", "words": ["полчаниновка"]},
+    {"file": "ru-road-sign_6.jpg", "lang": "ru", "words": ["церковь", "троицы", "живоначальной", "church", "trinity"]},
+    {"file": "ru-shop-sign_1.jpg", "lang": "ru", "words": ["товары", "повседневного", "спроса"]},
+    {"file": "ru-shop-sign_2.jpg", "lang": "ru", "words": ["продовольственный"]},
+    {"file": "ru-shop-sign_3.jpg", "lang": "ru", "words": ["магазин", "спутник"]},
+    {"file": "ru-shop-sign_4.jpg", "lang": "ru", "words": ["спирт"]},
+    {"file": "ru-shop-sign_5.jpg", "lang": "ru", "words": ["промтовар"]},
+    {"file": "ru-shop-sign_6.jpg", "lang": "ru", "words": ["знание"]}
+  ],
+  "boards": [
+    {"file": "board_apple_ru.png", "lang": "ru", "words": ["яблоко"]},
+    {"file": "board_cat_ru.png", "lang": "ru", "words": ["кошка"]},
+    {"file": "board_dog_ru.png", "lang": "ru", "words": ["собака"]},
+    {"file": "board_banana_ru.png", "lang": "ru", "words": ["банан"]},
+    {"file": "board_bicycle_ru.png", "lang": "ru", "words": ["велосипед"]},
+    {"file": "board_sunflower_ru.png", "lang": "ru", "words": ["подсолнух"]},
+    {"file": "board_coffee_ru.png", "lang": "ru", "words": ["кофе"]},
+    {"file": "board_pizza_ru.png", "lang": "ru", "words": ["пицца"]},
+    {"file": "board_apple_en.png", "lang": "en", "words": ["apple"]},
+    {"file": "board_coffee_en.png", "lang": "en", "words": ["coffee"]}
+  ],
+  "negatives": [
+    "apple_1.jpg", "banana_1.jpg", "bicycle_1.jpg", "cat_1.jpg", "coffee_1.jpg",
+    "dog_1.jpg", "mountain-lake_1.jpg", "pizza_1.jpg", "sportscar_1.jpg", "sunflower_1.jpg"
+  ]
+}

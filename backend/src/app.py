@@ -1,3 +1,5 @@
+import logging
+import threading
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -7,12 +9,22 @@ from features.images import get_image_file, indexing, list_images, search
 from migrate import run_migrations
 from utils.config import CORS_ORIGINS
 from utils.database import open_pool
+from utils.ml_core import get_text_embedding
+
+
+def _warm_up_text_model() -> None:
+    # Load the CLIP text encoder in the background so the first search is fast.
+    try:
+        get_text_embedding("warm up")
+    except Exception as e:  # noqa: BLE001
+        logging.getLogger(__name__).warning("CLIP text model warm-up failed: %s", e)
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     run_migrations()
     open_pool()
+    threading.Thread(target=_warm_up_text_model, daemon=True).start()
     yield
 
 

@@ -21,7 +21,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'uv sync завершился с ошибкой.' }
 
     if (-not $SkipModels) {
-        Write-Host 'Скачиваю модели (CLIP и PaddleOCR) ...'
+        Write-Host 'Скачиваю модели (CLIP и OCR) ...'
         & $uv run --env-file .env python scripts/download_models.py
         if ($LASTEXITCODE -ne 0) { throw 'Загрузка моделей завершилась с ошибкой.' }
     }

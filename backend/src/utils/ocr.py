@@ -1,80 +1,89 @@
 import logging
+import threading
 from pathlib import Path
 from typing import Any
 
-from utils.config import (
-    PADDLEOCR_DET_MODEL,
-    PADDLEOCR_DEVICE,
-    PADDLEOCR_ENABLE_MKLDNN,
-    PADDLEOCR_LANG,
-    PADDLEOCR_REC_MODEL,
-)
+from utils.config import MODELS_DIR, OCR_MAX_SIDE, OCR_THREADS
 
 logger = logging.getLogger(__name__)
 
 _ocr: Any = None
+_lock = threading.Lock()
+
+
+def _params() -> dict[str, Any]:
+    """RapidOCR settings that reproduce the former PaddleOCR pipeline.
+
+    Same models (PP-OCRv5 mobile detector, eslav mobile recognizer), converted to
+    ONNX by RapidOCR, and the same detector thresholds PaddleOCR uses for them.
+    """
+    from rapidocr import EngineType, LangDet, LangRec, ModelType, OCRVersion
+
+    models_dir = MODELS_DIR / "rapidocr"
+    models_dir.mkdir(parents=True, exist_ok=True)
+    return {
+        "Global.model_root_dir": str(models_dir),
+        "Global.log_level": "warning",
+        # Text line orientation classifier: off, as it was with PaddleOCR.
+        "Global.use_cls": False,
+        # Downscale large photos before detection: phone photos (4000 px)
+        # otherwise make the detector many times slower for the same text.
+        "Global.max_side_len": OCR_MAX_SIDE or 100_000,
+        # Keep every recognized line, like PaddleOCR (text_rec_score_thresh=0).
+        "Global.text_score": 0.0,
+        "Det.engine_type": EngineType.ONNXRUNTIME,
+        "Det.lang_type": LangDet.CH,  # the multilingual PP-OCRv5 detector
+        "Det.model_type": ModelType.MOBILE,
+        "Det.ocr_version": OCRVersion.PPOCRV5,
+        # PaddleOCR defaults for PP-OCRv5_mobile_det: do not upscale images whose
+        # short side is above 64 px.
+        "Det.limit_side_len": 64,
+        "Det.limit_type": "min",
+        "Det.thresh": 0.3,
+        "Det.box_thresh": 0.6,
+        "Det.unclip_ratio": 1.5,
+        # PaddleOCR does not dilate the text mask; RapidOCR does by default, which
+        # merges neighbouring words (bench/ocr: worse on Russian text).
+        "Det.use_dilation": False,
+        "Rec.engine_type": EngineType.ONNXRUNTIME,
+        "Rec.lang_type": LangRec.ESLAV,
+        "Rec.model_type": ModelType.MOBILE,
+        "Rec.ocr_version": OCRVersion.PPOCRV5,
+        "EngineConfig.onnxruntime.intra_op_num_threads": OCR_THREADS or -1,
+    }
 
 
 def load_ocr() -> Any:
-    """Lazily create the PaddleOCR pipeline.
-
-    Importing PaddleOCR (and PaddlePaddle itself) is slow, so it is kept out of
-    the FastAPI process and only loaded inside Celery workers on first use.
-    """
+    """Lazily create the OCR engine (downloads the models on first use)."""
     global _ocr
-    if _ocr is None:
-        from paddleocr import PaddleOCR
+    with _lock:
+        if _ocr is None:
+            from rapidocr import RapidOCR
 
-        kwargs: dict[str, Any] = {
-            # These stages are not useful for gallery images and would load
-            # additional models on every worker start.
-            "use_doc_orientation_classify": False,
-            "use_doc_unwarping": False,
-            "use_textline_orientation": False,
-            "enable_mkldnn": PADDLEOCR_ENABLE_MKLDNN,
-        }
-        # PaddleOCR ignores ``lang`` as soon as any model name is given.
-        if PADDLEOCR_DET_MODEL or PADDLEOCR_REC_MODEL:
-            if PADDLEOCR_DET_MODEL:
-                kwargs["text_detection_model_name"] = PADDLEOCR_DET_MODEL
-            if PADDLEOCR_REC_MODEL:
-                kwargs["text_recognition_model_name"] = PADDLEOCR_REC_MODEL
-        else:
-            kwargs["lang"] = PADDLEOCR_LANG
-        if PADDLEOCR_DEVICE:
-            kwargs["device"] = PADDLEOCR_DEVICE
-
-        logger.info(
-            "Loading PaddleOCR (det=%s, rec=%s, lang=%s, device=%s)",
-            PADDLEOCR_DET_MODEL or "auto",
-            PADDLEOCR_REC_MODEL or "auto",
-            PADDLEOCR_LANG,
-            PADDLEOCR_DEVICE or "auto",
-        )
-        _ocr = PaddleOCR(**kwargs)
+            params = _params()
+            logger.info(
+                "Loading RapidOCR (PP-OCRv5 mobile det + eslav rec, max side %s px, "
+                "%s threads)",
+                OCR_MAX_SIDE,
+                OCR_THREADS or "auto",
+            )
+            _ocr = RapidOCR(params=params)
     return _ocr
 
 
 def _extract_texts(result: Any) -> list[str]:
-    """Extract recognized lines from PaddleOCR 3.x results.
-
-    The result objects are dict-like and expose ``rec_texts`` (one entry per
-    detected text line).
-    """
     texts: list[str] = []
-    for page in result or []:
-        page_texts = page.get("rec_texts") if hasattr(page, "get") else None
-        if not page_texts:
-            continue
-        for text in page_texts:
-            text = str(text).strip()
-            if text:
-                texts.append(text)
+    for text in getattr(result, "txts", None) or ():
+        text = str(text).strip()
+        if text:
+            texts.append(text)
     return texts
 
 
-def get_image_text(image_path: str) -> str:
-    """Run OCR on an image and return all recognized text, one line per box."""
+def get_image_text(image: str | Path | Any) -> str:
+    """Run OCR on an image (path, PIL image or RGB array); one line per text box."""
     ocr = load_ocr()
-    result = ocr.predict(str(Path(image_path)))
+    if isinstance(image, Path):
+        image = str(image)
+    result = ocr(image, use_cls=False)
     return "\n".join(_extract_texts(result))

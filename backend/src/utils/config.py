@@ -7,32 +7,33 @@ DATABASE_URL = os.getenv(
 
 CELERY_BROKER = os.getenv("CELERY_BROKER", "redis://localhost:6380")
 
-# Must carry a "hf-hub:" (or "local-dir:") prefix: with a bare model name
-# open_clip would build the architecture with random, untrained weights.
-# The vector size of the model must match images.embedding in the migrations
-# (768 for ViT-B-16-SigLIP2).
-CLIP_MODEL_NAME = os.getenv("CLIP_MODEL_NAME", "hf-hub:timm/ViT-B-16-SigLIP2")
-
-# Light PP-OCRv5 mobile models. The eslav recognizer reads Russian, Belarusian,
-# Ukrainian and English. Set both to empty strings to let PaddleOCR choose the
-# models from PADDLEOCR_LANG instead (it then picks the heavier server detector).
-PADDLEOCR_DET_MODEL = os.getenv("PADDLEOCR_DET_MODEL", "PP-OCRv5_mobile_det")
-PADDLEOCR_REC_MODEL = os.getenv("PADDLEOCR_REC_MODEL", "eslav_PP-OCRv5_mobile_rec")
-
-# Used only when PADDLEOCR_DET_MODEL and PADDLEOCR_REC_MODEL are both empty.
-PADDLEOCR_LANG = os.getenv("PADDLEOCR_LANG", "ru")
-
-# Examples: "cpu", "gpu", "gpu:0". Leave empty to let PaddleOCR choose
-# (GPU 0 when available, CPU otherwise).
-PADDLEOCR_DEVICE = os.getenv("PADDLEOCR_DEVICE", "")
-
-# PaddlePaddle 3.x can crash on CPU with oneDNN/MKLDNN enabled, so it is off by
-# default. Set PADDLEOCR_ENABLE_MKLDNN=true to opt in.
-PADDLEOCR_ENABLE_MKLDNN = os.getenv("PADDLEOCR_ENABLE_MKLDNN", "").lower() in (
-    "1",
-    "true",
-    "yes",
+# Downloaded ONNX models (CLIP and OCR).
+MODELS_DIR = Path(
+    os.getenv("MODELS_DIR") or Path(__file__).resolve().parents[2] / "models"
 )
+
+# OpenCLIP model exported to ONNX (visual and text encoders separately); it is
+# downloaded from Hugging Face on first use. CLIP_MODEL_REPO is the repository
+# with the export, CLIP_MODEL_NAME the folder under MODELS_DIR/clip. The vector
+# size must match images.embedding in the migrations (768 for SigLIP2 B-16 and
+# B-32-256); a different model needs a full reindex.
+# The old open_clip form "hf-hub:timm/ViT-B-16-SigLIP2" is accepted too.
+CLIP_MODEL_NAME = os.getenv("CLIP_MODEL_NAME", "ViT-B-16-SigLIP2").rsplit("/", 1)[-1]
+CLIP_MODEL_REPO = os.getenv(
+    "CLIP_MODEL_REPO", f"immich-app/{CLIP_MODEL_NAME}__webli"
+)
+
+# ONNX Runtime threads per CLIP encoder; 0 lets ONNX Runtime decide.
+CLIP_THREADS = int(os.getenv("CLIP_THREADS", "0"))
+
+# OCR runs RapidOCR (ONNX Runtime) with the PP-OCRv5 mobile detector and the
+# eslav mobile recognizer (Russian, Belarusian, Ukrainian and English).
+# Larger images are downscaled to this many pixels on the long side before text
+# detection; 0 disables the downscale.
+OCR_MAX_SIDE = int(os.getenv("OCR_MAX_SIDE", "960"))
+
+# ONNX Runtime threads per OCR model; 0 lets ONNX Runtime decide.
+OCR_THREADS = int(os.getenv("OCR_THREADS", "0"))
 
 # Uploaded images and cached thumbnails live here.
 STORAGE_DIR = Path(
