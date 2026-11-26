@@ -23,7 +23,8 @@ def _params() -> dict[str, Any]:
     models_dir.mkdir(parents=True, exist_ok=True)
     return {
         "Global.model_root_dir": str(models_dir),
-        "Global.log_level": "warning",
+        # "warning" would log every image without text ("detection result is empty").
+        "Global.log_level": "error",
         # Text line orientation classifier: off, as it was with PaddleOCR.
         "Global.use_cls": False,
         # Downscale large photos before detection: phone photos (4000 px)

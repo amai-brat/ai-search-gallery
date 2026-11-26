@@ -15,21 +15,15 @@
             ],
             "jinja": true
         },
-         {
-            "name": "Celery",
+        {
+            "name": "Gallery (app + indexer)",
             "type": "debugpy",
             "request": "launch",
-            "module": "celery",
-            "console": "integratedTerminal",
-            "args": [
-                "--app",
-                "worker",
-                "worker",
-                "--loglevel",
-                "DEBUG",
-                "--pool",
-                "solo",
-            ]
+            "module": "ai_search_gallery",
+            "args": ["--no-browser"],
+            "cwd": "${workspaceFolder}/backend",
+            "subProcess": true,
+            "console": "integratedTerminal"
         },
     ]
 }

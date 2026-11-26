@@ -1,8 +1,10 @@
 import type { ImageItem, IndexJob } from "./types";
 
-// В dev-режиме /api проксируется Vite на FastAPI (см. vite.config.ts).
-// Для сборки можно указать прямой адрес: VITE_API_URL=http://127.0.0.1:8000
+// API приложения доступен на /api того же адреса (в dev-режиме через прокси Vite).
+// Для другого адреса API при сборке: VITE_API_URL=http://127.0.0.1:8000/api
 const BASE: string = import.meta.env.VITE_API_URL ?? "/api";
+
+const version = (image: ImageItem) => image.sha256sum.slice(0, 16);
 
 export class ApiError extends Error {
   constructor(
@@ -78,7 +80,9 @@ export const api = {
   pickDirectory: () =>
     request<{ path: string | null }>("/fs/pick-directory", { method: "POST" }),
 
-  fileUrl: (id: number) => `${BASE}/images/${id}/file`,
-  thumbUrl: (id: number, size = 480) =>
-    `${BASE}/images/${id}/thumbnail?size=${size}`,
+  // Хэш в адресе: id начинаются заново после очистки базы, а миниатюры браузер
+  // кэширует навсегда, и без него показал бы под новым id старую картинку.
+  fileUrl: (image: ImageItem) => `${BASE}/images/${image.id}/file?v=${version(image)}`,
+  thumbUrl: (image: ImageItem, size = 480) =>
+    `${BASE}/images/${image.id}/thumbnail?size=${size}&v=${version(image)}`,
 };

@@ -1,23 +1,21 @@
 [project]
 name = "ai_search_gallery"
 version = "0.1.0"
-description = "Add your description here"
+description = "Local image search by meaning (CLIP) and by text in the image (OCR)"
 readme = "README.md"
 authors = [
 ]
 requires-python = ">=3.13,<3.14"
 dependencies = [
-    "celery[redis]>=5.6.3",
     "fastapi[standard]>=0.142.2",
     "huggingface-hub>=2.4.0",
     "numpy>=2.3.5,<2.4",
     "onnxruntime>=1.32.0",
-    "pgvector>=0.5.0",
     "pillow>=12.3.0",
-    "psycopg[binary,pool]>=3.3.6",
     "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
     "rapidocr>=3.10.0",
-    "redis>=8.1.0",
+    "snowballstemmer>=3.1.1",
     "tokenizers>=0.23.3",
     "uvicorn>=0.54.0",
 ]
@@ -25,3 +23,6 @@ dependencies = [
 [build-system]
 requires = ["uv_build>=0.13.0,<0.14.0"]
 build-backend = "uv_build"
+
+[project.scripts]
+gallery = "ai_search_gallery.cli:main"

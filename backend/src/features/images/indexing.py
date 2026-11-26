@@ -9,7 +9,7 @@ from fastapi import APIRouter, Depends, File, HTTPException, Query, UploadFile
 from pydantic import BaseModel
 from repositories.index_job_repository import IndexJob, IndexJobRepository
 from utils.config import STORAGE_DIR
-from worker import SUPPORTED_FORMATS, index_images_task
+from indexer import SUPPORTED_FORMATS
 
 router = APIRouter(prefix="/images/index", tags=["indexing"])
 
@@ -50,10 +50,10 @@ class IndexJobsResponse(BaseModel):
 def _enqueue(
     jobs: IndexJobRepository, directory_path: str, kind: str
 ) -> IndexResponse:
+    # The indexer process polls index_jobs and picks the job up within a second.
     job = jobs.create(directory_path, kind)
-    result = index_images_task.delay(directory_path, job.id)  # type: ignore
     return IndexResponse(
-        task_id=result.id,
+        task_id=str(job.id),
         job_id=job.id,
         status="queued",
         directory_path=directory_path,

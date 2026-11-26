@@ -1,7 +1,8 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
-// В dev-режиме запросы на /api уходят на FastAPI, поэтому CORS не мешает.
+// Собранный фронтенд (npm run build → dist/) раздаёт сам FastAPI вместе с API на /api.
+// В dev-режиме (npm run dev) Vite проксирует /api на запущенное приложение.
 const API_TARGET = process.env.VITE_API_PROXY ?? "http://127.0.0.1:8000";
 
 export default defineConfig({
@@ -10,11 +11,7 @@ export default defineConfig({
     port: 5180,
     strictPort: true,
     proxy: {
-      "/api": {
-        target: API_TARGET,
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
+      "/api": { target: API_TARGET, changeOrigin: true },
     },
   },
 });
