@@ -1,64 +1,41 @@
-import os
+import logging
+from pathlib import Path
 
-import psycopg
-from utils.config import DATABASE_URL
+from utils.database import get_db_connection, now
 
-MIGRATIONS_DIR = os.path.join(os.path.dirname(__file__), "./migrations")
+MIGRATIONS_DIR = Path(__file__).resolve().parent / "migrations"
+
+logger = logging.getLogger(__name__)
 
 
-def run_migrations():
-    print("Checking for pending database migrations...")
-    conn = psycopg.connect(DATABASE_URL)
-
-    try:
-        with conn.cursor() as cur:
-            # 1. Create the migrations tracking table if it doesn't exist
-            cur.execute("""
-                CREATE TABLE IF NOT EXISTS schema_migrations (
-                    version VARCHAR(255) PRIMARY KEY,
-                    applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-                );
-            """)
-            conn.commit()
-
-            # 2. Get a list of already applied migrations
-            cur.execute("SELECT version FROM schema_migrations;")
-            applied_migrations = {row[0] for row in cur.fetchall()}
-
-            # 3. Read available migration files from the directory
-            if not os.path.exists(MIGRATIONS_DIR):
-                os.makedirs(MIGRATIONS_DIR)
-
-            files = sorted(
-                [f for f in os.listdir(MIGRATIONS_DIR) if f.endswith(".sql")]
+def run_migrations() -> None:
+    """Apply the SQL files in migrations/ that have not been applied yet."""
+    with get_db_connection() as conn:
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS schema_migrations (
+                version TEXT PRIMARY KEY,
+                applied_at TEXT NOT NULL
             )
+            """
+        )
+        applied = {row[0] for row in conn.execute("SELECT version FROM schema_migrations")}
 
-            # 4. Apply new migrations
-            for file in files:
-                if file not in applied_migrations:
-                    print(f"Applying migration: {file}")
-                    filepath = os.path.join(MIGRATIONS_DIR, file)
-
-                    with open(filepath, "r") as f:
-                        sql_script = f.read()
-
-                    try:
-                        # Execute the raw SQL script
-                        cur.execute(sql_script)  # type: ignore
-                        # Record that this migration was applied
-                        cur.execute(
-                            "INSERT INTO schema_migrations (version) VALUES (%s);",
-                            (file,),
-                        )
-                        conn.commit()
-                        print(f"Successfully applied: {file}")
-                    except Exception as e:
-                        conn.rollback()
-                        print(f"Failed to apply migration {file}: {e}")
-                        raise
-    finally:
-        conn.close()
+        for path in sorted(MIGRATIONS_DIR.glob("*.sql")):
+            if path.name in applied:
+                continue
+            logger.info("Applying migration %s", path.name)
+            script = path.read_text(encoding="utf-8")
+            # executescript commits first; wrap the file and its record in one
+            # transaction so a failed migration leaves nothing behind.
+            conn.executescript(
+                "BEGIN;\n"
+                + script
+                + "\nINSERT INTO schema_migrations (version, applied_at) VALUES ("
+                + f"'{path.name}', '{now()}');\nCOMMIT;"
+            )
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
     run_migrations()

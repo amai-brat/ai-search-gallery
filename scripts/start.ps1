@@ -1,15 +1,16 @@
 ﻿<#
 .SYNOPSIS
-    Запускает весь сервис: Docker (Postgres + Redis), Celery-воркер и FastAPI.
+    Запускает приложение (API, сайт и индексатор в одном процессе) и открывает вкладку браузера.
 .PARAMETER Hidden
-    Не открывать окна консоли, писать логи в logs\api.log и logs\worker.log.
-.PARAMETER Open
-    Открыть фронтенд (http://127.0.0.1:5180) в браузере, когда всё готово.
-    Если фронтенд не установлен, откроется Swagger (http://127.0.0.1:8000/docs).
+    Не открывать окно консоли, писать лог в logs\app.log.
+.PARAMETER NoBrowser
+    Не открывать вкладку браузера.
+.PARAMETER Port
+    Порт приложения (по умолчанию 8000).
 #>
 param(
     [switch]$Hidden,
-    [switch]$Open,
+    [switch]$NoBrowser,
     [int]$Port = 8000
 )
 
@@ -17,79 +18,44 @@ param(
 
 $uv = Get-Uv
 Ensure-EnvFile
-Start-Infra
 
 if (-not (Test-Path (Join-Path $script:Backend '.venv'))) {
     throw 'Нет backend\.venv. Сначала выполните .\scripts\setup.ps1'
+}
+if (-not (Test-Path (Join-Path $script:Frontend 'dist\index.html'))) {
+    Build-Frontend
 }
 
 # Не запускаем второй экземпляр поверх первого.
 $pidFile = Join-Path $script:RunDir 'pids.txt'
 if (Test-Path $pidFile) {
     $alive = Get-Content $pidFile | Where-Object { $_ -and (Get-Process -Id $_ -ErrorAction SilentlyContinue) }
-    if ($alive) { throw 'Сервис уже запущен (см. .run\pids.txt). Остановите его: .\scripts\stop.ps1' }
+    if ($alive) {
+        Write-Host 'Приложение уже запущено, открываю его.'
+        if (-not $NoBrowser) { Start-Process "http://127.0.0.1:$Port" }
+        exit 0
+    }
 }
 New-Item -ItemType Directory -Force $script:RunDir, $script:LogDir | Out-Null
 
-$apiDir = $script:Backend
-$workerDir = Join-Path $script:Backend 'src'   # модуль `worker` лежит в src
+$appArgs = "--port $Port"
+if ($NoBrowser) { $appArgs += ' --no-browser' }
+$cmd = "& '$uv' run gallery $appArgs"
 
-$apiCmd = "& '$uv' run --env-file .env fastapi run src/app.py --host 127.0.0.1 --port $Port"
-# --pool=solo: prefork Celery на Windows не работает.
-$workerCmd = "& '$uv' run celery -A worker worker --pool=solo --loglevel=info"
-
-function Start-Service-Window($title, $dir, $cmd, $logName) {
-    if ($Hidden) {
-        $log = Join-Path $script:LogDir $logName
-        $inner = "Set-Location '$dir'; $cmd *>> '$log'"
-        return Start-Process powershell -WindowStyle Hidden -PassThru `
-            -ArgumentList '-NoProfile', '-Command', $inner
-    }
-    $inner = "`$Host.UI.RawUI.WindowTitle = '$title'; Set-Location '$dir'; $cmd"
-    return Start-Process powershell -PassThru `
-        -ArgumentList '-NoProfile', '-NoExit', '-Command', $inner
+if ($Hidden) {
+    $log = Join-Path $script:LogDir 'app.log'
+    # Через cmd: PowerShell 5.1 оборачивает каждую строку stderr в запись об ошибке.
+    # Внешние кавычки вокруг всей команды: cmd /c снимает первую и последнюю.
+    $inner = "`"$uv`" run gallery $appArgs >> `"$log`" 2>&1"
+    $proc = Start-Process cmd.exe -WindowStyle Hidden -PassThru -WorkingDirectory $script:Backend -ArgumentList '/c', "`"$inner`""
+    Write-Host "Приложение запущено в фоне, лог: $log"
 }
-
-$worker = Start-Service-Window 'AI Gallery - worker' $workerDir $workerCmd 'worker.log'
-$api = Start-Service-Window 'AI Gallery - API' $apiDir $apiCmd 'api.log'
-$ids = @($worker.Id, $api.Id)
-
-# Фронтенд (Vite) запускаем, только если он установлен (setup.ps1 делает npm install).
-$frontendPort = 5180
-$hasFrontend = (Test-Path (Join-Path $script:Frontend 'node_modules')) -and (Get-Command npm.cmd -ErrorAction SilentlyContinue)
-if ($hasFrontend) {
-    $frontend = Start-Service-Window 'AI Gallery - frontend' $script:Frontend 'npm.cmd run dev -- --host 127.0.0.1' 'frontend.log'
-    $ids += $frontend.Id
+else {
+    $inner = "`$Host.UI.RawUI.WindowTitle = 'AI Search Gallery'; Set-Location '$($script:Backend)'; $cmd"
+    $proc = Start-Process powershell -PassThru -ArgumentList '-NoProfile', '-NoExit', '-Command', $inner
+    Write-Host 'Приложение запущено в отдельном окне.'
 }
-$ids | Set-Content $pidFile
+$proc.Id | Set-Content $pidFile
 
-Write-Host "Жду готовности API на порту $Port (миграции применяются при старте) ..."
-$url = "http://127.0.0.1:$Port/docs"
-$ready = $false
-for ($i = 0; $i -lt 90; $i++) {
-    Start-Sleep -Seconds 2
-    if ($api.HasExited) { break }
-    try {
-        $r = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 3
-        if ($r.StatusCode -eq 200) { $ready = $true; break }
-    }
-    catch { }
-}
-
-if (-not $ready) {
-    Write-Host 'API не поднялся. Смотрите окно API или logs\api.log.' -ForegroundColor Red
-    exit 1
-}
-
-Write-Host ''
-if ($hasFrontend) { Write-Host "Сайт:    http://127.0.0.1:$frontendPort" -ForegroundColor Green }
-Write-Host "API:     $url" -ForegroundColor Green
-Write-Host 'Остановить: .\scripts\stop.ps1'
-Write-Host 'Первый поиск/индексация медленнее: модели загружаются в память при первом обращении.'
-if ($Open) {
-    if ($hasFrontend) {
-        Start-Sleep -Seconds 2   # Vite стартует чуть позже API
-        Start-Process "http://127.0.0.1:$frontendPort"
-    }
-    else { Start-Process $url }
-}
+Write-Host "Адрес: http://127.0.0.1:$Port" -ForegroundColor Green
+Write-Host 'Остановить: .\scripts\stop.ps1 (или Ctrl+C в окне приложения)'

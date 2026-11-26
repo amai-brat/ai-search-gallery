@@ -1,16 +1,40 @@
 import os
+import sys
 from pathlib import Path
 
-DATABASE_URL = os.getenv(
-    "DATABASE_URL", "postgresql://postgres:password@localhost:5434/gallery"
-)
+import dotenv
 
-CELERY_BROKER = os.getenv("CELERY_BROKER", "redis://localhost:6380")
+BACKEND_DIR = Path(__file__).resolve().parents[2]
+REPO_DIR = BACKEND_DIR.parent
+
+# Settings come from the environment and backend/.env (the environment wins).
+dotenv.load_dotenv(BACKEND_DIR / ".env", override=False)
+
+
+def _default_data_dir() -> Path:
+    if sys.platform == "win32" and os.getenv("LOCALAPPDATA"):
+        return Path(os.environ["LOCALAPPDATA"]) / "AISearchGallery"
+    return Path(os.getenv("XDG_DATA_HOME") or Path.home() / ".local" / "share") / (
+        "ai-search-gallery"
+    )
+
+
+# User data: the SQLite database, uploaded images and thumbnails.
+DATA_DIR = Path(os.getenv("DATA_DIR") or _default_data_dir())
+DATABASE_PATH = Path(os.getenv("DATABASE_PATH") or DATA_DIR / "gallery.db")
+
+# Address of the web app (API and built frontend).
+HOST = os.getenv("HOST", "127.0.0.1")
+PORT = int(os.getenv("PORT", "8000"))
+
+# Built frontend (npm run build) served by FastAPI at "/".
+FRONTEND_DIST = Path(os.getenv("FRONTEND_DIST") or REPO_DIR / "frontend" / "dist")
+
+# Run the indexer process together with the API. Turn off to only search.
+INDEXER_ENABLED = os.getenv("INDEXER_ENABLED", "true").lower() in ("1", "true", "yes")
 
 # Downloaded ONNX models (CLIP and OCR).
-MODELS_DIR = Path(
-    os.getenv("MODELS_DIR") or Path(__file__).resolve().parents[2] / "models"
-)
+MODELS_DIR = Path(os.getenv("MODELS_DIR") or BACKEND_DIR / "models")
 
 # OpenCLIP model exported to ONNX (visual and text encoders separately); it is
 # downloaded from Hugging Face on first use. CLIP_MODEL_REPO is the repository
@@ -36,11 +60,11 @@ OCR_MAX_SIDE = int(os.getenv("OCR_MAX_SIDE", "960"))
 OCR_THREADS = int(os.getenv("OCR_THREADS", "0"))
 
 # Uploaded images and cached thumbnails live here.
-STORAGE_DIR = Path(
-    os.getenv("STORAGE_DIR") or Path(__file__).resolve().parents[2] / "storage"
-)
+STORAGE_DIR = Path(os.getenv("STORAGE_DIR") or DATA_DIR / "storage")
 
-# Origins allowed to call the API from a browser (the Vite dev server by default).
+# Origins allowed to call the API from another origin. The built frontend is
+# served by the API itself and the Vite dev server proxies /api, so neither
+# needs this; it is for other clients only.
 CORS_ORIGINS = [
     o.strip()
     for o in os.getenv(

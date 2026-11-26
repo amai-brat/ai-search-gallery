@@ -12,6 +12,7 @@ from utils.config import (
 )
 from utils.ml_core import get_text_embedding
 from utils.search_query import QuerySyntaxError
+from utils.vector_index import vector_index
 
 router = APIRouter(prefix="/images/search", tags=["images"])
 
@@ -81,20 +82,21 @@ def search(
 
     if semantic_query:
         vector = get_text_embedding(semantic_query)
-        nearest = repo.nearest_(vector, limit=limit)
+        nearest = vector_index.nearest(vector, limit=limit)
         window = _WINDOWS[strictness]
         if window is not None and nearest:
-            threshold = nearest[0].distance + window
-            kept = [h for h in nearest if h.distance <= threshold]
+            threshold = nearest[0][1] + window
+            kept = [h for h in nearest if h[1] <= threshold]
             hidden_count = len(nearest) - len(kept)
             nearest = kept
-        for hit in nearest:
-            image = hit.image
-            if image.id is None:
+        images = repo.get_many(image_id for image_id, _ in nearest)
+        for image_id, distance in nearest:
+            image = images.get(image_id)
+            if image is None:
                 continue
-            hits[image.id] = SearchHit(
-                id=image.id,
-                score=hit.distance,
+            hits[image_id] = SearchHit(
+                id=image_id,
+                score=distance,
                 matched_by=["semantic"],
                 filepath=image.filepath,
                 sha256sum=image.sha256sum,

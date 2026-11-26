@@ -5,82 +5,79 @@
 
 ## Как начать
 
+Это одно приложение: один процесс Python раздаёт сайт и API и сам запускает индексатор
+(дочерний процесс). Docker, Postgres и Redis не нужны, данные лежат в файле SQLite.
+
 ### Windows (PowerShell, через скрипты)
 
-Нужны: Docker Desktop и Python 3.13 (`uv` скрипт поставит сам).
+Нужны Python 3.13 (`uv` скрипт поставит сам) и Node.js (только для сборки сайта).
 
 ```powershell
-.\scripts\setup.ps1     # один раз: .env, Docker (Postgres + Redis), зависимости, модели
-.\scripts\start.ps1 -Open   # запустить всё и открыть сайт
-.\scripts\stop.ps1      # остановить воркер, API и сайт
+.\scripts\setup.ps1     # один раз: .env, зависимости, модели (~1.5 ГБ), сборка сайта
+.\scripts\start.ps1     # запустить и открыть вкладку браузера
+.\scripts\stop.ps1      # остановить
 ```
 
-- `start.ps1` открывает три окна (воркер Celery, API и сайт). `-Hidden` — без окон, логи в `logs\`.
-- `stop.ps1 -Docker` дополнительно останавливает контейнеры, `stop.ps1 -WipeData` ещё и стирает базу.
-- Сайт: http://127.0.0.1:5180 (нужен Node.js; `setup.ps1` сам делает `npm install`)
-- API: http://127.0.0.1:8000/docs
+- `start.ps1` открывает одно окно приложения; `-Hidden` — без окна, лог в `logspp.log`;
+  `-NoBrowser` — не открывать вкладку; `-Port 8001` — другой порт.
+- `stop.ps1 -WipeData` дополнительно удаляет базу (проиндексированные картинки и историю задач).
+- Сайт: http://127.0.0.1:8000, API: http://127.0.0.1:8000/docs
 
-Postgres (pgvector) доступен на `localhost:5434`, Redis на `localhost:6380`
-(нестандартные порты, чтобы не пересекаться с локальным Postgres и другими контейнерами;
-меняются переменными `PG_PORT` / `REDIS_PORT` и в `backend/.env`).
+### Одной командой (любая ОС)
 
-### Вручную (Linux / macOS)
-
-Запустить pgvector (postgres + vector) и redis
 ```bash
-docker compose up
-```
-
-Скачать зависимости бэка (сначала поставить `uv`, если его нет)
-```bash
+cd frontend && npm install && npm run build && cd ..   # один раз: собрать сайт
 cd backend
 uv sync
-source .venv/bin/activate
+uv run gallery            # http://127.0.0.1:8000, откроется вкладка браузера
 ```
 
-Модели (ONNX) скачаются сами при первом запуске в `backend/models`, см. раздел «Модели».
+`uv run gallery --no-browser --port 8001` — без браузера и на другом порту. Если приложение уже
+запущено, команда просто открывает вкладку. Остановить — Ctrl+C.
 
-Заполнить `.env` по `.env.example`
-```bash
-cp .env.example .env
+Модели (ONNX) скачаются сами при первом запуске в `backend/models`, см. раздел «Модели»;
+заранее — `uv run python scripts/download_models.py`.
+
+### Где лежат данные
+
+| Что | Где | Переменная |
+| --- | --- | --- |
+| База SQLite (картинки, векторы, OCR-текст, задачи) | `%LOCALAPPDATA%\AISearchGallery\gallery.db` (Linux: `~/.local/share/ai-search-gallery`) | `DATA_DIR`, `DATABASE_PATH` |
+| Загруженные через сайт файлы и миниатюры | `<DATA_DIR>\storage` | `STORAGE_DIR` |
+| Модели | `backend\models` | `MODELS_DIR` |
+
+Сами картинки из проиндексированных папок никуда не копируются, в базе хранится путь к ним.
+
+### Как устроено
+
+```
+uv run gallery
+ ├─ главный процесс: FastAPI (API на /api + собранный сайт), поиск
+ └─ дочерний процесс: индексатор (CLIP + OCR на ONNX Runtime)
+        ↕ общий файл SQLite (режим WAL): картинки, векторы, очередь задач
 ```
 
-Запустить Celery (из папки `backend/src`)
-```bash
-celery -A worker worker
-```
-
-Запустить FastAPI (в другом терминале, из папки `backend`)
-```bash
-uv run --env-file=.env fastapi dev src/app.py
-```
-
-### Вручную (Windows, без скриптов)
-
-```powershell
-docker compose up -d --wait
-cd backend
-uv sync
-Copy-Item .env.example .env
-uv run --env-file .env python scripts/download_models.py
-
-# окно 1 (воркер; --pool=solo обязателен на Windows)
-cd src
-uv run celery -A worker worker --pool=solo --loglevel=info
-
-# окно 2 (API), из папки backend
-uv run --env-file .env fastapi dev src/app.py
-```
+- **Очередь индексации** — таблица `index_jobs`: API добавляет задачу, индексатор забирает её
+  в течение секунды. Если индексатор падает, приложение перезапускает его, а прерванная задача
+  продолжается (готовые файлы пропускаются). Если остановить приложение посреди индексации, задача
+  продолжится при следующем запуске.
+- **Поиск по смыслу**: векторы хранятся в SQLite, при старте загружаются в память одной матрицей
+  float32 (около 30 МБ на 10 тыс. картинок) и ищутся полным перебором (единицы миллисекунд).
+  Новые картинки подхватываются при следующем запросе. `INDEXER_ENABLED=false` — запустить
+  только поиск без индексатора.
+- **Поиск по тексту**: в базе хранится текст в нижнем регистре (ё→е) и основы слов (стеммер
+  Snowball для русского и английского), поэтому находятся и другие формы слова.
 
 ## Веб-интерфейс
 
-Папка `frontend/`: React + TypeScript + Vite. Запускается вместе с остальным через `start.ps1`,
-либо отдельно:
+Папка `frontend/`: React + TypeScript + Vite. Собранный сайт (`npm run build` → `frontend/dist`)
+раздаёт само приложение. Для разработки сайта с горячей перезагрузкой запустите приложение
+и отдельно Vite:
 
 ```bash
 cd frontend
 npm install
-npm run dev        # http://127.0.0.1:5180
+npm run dev        # http://127.0.0.1:5180, /api проксируется на приложение (:8000)
 ```
 
 - **Поиск**: два поля (по смыслу и по тексту на картинке, можно заполнить оба), примеры запросов,
@@ -95,13 +92,12 @@ npm run dev        # http://127.0.0.1:5180
 `hidden_count` показывает, сколько скрыто. Размер окна настраивается `SEMANTIC_WINDOW_STRICT`,
 `SEMANTIC_WINDOW_BALANCED` и `SEMANTIC_WINDOW_WIDE` в `backend/.env` (подобрано на тестовом наборе).
 
-В dev-режиме Vite проксирует `/api` на FastAPI (`http://127.0.0.1:8000`, меняется переменной
-`VITE_API_PROXY`). Для сборки (`npm run build`) с прямым адресом API задайте `VITE_API_URL`,
-а в `backend/.env` добавьте адрес сайта в `CORS_ORIGINS`.
+API доступен на `/api` того же адреса. В dev-режиме Vite проксирует `/api` на приложение
+(`http://127.0.0.1:8000`, меняется переменной `VITE_API_PROXY`).
 
-Для интерфейса бэкенд получил: `GET /images/index/jobs` (очередь и история), `POST /images/index/upload`,
-`POST /fs/pick-directory`, `GET /images/{id}/thumbnail`, поля `ocr_text` и `total` в списках.
-Загруженные файлы и миниатюры лежат в `backend/storage/` (в git не попадает, путь меняется `STORAGE_DIR`).
+Для интерфейса бэкенд даёт: `GET /api/images/index/jobs` (очередь и история), `POST /api/images/index/upload`,
+`POST /api/fs/pick-directory`, `GET /api/images/{id}/thumbnail`, поля `ocr_text` и `total` в списках.
+Загруженные файлы и миниатюры лежат в `<DATA_DIR>\storage` (путь меняется `STORAGE_DIR`).
 
 ## Тестовые картинки
 
@@ -118,16 +114,16 @@ uv run python scripts/fetch_test_images.py
 Wikimedia Commons (нужен интернет), доски рисуются локально. `--dry-run` только покажет список,
 `--out <папка>` меняет место сохранения.
 
-Затем проиндексируйте папку: `POST /images/index` с телом
+Затем проиндексируйте папку на вкладке «Индексация» или `POST /api/images/index` с телом
 `{"directory_path": "C:/путь/к/проекту/test-images"}`, и пробуйте, например:
 `semanticQuery=яблоко`, `semanticQuery=дорожный знак`, `ocrQuery=двуречье`.
 
 ## Как проверить
 
-1. `POST /images/index` с телом `{"directory_path": "C:/Users/<вы>/Pictures"}` — индексация идёт в фоне, смотрите окно воркера.
-2. `GET /images/search?semanticQuery=собака на пляже`
-3. `GET /images/search?ocrQuery=счёт`
-4. `GET /images/{id}/file` — открыть найденную картинку.
+1. `POST /api/images/index` с телом `{"directory_path": "C:/Users/<вы>/Pictures"}` — индексация идёт в фоне, прогресс в `GET /api/images/index/jobs` и на вкладке «Индексация».
+2. `GET /api/images/search?semanticQuery=собака на пляже`
+3. `GET /api/images/search?ocrQuery=счёт`
+4. `GET /api/images/{id}/file` — открыть найденную картинку.
 
 ## Модели
 
@@ -151,12 +147,11 @@ uv run --env-file .env python scripts/download_models.py
 - `CLIP_MODEL_NAME` — имя модели, ONNX-экспорт берётся из `immich-app/<имя>__webli` (или задайте
   `CLIP_MODEL_REPO`). Например, `ViT-B-32-SigLIP2-256`: кодирует картинки в несколько раз быстрее при
   чуть меньшей точности (см. `bench/README.md`). После смены модели нужна полная переиндексация
-  (`stop.ps1 -WipeData`), а если у модели другая размерность вектора, ещё и `VECTOR(768)` в
-  `backend/src/migrations/001_init.sql`.
+  (`stop.ps1 -WipeData`, затем проиндексировать папки заново).
 
 ## OCR-поиск
 
-При индексации изображений Celery-воркер распознаёт текст через RapidOCR (модели PP-OCRv5 на
+При индексации изображений индексатор распознаёт текст через RapidOCR (модели PP-OCRv5 на
 ONNX Runtime) и сохраняет его в поле `images.ocr_text`.
 
 Настройки OCR (`.env`):
@@ -172,8 +167,8 @@ ONNX Runtime) и сохраняет его в поле `images.ocr_text`.
 Поиск:
 
 ```bash
-GET /images/search?ocrQuery=invoice
-GET /images/search?semanticQuery=кот&ocrQuery=invoice
+GET /api/images/search?ocrQuery=invoice
+GET /api/images/search?semanticQuery=кот&ocrQuery=invoice
 ```
 
 `ocrQuery` поддерживает синтаксис в духе Kibana:
@@ -189,7 +184,7 @@ GET /images/search?semanticQuery=кот&ocrQuery=invoice
 
 Без кавычек слово ищется как подстрока, регистр не важен. Кроме того, находятся
 другие формы слова (русские и английские): по `яблоки` найдётся «Яблоко», по
-`apples` найдётся «Apple». Это стемминг средствами Postgres; для слов со
+`apples` найдётся «Apple». Это стемминг (Snowball, основы слов хранятся в базе); для слов со
 знаками `*` / `?` и для фраз в кавычках он не применяется, там совпадение
 точное. Операторы `AND`,
 `OR`, `NOT` можно писать в любом регистре. В ответе `matched_by` показывает,

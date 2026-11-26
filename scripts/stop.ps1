@@ -1,15 +1,11 @@
 ﻿<#
 .SYNOPSIS
-    Останавливает воркер и API, запущенные через start.ps1.
-.PARAMETER Docker
-    Дополнительно остановить контейнеры Postgres и Redis (данные сохраняются).
+    Останавливает приложение, запущенное через start.ps1.
 .PARAMETER WipeData
-    Остановить контейнеры и УДАЛИТЬ тома с данными (вся база и очередь будут стёрты).
+    Дополнительно УДАЛИТЬ базу (все проиндексированные картинки и история задач).
+    Сами картинки на диске не трогаются; загруженные через сайт файлы и миниатюры остаются.
 #>
-param(
-    [switch]$Docker,
-    [switch]$WipeData
-)
+param([switch]$WipeData)
 
 . "$PSScriptRoot\common.ps1"
 
@@ -17,7 +13,7 @@ $pidFile = Join-Path $script:RunDir 'pids.txt'
 if (Test-Path $pidFile) {
     foreach ($id in Get-Content $pidFile) {
         if ($id -and (Get-Process -Id $id -ErrorAction SilentlyContinue)) {
-            # /T убивает и дочерние процессы (uv -> python -> celery/fastapi).
+            # /T убивает и дочерние процессы (uv -> python -> индексатор).
             & taskkill /PID $id /T /F | Out-Null
             Write-Host "Остановлен процесс $id"
         }
@@ -29,10 +25,15 @@ else {
 }
 
 if ($WipeData) {
-    Wait-Docker
-    & docker compose -f (Join-Path $script:Root 'compose.yml') down -v
-}
-elseif ($Docker) {
-    Wait-Docker
-    & docker compose -f (Join-Path $script:Root 'compose.yml') down
+    $uv = Get-Uv
+    Push-Location $script:Backend
+    try {
+        $db = (& $uv run python -c "import sys; sys.path.insert(0, 'src'); from utils.config import DATABASE_PATH; print(DATABASE_PATH)").Trim()
+    }
+    finally {
+        Pop-Location
+    }
+    foreach ($f in @($db, "$db-wal", "$db-shm")) {
+        if (Test-Path $f) { Remove-Item $f -Force; Write-Host "Удалён $f" }
+    }
 }

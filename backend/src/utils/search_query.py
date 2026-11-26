@@ -20,6 +20,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum, auto
 
+from utils.text_norm import normalize, stems
+
 
 class QuerySyntaxError(ValueError):
     """Raised when an OCR query cannot be parsed."""
@@ -227,15 +229,12 @@ def parse_query(query: str) -> _Node:
     return _Parser(_tokenize(query)).parse()
 
 
-_STEM_LANGUAGES = ("russian", "english")
-
-
 def _escape_like(value: str) -> str:
     return value.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
 
 
 def _like_pattern(term: Term) -> str:
-    escaped = _escape_like(term.value)
+    escaped = _escape_like(normalize(term.value))
     if term.wildcard:
         # Keep SQL wildcards where the user explicitly asked for them.  The
         # pattern is still matched as a substring, like plain terms.
@@ -243,44 +242,47 @@ def _like_pattern(term: Term) -> str:
     return f"%{escaped}%"
 
 
-def _compile(node: _Node, column: str) -> tuple[str, list[str]]:
+# SQLite columns (see migrations/001_init.sql): normalized text for substring
+# matches and word stems for other word forms.
+_NORM_COLUMN = "ocr_norm"
+_STEMS_COLUMN = "ocr_stems"
+
+
+def _compile(node: _Node) -> tuple[str, list[str]]:
     if isinstance(node, Term):
-        like_sql = f"{column} ILIKE %s ESCAPE '\\'"
+        like_sql = f"{_NORM_COLUMN} LIKE ? ESCAPE '\\'"
         params = [_like_pattern(node)]
-        if node.wildcard or node.exact:
+        term_stems = stems(node.value)
+        if node.wildcard or node.exact or not term_stems:
             return like_sql, params
         # Plain words also match other word forms ("яблоки" finds "Яблоко"):
-        # both sides are reduced to stems by the Russian and English dictionaries.
-        stem_sql = " OR ".join(
-            f"to_tsvector('{lang}', {column}) @@ plainto_tsquery('{lang}', %s)"
-            for lang in _STEM_LANGUAGES
+        # every word of the term must be among the stems of the text.
+        stem_sql = " AND ".join(
+            f"{_STEMS_COLUMN} LIKE ? ESCAPE '\\'" for _ in term_stems
         )
         return (
-            f"({like_sql} OR {stem_sql})",
-            params + [node.value] * len(_STEM_LANGUAGES),
+            f"({like_sql} OR ({stem_sql}))",
+            params + [f"% {_escape_like(s)} %" for s in term_stems],
         )
 
     if isinstance(node, And):
-        left_sql, left_params = _compile(node.left, column)
-        right_sql, right_params = _compile(node.right, column)
+        left_sql, left_params = _compile(node.left)
+        right_sql, right_params = _compile(node.right)
         return f"({left_sql} AND {right_sql})", left_params + right_params
 
     if isinstance(node, Or):
-        left_sql, left_params = _compile(node.left, column)
-        right_sql, right_params = _compile(node.right, column)
+        left_sql, left_params = _compile(node.left)
+        right_sql, right_params = _compile(node.right)
         return f"({left_sql} OR {right_sql})", left_params + right_params
 
     if isinstance(node, Not):
-        operand_sql, operand_params = _compile(node.operand, column)
+        operand_sql, operand_params = _compile(node.operand)
         return f"(NOT {operand_sql})", operand_params
 
     raise TypeError(f"Unsupported query node: {type(node)!r}")
 
 
-def compile_ocr_filter(query: str, column: str = "ocr_text") -> tuple[str, list[str]]:
-    """Compile a query to a SQL predicate and its parameters.
-
-    ``column`` must be a trusted identifier (it is interpolated into SQL), while
-    all user-provided text is passed as query parameters.
-    """
-    return _compile(parse_query(query), column)
+def compile_ocr_filter(query: str) -> tuple[str, list[str]]:
+    """Compile a query to a SQLite predicate over the OCR columns of ``images``
+    and its parameters (all user-provided text is passed as parameters)."""
+    return _compile(parse_query(query))

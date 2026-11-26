@@ -14,18 +14,15 @@ class Image(BaseModel):
     filepath: str
     added_at: datetime
     ocr_text: str | None = None
-    embedding: list[float] | None
+    # Loaded only where it is needed (the indexer); lists and search use the
+    # in-memory vector index instead.
+    embedding: list[float] | None = None
 
 
 class ImageCreate(BaseModel):
     sha256sum: str = Field(min_length=64, max_length=64)
     filepath: str
     added_at: datetime
-    ocr_text: str | None = None
-    embedding: list[float] | None
-
-
-class ImageUpdate(BaseModel):
     ocr_text: str | None = None
     embedding: list[float] | None
 

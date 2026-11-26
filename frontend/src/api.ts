@@ -1,7 +1,7 @@
 import type { ImageItem, IndexJob } from "./types";
 
-// В dev-режиме /api проксируется Vite на FastAPI (см. vite.config.ts).
-// Для сборки можно указать прямой адрес: VITE_API_URL=http://127.0.0.1:8000
+// API приложения доступен на /api того же адреса (в dev-режиме через прокси Vite).
+// Для другого адреса API при сборке: VITE_API_URL=http://127.0.0.1:8000/api
 const BASE: string = import.meta.env.VITE_API_URL ?? "/api";
 
 export class ApiError extends Error {
